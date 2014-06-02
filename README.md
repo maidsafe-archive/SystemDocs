@@ -1,4 +1,1 @@
-SystemDocs
-==========
-
-System Documents
+# System Documents
