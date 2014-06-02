@@ -1,0 +1,22 @@
+{
+    "generator": "site",
+    "title": "SystemDocs",
+    "description": "System Documents",
+    "github": null,
+    "githubHost": "https://github.com/",
+    "plugins": ["disqus"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "system-documents"
+    }
+},
+    "links": {
+        "home": "https://github.com/maidsafe/systemdocs/tree/master",
+        "about": "http://maidsafe.net",
+        "issues": "https://github.com/maidsafe/systemdocs/issues",
+        "sharing": {
+            "google": "https://plus.google.com/u/0/+MaidsafeNet/posts",
+            "twitter": "https://twitter.com/maidsafe"
+        }
+    }
+}
