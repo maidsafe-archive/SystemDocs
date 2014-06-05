@@ -1,11 +1,7 @@
 CACHE MANIFEST
-# Revision 1401845630804
+# Revision 1401960992359
 
 CACHE:
-001_chapter_one/article_one.html
-001_chapter_one/autonomous_network.html
-001_chapter_one/intro.html
-001_chapter_one/self_authentication.html
 index.html
 attacks/README.html
 attacks/birthday_paradoxsybil_attack.html
@@ -14,6 +10,10 @@ attacks/isp_simulates_network.html
 attacks/keylogger__virus.html
 detail/README.html
 detail/libraries.html
+system_components/article_one.html
+system_components/autonomous_network.html
+system_components/intro.html
+system_components/self_authentication.html
 user_perspective/README.html
 user_perspective/builders.html
 user_perspective/farmers.html
