@@ -4,12 +4,14 @@
     "description": "System Documents",
     "github": null,
     "githubHost": "https://github.com/",
-    "plugins": ["disqus"],
+    "plugins": [
+        "disqus"
+    ],
     "pluginsConfig": {
         "disqus": {
             "shortName": "system-documents"
-    }
-},
+        }
+    },
     "links": {
         "home": "https://github.com/maidsafe/systemdocs/tree/master",
         "about": "http://maidsafe.net",
