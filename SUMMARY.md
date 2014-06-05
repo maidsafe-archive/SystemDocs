@@ -4,7 +4,7 @@
    * [Farmers](user_perspective/farmers.md)
    * [Builders](user_perspective/builders.md)
 * [System Components](system_components/intro.md)
-   * [Self Encryption](system_components/article_one.md)
+   * [Self Encryption](system_components/self_encryption.md)
    * [Autonomous Network](system_components/autonomous_network.md)
    * [Self Authentication](system_components/self_authentication.md)
 * [Detail](detail/README.md)
