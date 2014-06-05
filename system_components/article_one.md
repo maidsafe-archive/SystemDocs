@@ -7,6 +7,9 @@ The process of self encryption has some properties important to the secure stora
 3. To efficiently store data on a global network, data de duplication is a side effect that can maximise space required to store all data. In essense to store XGb will take up only a % of XGb on the nework.
 4. As data has to be encrypted then the encryption keys should be deduced securely from the data itself, otherwise keys need to be hard coded, or users of the system need to type in passwords continually (there are of course alternatives to make this simpler).
 
+An overview of the process is shown in this diagram ![Figure 1-1](./self-encryption.png)
+
+
 ###Notes
 
 As the mechanism used is a variant on [convergent encryption](http://en.wikipedia.org/wiki/Convergent_encryption) then it would be possible to recodnise data if an attacker had the original file. This depends on access to the data, which in itslef is an issue MaidSafe seeks to resoslve. In the MaidSafe network physical security is also an important issue.
