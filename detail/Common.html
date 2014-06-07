@@ -5,7 +5,7 @@
         
         
         <meta charset="UTF-8">
-        <title>Attacks | SystemDocs</title>
+        <title>Common | SystemDocs</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -15,13 +15,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../attacks/isp_simulates_network.html" />
+        <link rel="next" href="../detail/Passport.html" />
         
         
-        <link rel="prev" href="../detail/Vault.html" />
+        <link rel="prev" href="../detail/libraries.html" />
         
 
-        <meta property="og:title" content="Attacks | SystemDocs">
+        <meta property="og:title" content="Common | SystemDocs">
         <meta property="og:site_name" content="SystemDocs">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-github="maidsafe/SystemDocs" data-level="4" data-basepath=".." data-revision="1402135126782">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="3.2" data-basepath=".." data-revision="1402135126782">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -130,7 +130,7 @@
         
         
         <li>
-            <a href="https://github.com/maidsafe/SystemDocs/edit/master/attacks/README.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/maidsafe/SystemDocs/edit/master/detail/Common.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -390,7 +390,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 82.6086956521739%;min-width: 78.26086956521739%;"></div>
+        <div class="inner" style="width: 47.82608695652174%;min-width: 43.47826086956522%;"></div>
     </div>
     <div class="chapters">
     
@@ -418,21 +418,21 @@
     
         <a href="../detail/Common.html" title="Common" class="chapter done " data-progress="3.2" style="left: 47.82608695652174%;"></a>
     
-        <a href="../detail/Passport.html" title="Passport" class="chapter done " data-progress="3.3" style="left: 52.17391304347826%;"></a>
+        <a href="../detail/Passport.html" title="Passport" class="chapter  " data-progress="3.3" style="left: 52.17391304347826%;"></a>
     
-        <a href="../detail/RUDP.html" title="RUDP" class="chapter done " data-progress="3.4" style="left: 56.52173913043478%;"></a>
+        <a href="../detail/RUDP.html" title="RUDP" class="chapter  " data-progress="3.4" style="left: 56.52173913043478%;"></a>
     
-        <a href="../detail/Routing.html" title="Routing" class="chapter done " data-progress="3.5" style="left: 60.869565217391305%;"></a>
+        <a href="../detail/Routing.html" title="Routing" class="chapter  " data-progress="3.5" style="left: 60.869565217391305%;"></a>
     
-        <a href="../detail/Encrypt.html" title="Encrypt" class="chapter done " data-progress="3.6" style="left: 65.21739130434783%;"></a>
+        <a href="../detail/Encrypt.html" title="Encrypt" class="chapter  " data-progress="3.6" style="left: 65.21739130434783%;"></a>
     
-        <a href="../detail/Drive.html" title="Drive" class="chapter done " data-progress="3.7" style="left: 69.56521739130434%;"></a>
+        <a href="../detail/Drive.html" title="Drive" class="chapter  " data-progress="3.7" style="left: 69.56521739130434%;"></a>
     
-        <a href="../detail/Network-Filesystem.html" title="Network Filesystem" class="chapter done " data-progress="3.8" style="left: 73.91304347826087%;"></a>
+        <a href="../detail/Network-Filesystem.html" title="Network Filesystem" class="chapter  " data-progress="3.8" style="left: 73.91304347826087%;"></a>
     
-        <a href="../detail/Vault-Manager.html" title="Vault Manager" class="chapter done " data-progress="3.9" style="left: 78.26086956521739%;"></a>
+        <a href="../detail/Vault-Manager.html" title="Vault Manager" class="chapter  " data-progress="3.9" style="left: 78.26086956521739%;"></a>
     
-        <a href="../attacks/README.html" title="Attacks" class="chapter done new-chapter" data-progress="4" style="left: 82.6086956521739%;"></a>
+        <a href="../attacks/README.html" title="Attacks" class="chapter  new-chapter" data-progress="4" style="left: 82.6086956521739%;"></a>
     
         <a href="../attacks/isp_simulates_network.html" title="ISP simulates network" class="chapter  " data-progress="4.1" style="left: 86.95652173913044%;"></a>
     
@@ -447,55 +447,63 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_2">
+                    <section class="normal" id="section-gitbook_8">
                     
-                        <h1 id="attacks">Attacks</h1>
-<p>We work very hard to ensure system attack vectors are analysed and (now) documented. This is an important aspect of any such system and will require constant updating as more vectors are discovered.</p>
-<p>Attacks can be classified in two seperate categories, system bugs and logic errors. This section focusses on any logic errors that could introduce an attack opportunity. It is recodnised, that, as with any system enough resources, cash and determination could kill it off. We try to limit the vectors here to be realistic, although we have addressed some seemingly unrealistic attacks as they have been discussed in the community.</p>
-<h2 id="notes">notes</h2>
-<p>To make things fast we removed many signature checks and now with such an accurate routing layer we base decisions on closeness to particular addresses for authority.  We make joining very cryptographically secure, so this is key that the join is very secure and it is. We have a small bit of code to do that will make this even more secure, but that&#39;s another mail. Imagine it is extremely difficult to get into the network at a known point. So your vault address is not able to be manipulated by anyone to give a known address for any attack of that order. for this experiment we assume the opposite though :-)</p>
-<p>I believe there is no single point of failure in any of the vault network. So for this thought experiment we imagine an attacker can get a group of closely connected nodes (which we think is near impossible to do, but for this experiment it makes sense to imagine there is a flaw we have not uncovered and this attack happens).</p>
-<p>So in these experiments in house we assume even a tiny chance is an attack, so it it&#39;s at all possible we imagine it&#39;s easy. This does not mean we ignore the laws of physics though, traversing the address range is considered not a possible attack. So any small chink in the armour is considered a full on attack.</p>
-<p>Note: a group of responsibility as below has a limited attack range. To attack the whole list of addresses managed by a group then the group size would have to be equal to our routing matrix size. This is 64 nodes as it stands. There could be a single address they can manipulate, but to manipulate all addresses within the group of 4 then our tests have shown that you need to attack all 64 nodes. When the matrix is less than 64 we get routing errors, therefore this is the size of group to be able to confirm the close 4 and also to be responsible for the addresses contained within that group. I think best case scenario is an attacker would have to acquire 64 nodes to control a whole groups internal data.</p>
-<h2 id="the-attacker-becomes-a-group-of-maidmanagers">The attacker becomes a group of MaidManagers</h2>
-<p>They could
-1: Issue delete messages to DM&#39;s
-2: Issue put messages to DM
-3: delete a MaidAccount
-4: Fill up a Maid allowance (make the account full)
-Result of attack
-1: This would mean a chunk never actually gets deleted as they upset the count and it will never got to zero on successful deletes. Net effect, the network keeps data it maybe should not.
-1a: The ability to send deletes to every successive address would require several trillion years
-1b: Likely attack would be limited to known chunk names.
-1c: Attack is not limited by group size in this case, the MM could emulate a single Maid they are definitely responsible for.
-2: This requires the data, so this attack would emulate a Maid with no vault. So this is an attack against proof of resource. It is limited though as the store would mean there has to be a pmid hint. We do not catch that just now, but the DM could check the health of the pmid in question and find it&#39;s dead. This attack can be pretty securely locked down I think if we measured it every happened.
-3: This is a good thing for a Maid as they get all that space back. IT has no lasting effect on the user at all. If the attacker were the user as well it would mean the users could get unlimited space and perhaps bypass proof of resource, this again can be killed by a DM check on pmid hint.
-4: This would work I think, it would inconvenience a Maid for sure. It is possible the Maid would spot this though at the users side. In this case creating a new Maid could be considered when the users vault is secured (as it probably is anyway).</p>
-<h2 id="the-attacker-becomes-a-group-of-datamanagers">The attacker becomes a group of DataManagers</h2>
-<p>They could
-1: Delete data on Pmids
-2: Put data on Pmids
-3: Report failed integrity checks on a Pmid.
-Result of attack
-1: This would be valid and cause the pmid to delete the data at no reduction in rank. Very limited to perhaps a single chunk
-1a: This would remove a chunk from the network and is possible (limited as in note). Very limited to perhaps a single chunk
-2: as with MM this would require the data so is naturally limited.
-2a: This is a better way to attack proof of resource, but is very limited in the data it could store as in note above.
-3: This again is an amortised attack and would only be able to report a pmid corrupt for a single chunk. If the pmid holds many chunks (they will) then this is a slight de-rank.</p>
-<h2 id="the-attacker-becomes-a-group-of-pmidmanagers">The attacker becomes a group of PmidManagers</h2>
-<p>They could
-1: Delete all data from a Pmid
-2: Return false health from a pmid
-Result of attack
-1: This is a valid act and would not harm the pmid or the chunks.
-2: This is a way to affect the Maid and would cause a (single) user some hassle. If the vault were shared the number of users may be increased.
-2a: The user may note a vault fault and delete it and create another. The affect would be limited to this hassle. So it should be easy for a user to do this at the API level.</p>
-<h2 id="the-attacker-becomes-a-pmid">The attacker becomes a Pmid</h2>
-<p>The attack would be thwarted here, as the vault storage devices are heavily monitored by both DM and PM groups. The DM groups would equal the amount of chunks held which could be considerable. A rouge vault should be detected very fast and de-ranked, becoming useless.</p>
-<h2 id="the-attacker-becomes-a-maid">The attacker becomes a Maid</h2>
-<p>In this case they are a user and are pretty much locked down in terms of attack vectors. They need a vault etc. and that is all checked by MaidManagers.</p>
-<p>It seems the most serious attack would be DM delete data attack. This is limited in it&#39;s ability, but does exist and we should think of this one as serious. At the moment if such an attack were carried out (it is extremely difficult) then the simple answer is to increase the group size of the nodes. Not the replicant count, only the close group size. It is extremely limited though to possibly a single chunk.</p>
-<p>All ideas and comments welcomed though to add to the continuous improvement.</p>
+                        <p>Maidsafe-Common library provides many components that are widely used by other MaidSafe libraries. Use of these components is strongly encouraged as they are well tested and will evolve over time to increase efficiency and effectiveness.</p>
+<p>Generally, the components it presents can be divided into the following groups :</p>
+<p><em><strong>Concurrency Helpers</strong></em> </p>
+<ul>
+<li><a href="Active-Object">Active Object</a> An implementation of <a href="http://en.wikipedia.org/wiki/Active_object" target="_blank">Active Object Design Pattern</a>. Useful for running operations in a thread safe manner.</li>
+<li><a href="Asio-Service">Asio Service</a> Asynchronous helpers for asynchronous operations and timers based on <a href="http://www.boost.org/doc/libs/release/doc/html/boost_asio.html" target="_blank">Boost ASIO</a>. </li>
+<li><a href="Safe-Queue">Safe Queue</a> An internally synchronised (not lock free) queue based on a <a href="http://en.cppreference.com/w/cpp/container/deque" target="_blank">deque</a>. Please consider <a href="http://www.boost.org/doc/libs/release/doc/html/lockfree.html" target="_blank">boost lock free</a> structures instead. This container is likely to be deprecated.</li>
+</ul>
+<p><em><strong>Type Safety</strong></em></p>
+<ul>
+<li><a href="Bounded-String">Bounded String</a> Create string types with upper and lower &#39;bounds&#39;</li>
+<li><a href="Tagged-Value">Tagged Value</a> An implementation of <a href="http://martin-moene.blogspot.co.uk/2012/07/light-on-whole-value.html" target="_blank">the whole value idiom</a></li>
+</ul>
+<p><em><strong>Exception Safety</strong></em></p>
+<ul>
+<li><a href="Errors-Exceptions">Errors and Exceptions</a> Error handling system extending <code>std::error_code</code> and <code>std::exception</code></li>
+<li><a href="On-Scope-Exit">On Scope Exit</a> A very handy utility to revert values or perform functions on the event of an exception being thrown. </li>
+</ul>
+<p><em><strong>Data Storage</strong></em></p>
+<p>The data storage section implements classes which satisfy some of the requirements of the network&#39;s RESTful interface; mainly Put, Get and Delete.  They are essentially <key,value> stores, not databases.</p>
+<p>Its interface is provided in the following files:</p>
+<ul>
+<li>[permanent_store.h][permanent_store_h] - A persistent storage class using the filesystem as the storage medium.</li>
+<li>[data_buffer.h][data_buffer_h] - A FIFO buffer which uses a combination of disk-based storage and memory-based storage.  It is designed to allow fast read/write to the in-memory portion while a background thread copies the data to the on-disk portion.</li>
+<li>[data_store.h][data_store_h] - A policy-based storage class.  This is currently used in conjunction with the [DataBuffer][data_buffer_h] as the policy.</li>
+<li>[memory_buffer.h][memory_buffer_h] - An in-memory storage class internally using a [<code>boost::circular_buffer</code>][boost_circular_buffer] to provide fast, small FIFO storage for non-persistent data.</li>
+</ul>
+<p><em><strong>Data Types</strong></em></p>
+<p>The data types section is used to pull together the various types of data which the network can handle.  Some types are defined here, others simply are enumerated.  Enumerations of the types are unfortunately required when serialising the data in order to send it to peer nodes on the network.</p>
+<p>The interface is provided in the following files:</p>
+<ul>
+<li>[data_type_values.h][data_type_values_h] - An enumeration of all data types which can be handled by the MaidSafe Network.</li>
+<li>[immutable_data.h][immutable_data_h] - A data type whose content cannot be changed.  Its name is defined as the SHA512 hash of its value.  This is the primary type of data resulting from self-encrypting a file.</li>
+<li>[structured_data_versions.h][structured_data_versions_h] - A data type not itself directly put to the network, but rather a means of managing versions of mutable data put to the network.  The versions represent pointers to ImmutableData chunks.</li>
+<li>[mutable_data.h][mutable_data_h] - Data types representing serialised versions.  These are used in the context of storing updates to directories; each update becomes a new version.  When a user&#39;s directory changes, it is serialised, encrypted if required, and the contents put to the network as ImmutableData.  The name of that piece of ImmutableData is the value of a version (along with a reference to the previous version).  This version is then serialised into a MutableData chunk and stored.  The name of the Directory is a random string and persists for the duration of the directory&#39;s lifetime.</li>
+<li>[data_name_variant.h][data_name_variant_h] - A [<code>boost::variant</code>][boost_variant] of the names of the various types which the network handles.  This is primarily used in the Data Stores, where there is a requirement to hold various types of similarly-structured data, but with different actual name types.</li>
+</ul>
+<p><em><strong>General Utilities</strong></em></p>
+<ul>
+<li><a href="Utils">Utils</a> A varied mix of utilities, such as hex conversions, random number generators etc.</li>
+<li><a href="Key-Value-Buffer">Key Value Buffer</a> A buffered disk writing system with caching ability.</li>
+<li><a href="Node-Id">Node Id</a> Utilities to handle 512 bit addresses as used throughout MaidSafe libraries.</li>
+</ul>
+<p><em><strong>Cryptographic Helpers</strong></em> </p>
+<ul>
+<li><a href="Crypto-Utils">Crypto Utils</a> Symmetric encryption, Hash wrappers, secure password wrapper, N+P key sharing (based on Shamir&#39;s algorithm)</li>
+<li><a href="Asymmetric-Encryption">Asymmetric Encryption</a> Wrapper for asymmetric encryption methods (including safe encrypt), currently supporting RSA.</li>
+</ul>
+<p><em><strong>Debug helpers</strong></em></p>
+<ul>
+<li><a href="https://github.com/maidsafe/MaidSafe/wiki/Running-Tests" target="_blank">Test Runner</a></li>
+<li><a href="https://github.com/maidsafe/MaidSafe/wiki/Logging-Options" target="_blank">Logging</a></li>
+</ul>
+<h2 id="network_viewer">NetWork_Viewer</h2>
+<p><a href="https://github.com/maidsafe/MaidSafe-Common/wiki/Network-Viewer" target="_blank">NetWork Viewer</a> is a UI tool presented by MaidSafe to visualize the MaidSafe-Routing network. It can help you understanding how the network works and debugging routing algorithms.</p>
 
                     
                     </section>
@@ -505,10 +513,10 @@ Result of attack
         </div>
 
         
-        <a href="../detail/Vault.html" class="navigation navigation-prev " aria-label="Previous page: Vault"><i class="fa fa-angle-left"></i></a>
+        <a href="../detail/libraries.html" class="navigation navigation-prev " aria-label="Previous page: Libraries"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../attacks/isp_simulates_network.html" class="navigation navigation-next " aria-label="Next page: ISP simulates network"><i class="fa fa-angle-right"></i></a>
+        <a href="../detail/Passport.html" class="navigation navigation-next " aria-label="Next page: Passport"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
