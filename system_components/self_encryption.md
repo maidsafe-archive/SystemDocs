@@ -22,7 +22,7 @@ If this is still not enough security then there is the possibility of users alte
 
 ###Use in a decentralised network
 
-In a DHT like MaidSafe this encryption scheme 
+In a DHT like MaidSafe this encryption scheme proves to be invaluable. As stated the de-duplication aspect is efficient, but the issues surrounding convergent encryption are also mitigated to an extent. In such a network the IP address and port are removed from any Get request for data as well as the ID of the node that held that data. This means the network effectively masks where data is stored and where it comes from.  
 
 ##Detailed description
 
