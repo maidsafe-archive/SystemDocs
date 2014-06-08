@@ -5,7 +5,7 @@
         
         
         <meta charset="UTF-8">
-        <title>RUDP | SystemDocs</title>
+        <title>LifeStuff | SystemDocs</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -15,13 +15,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../detail/Routing.html" />
+        <link rel="next" href="../system_components/intro.html" />
         
         
-        <link rel="prev" href="../detail/Passport.html" />
+        <link rel="prev" href="../projects_on_safe/README.html" />
         
 
-        <meta property="og:title" content="RUDP | SystemDocs">
+        <meta property="og:title" content="LifeStuff | SystemDocs">
         <meta property="og:site_name" content="SystemDocs">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-github="maidsafe/SystemDocs" data-level="4.4" data-basepath=".." data-revision="1402268906405">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="2.1" data-basepath=".." data-revision="1402268906405">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -130,7 +130,7 @@
         
         
         <li>
-            <a href="https://github.com/maidsafe/SystemDocs/edit/master/detail/RUDP.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/maidsafe/SystemDocs/edit/master/projects_on_safe/lifestuff.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -423,7 +423,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 61.53846153846154%;min-width: 57.69230769230769%;"></div>
+        <div class="inner" style="width: 23.076923076923077%;min-width: 19.23076923076923%;"></div>
     </div>
     <div class="chapters">
     
@@ -441,25 +441,25 @@
     
         <a href="../projects_on_safe/lifestuff.html" title="LifeStuff" class="chapter done " data-progress="2.1" style="left: 23.076923076923077%;"></a>
     
-        <a href="../system_components/intro.html" title="System Components" class="chapter done new-chapter" data-progress="3" style="left: 26.923076923076923%;"></a>
+        <a href="../system_components/intro.html" title="System Components" class="chapter  new-chapter" data-progress="3" style="left: 26.923076923076923%;"></a>
     
-        <a href="../system_components/self_encryption.html" title="Self Encryption" class="chapter done " data-progress="3.1" style="left: 30.76923076923077%;"></a>
+        <a href="../system_components/self_encryption.html" title="Self Encryption" class="chapter  " data-progress="3.1" style="left: 30.76923076923077%;"></a>
     
-        <a href="../system_components/autonomous_network.html" title="Autonomous Network" class="chapter done " data-progress="3.2" style="left: 34.61538461538461%;"></a>
+        <a href="../system_components/autonomous_network.html" title="Autonomous Network" class="chapter  " data-progress="3.2" style="left: 34.61538461538461%;"></a>
     
-        <a href="../system_components/self_authentication.html" title="Self Authentication" class="chapter done " data-progress="3.3" style="left: 38.46153846153846%;"></a>
+        <a href="../system_components/self_authentication.html" title="Self Authentication" class="chapter  " data-progress="3.3" style="left: 38.46153846153846%;"></a>
     
-        <a href="../detail/README.html" title="Detail" class="chapter done new-chapter" data-progress="4" style="left: 42.30769230769231%;"></a>
+        <a href="../detail/README.html" title="Detail" class="chapter  new-chapter" data-progress="4" style="left: 42.30769230769231%;"></a>
     
-        <a href="../detail/libraries.html" title="Libraries" class="chapter done " data-progress="4.1" style="left: 46.15384615384615%;"></a>
+        <a href="../detail/libraries.html" title="Libraries" class="chapter  " data-progress="4.1" style="left: 46.15384615384615%;"></a>
     
-        <a href="../detail/Vault.html" title="Vault" class="chapter done " data-progress="4.10" style="left: 50%;"></a>
+        <a href="../detail/Vault.html" title="Vault" class="chapter  " data-progress="4.10" style="left: 50%;"></a>
     
-        <a href="../detail/Common.html" title="Common" class="chapter done " data-progress="4.2" style="left: 53.84615384615385%;"></a>
+        <a href="../detail/Common.html" title="Common" class="chapter  " data-progress="4.2" style="left: 53.84615384615385%;"></a>
     
-        <a href="../detail/Passport.html" title="Passport" class="chapter done " data-progress="4.3" style="left: 57.69230769230769%;"></a>
+        <a href="../detail/Passport.html" title="Passport" class="chapter  " data-progress="4.3" style="left: 57.69230769230769%;"></a>
     
-        <a href="../detail/RUDP.html" title="RUDP" class="chapter done " data-progress="4.4" style="left: 61.53846153846154%;"></a>
+        <a href="../detail/RUDP.html" title="RUDP" class="chapter  " data-progress="4.4" style="left: 61.53846153846154%;"></a>
     
         <a href="../detail/Routing.html" title="Routing" class="chapter  " data-progress="4.5" style="left: 65.38461538461539%;"></a>
     
@@ -486,29 +486,9 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_7">
+                    <section class="normal" id="section-gitbook_22">
                     
-                        <h3 id="overview">Overview</h3>
-<p>RUDP (Reliable UDP) implements psuedo-connections using UDP to achieve many of the benefits of a connection-based protocol like TCP, but crucially allows [NAT traversal][nat_traversal] where TCP cannot. Furthermore, all data is encrypted between both endpoints using a secure, verifiable RSA public key exchange mechanism.  This forms part of the [PKI][pki] which is provided by the MaidSafe Network.</p>
-<p>The library&#39;s interface is provided in the following files:</p>
-<ul>
-<li>[managed_connections.h][mc] - this is the main API and is discussed in more detail below</li>
-<li>[parameters.h][params] - provides library configuration variables</li>
-<li>[return_codes.h][rc] - In the future, the use of return codes will be replaced with the error-handling mechanisms provided in the [MaidSafe-Common][common] library.</li>
-<li>[nat_type.h][nt] - an enumeration of the relevant [NAT][nat] types the library needs to identify</li>
-</ul>
-<p>The library makes heavy use of [Boost.Asio][asio], both for network-related operations and asynchronous operations. It also depends on the MaidSafe libraries [Common][common], [Private][private], and [Passport][passport].</p>
-<h3 id="background">Background</h3>
-<p>Two RUDP nodes maintain a psuedo-connection or &quot;managed connection&quot; by continually sending small keepalive control messages between each other.  The connection can be closed by either peer by sending a shutdown control message, hence under normal circumstances peers become aware very quickly of a closed connection.  Should a fixed number of keepalives fail to be received in a row for a given connection, the node considers the connection to be dead.  This is a slower mechanism than using the shutdown message, however, it should be far less common since it is caused by the peer process terminating unexpectedly, or by the peer&#39;s network connection dropping unexpectedly for example.</p>
-<p>For each connection, a node has an <code>EndpointPair</code> associated with itself and another for the peer.  The <code>EndpointPair</code> contains the &quot;local&quot; endpoint (IP/Port as seen inside or behind the router) and the &quot;external&quot; endpoint (IP/Port as seen outside the router).  External endpoints are preferred, internals are used in case the external fails and the two peers are both behind a router which disallows hairpinning.</p>
-<p>A connection cannot be established between two peers which are both behind routers providing [Symmetric NAT][symm_nat].  The MaidSafe [Routing][routing] library handles this by providing a proxy node for each such &quot;hidden&quot; node, and as such the RUDP library doesn&#39;t attempt to resolve this issue.</p>
-<h3 id="details">Details</h3>
-<p>[managed_connections.h][mc] defines three functors; <code>MessageReceivedFunctor</code>, <code>ConnectionLostFunctor</code>, and <code>MessageSentFunctor</code>.  The first two must be provided in the <code>ManagedConnections::Bootstrap</code> function, can be called many times by RUDP and are self-explanatory.</p>
-<p>The <code>MessageSentFunctor</code> will be invoked exactly once per call to <code>ManagedConnections::Send</code>.  It indicates that the associated message has been received by the target peer, (not just enqueued for sending, but actually received), or else has failed.  It is anticipated (but not required) that a separate instance of <code>MessageSentFunctor</code> will be passed in each call to <code>Send</code>.</p>
-<p>Internally, a <code>ManagedConnections</code> class maintains several (up to <code>Parameters::max_transports</code>) transport objects, each with its own actual network socket.  This socket is used to maintain several, (currently up to 50) (see [transport.h][transport], <code>Transport::kMaxConnections</code>) psuedo-connections.  Therefore, it is likely that having very few <code>ManagedConnections</code> objects will provide optimal performance.</p>
-<p>Bootstrapping a <code>ManagedConnections</code> object can be a slow process, as connections are attempted to the various candidate endpoints until one succeeds.</p>
-<p><code>ManagedConnections::kResiliencePort()</code> provides a network-wide known port which can be used in a disaster-recovery situation.  Every <code>ManagedConnections</code> instance attempts to open this port locally.  After network segmentation for example, nodes can try to rejoin by attempting to connect to other local nodes, or to direct-connected nodes using this known port.</p>
-<p>Further details of the individual functions can be found in the [managed_connections.h][mc] file itself.</p>
+                        <h1 id="lifestuff">LifeStuff</h1>
 
                     
                     </section>
@@ -518,10 +498,10 @@
         </div>
 
         
-        <a href="../detail/Passport.html" class="navigation navigation-prev " aria-label="Previous page: Passport"><i class="fa fa-angle-left"></i></a>
+        <a href="../projects_on_safe/README.html" class="navigation navigation-prev " aria-label="Previous page: Projects on SAFE"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../detail/Routing.html" class="navigation navigation-next " aria-label="Next page: Routing"><i class="fa fa-angle-right"></i></a>
+        <a href="../system_components/intro.html" class="navigation navigation-next " aria-label="Next page: System Components"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

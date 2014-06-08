@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1402135126782
+# Revision 1402268906406
 
 CACHE:
 index.html
@@ -19,6 +19,8 @@ detail/Routing.html
 detail/Vault-Manager.html
 detail/Vault.html
 detail/libraries.html
+projects_on_safe/README.html
+projects_on_safe/lifestuff.html
 system_components/autonomous_network.html
 system_components/intro.html
 system_components/self_authentication.html
@@ -26,6 +28,7 @@ system_components/self_encryption.html
 user_perspective/README.html
 user_perspective/builders.html
 user_perspective/farmers.html
+user_perspective/safecoin.html
 gitbook/app.js
 gitbook/fonts/fontawesome/FontAwesome.otf
 gitbook/fonts/fontawesome/fontawesome-webfont.eot
