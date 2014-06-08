@@ -9,8 +9,7 @@ Maidsafe is the software project behind project SAFE. Project SAFE is an attempt
 MaidSafe is an open-source program that enables a decentralized internet platform, called the SAFE Network. MaidSafe autonomously handles static and dynamic data including communications. Data stored on the network is either encrypted and/or cryptographically signed by MaidSafe connected applications (clients). In either case the network itself cannot decrypt any of the data. MaidSafe also distributes all data on the network without the need for centralized servers. The idea was originally conceived by David Irvine who leads a small team building the base layer services. The system source code is open source and hosted on [GitHub](https://github.com/maidsafe).
 
 #How does MaidSafe work?
-The MaidSafe system turns all connected devices into SAFE Network nodes that collectively store data for all MaidSafe users. MaidSafe allows public and private cloud data storage and processing within the SAFE Network. Data storage is automatically decentralized. This means a
-web application, using MaidSafe does not store its user's data on any central server, rather the data is spread across many disks and devices owned and managed by many different users. No one person or corporation has an intact copy of a user's file. An overview short video can be found [here](https://www.youtube.com/watch?v=RdGH40oUVDY)
+The MaidSafe system turns all connected devices into SAFE Network nodes that collectively store data for all MaidSafe users. MaidSafe allows public and private cloud data storage and processing within the SAFE Network. Data storage is automatically decentralized. This means a web application, using MaidSafe does not store its user's data on any central server, rather the data is spread across many disks and devices owned and managed by many different users. No one person or corporation has an intact copy of a user's file. An overview short video can be found [here](https://www.youtube.com/watch?v=RdGH40oUVDY)
 
 ##Terminology
  
@@ -43,7 +42,7 @@ The SAFE network allows many millions of transactions per second and the larger 
 * [WikiPedia](http://en.wikipedia.org/wiki/MaidSafe)
 * [Google scholar papers and patents](http://http://scholar.google.co.uk/scholar?hl=en&q=maidsafe)
 
-There are a number of technical white papers explaining different parts of the system
+There are a number of technical white papers explaining various parts of the system
 
 * [AutonomousNetwork](https://github.com/maidsafe/MaidSafe/wiki/unpublished_papers/AutonomousNetwork.pdf?raw=true)
 * [Distributed File System ](https://github.com/maidsafe/MaidSafe/wiki/unpublished_papers/MaidSafeDistributedFileSystem.pdf?raw=true)
