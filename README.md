@@ -27,6 +27,7 @@ Vault | The allocated portion of a user's disk space, contributed to the SAFE Ne
 Vault Farmer | A user who dedicates large amounts of storage space to the SAFE Network in order to farm safecoins.
 
 #What is Safecoin?
+
 Safecoin Is a coin that is generated and protected by the SAFE network and stays on the SAFE network (It of course can be copied as it is data, but off-network copies are of no value as a coin). Wallets will actually ask the network what their balance is and allow transactions to happen. The network can confirm and exchange coin ownership via a digitally signed authority from the coins last owner. This operation is ‘network atomic’ which basically means the network will make sure all copies update to show the transaction. This is a different approach to the ‘blockchain’ mechanism employed by bitcoin.
 
 The SAFE network allows many millions of transactions per second and the larger the network the more transactions per second can be executed. Safecoin only holds the last and current owner. It does this to make sure the current owner has signed authority from the last owner to take ownership. This allows coins to be transferred between people very easily and without delay.  Safecoins use a proof of resource to create coins and this is a system that is waste free, so the proof is that a node or application is providing immediate value to society. This can be considered proof of validated resource provision.

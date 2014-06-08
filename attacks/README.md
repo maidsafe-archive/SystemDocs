@@ -17,42 +17,42 @@ Note: a group of responsibility as below has a limited attack range. To attack t
 
 ##The attacker becomes a group of MaidManagers
 They could
-1: Issue delete messages to DM's
-2: Issue put messages to DM
-3: delete a MaidAccount
-4: Fill up a Maid allowance (make the account full)
+1. Issue delete messages to DM's
+2. Issue put messages to DM
+3. delete a MaidAccount
+4. Fill up a Maid allowance (make the account full)
 Result of attack
-1: This would mean a chunk never actually gets deleted as they upset the count and it will never got to zero on successful deletes. Net effect, the network keeps data it maybe should not.
-1a: The ability to send deletes to every successive address would require several trillion years
-1b: Likely attack would be limited to known chunk names.
-1c: Attack is not limited by group size in this case, the MM could emulate a single Maid they are definitely responsible for.
-2: This requires the data, so this attack would emulate a Maid with no vault. So this is an attack against proof of resource. It is limited though as the store would mean there has to be a pmid hint. We do not catch that just now, but the DM could check the health of the pmid in question and find it's dead. This attack can be pretty securely locked down I think if we measured it every happened.
-3: This is a good thing for a Maid as they get all that space back. IT has no lasting effect on the user at all. If the attacker were the user as well it would mean the users could get unlimited space and perhaps bypass proof of resource, this again can be killed by a DM check on pmid hint.
-4: This would work I think, it would inconvenience a Maid for sure. It is possible the Maid would spot this though at the users side. In this case creating a new Maid could be considered when the users vault is secured (as it probably is anyway).
+1. This would mean a chunk never actually gets deleted as they upset the count and it will never got to zero on successful deletes. Net effect, the network keeps data it maybe should not.
+1a. The ability to send deletes to every successive address would require several trillion years
+1b. Likely attack would be limited to known chunk names.
+1c. Attack is not limited by group size in this case, the MM could emulate a single Maid they are definitely responsible for.
+2. This requires the data, so this attack would emulate a Maid with no vault. So this is an attack against proof of resource. It is limited though as the store would mean there has to be a pmid hint. We do not catch that just now, but the DM could check the health of the pmid in question and find it's dead. This attack can be pretty securely locked down I think if we measured it every happened.
+3. This is a good thing for a Maid as they get all that space back. IT has no lasting effect on the user at all. If the attacker were the user as well it would mean the users could get unlimited space and perhaps bypass proof of resource, this again can be killed by a DM check on pmid hint.
+4. This would work I think, it would inconvenience a Maid for sure. It is possible the Maid would spot this though at the users side. In this case creating a new Maid could be considered when the users vault is secured (as it probably is anyway).
 
 
 ##The attacker becomes a group of DataManagers
 They could
-1: Delete data on Pmids
-2: Put data on Pmids
-3: Report failed integrity checks on a Pmid.
+1. Delete data on Pmids
+2. Put data on Pmids
+3. Report failed integrity checks on a Pmid.
 Result of attack
-1: This would be valid and cause the pmid to delete the data at no reduction in rank. Very limited to perhaps a single chunk
-1a: This would remove a chunk from the network and is possible (limited as in note). Very limited to perhaps a single chunk
-2: as with MM this would require the data so is naturally limited.
-2a: This is a better way to attack proof of resource, but is very limited in the data it could store as in note above.
-3: This again is an amortised attack and would only be able to report a pmid corrupt for a single chunk. If the pmid holds many chunks (they will) then this is a slight de-rank.
+1. This would be valid and cause the pmid to delete the data at no reduction in rank. Very limited to perhaps a single chunk
+1a. This would remove a chunk from the network and is possible (limited as in note). Very limited to perhaps a single chunk
+2. as with MM this would require the data so is naturally limited.
+2a. This is a better way to attack proof of resource, but is very limited in the data it could store as in note above.
+3. This again is an amortised attack and would only be able to report a pmid corrupt for a single chunk. If the pmid holds many chunks (they will) then this is a slight de-rank.
 
 
 ##The attacker becomes a group of PmidManagers
 They could
-1: Delete all data from a Pmid
-2: Return false health from a pmid
+1. Delete all data from a Pmid
+2. Return false health from a pmid
 Result of attack
-1: This is a valid act and would not harm the pmid or the chunks.
-2: This is a way to affect the Maid and would cause a (single) user some hassle. If the vault were shared the number of users may be increased.
-2a: The user may note a vault fault and delete it and create another. The affect would be limited to this hassle. So it should be easy for a user to do this at the API level.
-
+1. This is a valid act and would not harm the pmid or the chunks.
+2. This is a way to affect the Maid and would cause a (single) user some hassle. If the vault were shared the number of users may be increased.
+2a. The user may note a vault fault and delete it and create another. The affect would be limited to this hassle. So it should be easy for a user to do this at the API level.
+ 
 ##The attacker becomes a Pmid
 The attack would be thwarted here, as the vault storage devices are heavily monitored by both DM and PM groups. The DM groups would equal the amount of chunks held which could be considerable. A rouge vault should be detected very fast and de-ranked, becoming useless.
 

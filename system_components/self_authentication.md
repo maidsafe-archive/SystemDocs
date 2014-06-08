@@ -40,7 +40,7 @@ Store On Network[H(K+S)] Symmetric Encrypt[PBKDF2[P][S]](Account)
 
 ####Login
 
-2: Symmetric Decrypt[PBKDF2[P][S]] (Get from network[H(K+S)])
+Symmetric Decrypt[PBKDF2[P][S]] (Get from network[H(K+S)])
 
 ##Issues
 

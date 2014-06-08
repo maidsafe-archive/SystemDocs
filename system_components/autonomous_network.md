@@ -4,20 +4,20 @@ There have been many examples of at pseudo autonomous networks, these would incl
 
 The requirements of such a network are at minimum:
 
-1: Cryptographically secured
-2: A system of guaranteed node identification
-3: A p2p network that is very accurate and can guarantee node proximity to any address
-4: Ensure home routers are able to allow connections both ways (NAT traversal)
+1. Cryptographically secured
+2. A system of guaranteed node identification
+3. A p2p network that is very accurate and can guarantee node proximity to any address
+4. Ensure home routers are able to allow connections both ways (NAT traversal)
 
 For such a network to be accessible for the public at large then we require further efforts:
 
-5: A mechanism where people can prove they have provided resources
-6: A mechanism of resource measurement and reward
+5. A mechanism where people can prove they have provided resources
+6. A mechanism of resource measurement and reward
 
 If such a network were to exist and be fuelled by peoples own computers then the problems are increased to include:
 
-7: Dealing with very high levels of churn (computers going off and on, potentially staying off)
-8: Removing any administration requirement
+7. Dealing with very high levels of churn (computers going off and on, potentially staying off)
+8. Removing any administration requirement
 
 #Overview
 
@@ -68,13 +68,13 @@ A network for public access and provisioning requires all nodes can not only com
 
 Booststrap node = [B]; Our node = [U], Other node who is not sharing the same IP as [U] = [O]
 
-1: On initial bootstrap, receive IP and port [B] detects.
-2: If IP = a local IP then directly connected [stop]
-3: Send Detection packet to [B] which in turn sends a packet to [O].
-4: Both [B] and [O] send message to [U] and await reply.
-5: If [O] receives a reply, it messages [B] with success. [B] reports back to [U] that we are behind a full cone NAT.  [stop]
-6: If [O] cannot get a reply, it asks [B] to message [U] with an attempt to connect to [O] (which may fail), at the same time [O] tries to connect to [U]. If successful [O] reports back to [B] with success, and is then behind a port restricted NAT [stop].
-7: If 6. fails [U] is behind another type of NAT, probably symmetric, although these is some success at predicting port increment or decrement symmetric NAT devices, it is not efficient enough so [stop] with fail at this point.  On all attempts failing the node should report NAT traversal fail to the application. This is not the final attempt as the network will actually implement a relay configuration for 2 nodes behind symmetric routers when necessary. This situation, however, should mean that a server node or an autonomous network node should fail as the remaining operations would be bandwidth restrictive at this time to complete.
+1. On initial bootstrap, receive IP and port [B] detects.
+2. If IP = a local IP then directly connected [stop]
+3. Send Detection packet to [B] which in turn sends a packet to [O].
+4. Both [B] and [O] send message to [U] and await reply.
+5. If [O] receives a reply, it messages [B] with success. [B] reports back to [U] that we are behind a full cone NAT.  [stop]
+6. If [O] cannot get a reply, it asks [B] to message [U] with an attempt to connect to [O] (which may fail), at the same time [O] tries to connect to [U]. If successful [O] reports back to [B] with success, and is then behind a port restricted NAT [stop].
+7. If 6. fails [U] is behind another type of NAT, probably symmetric, although these is some success at predicting port increment or decrement symmetric NAT devices, it is not efficient enough so [stop] with fail at this point.  On all attempts failing the node should report NAT traversal fail to the application. This is not the final attempt as the network will actually implement a relay configuration for 2 nodes behind symmetric routers when necessary. This situation, however, should mean that a server node or an autonomous network node should fail as the remaining operations would be bandwidth restrictive at this time to complete.
 
 Efficient NAT traversal is the dilemma facing almost all decentralisation project that wish to implement planetary scale networks that require zero configuration by users of such networks. This is a significant improvement on existing solutions. 
 
