@@ -10,7 +10,7 @@
     ],
     "pluginsConfig": {
         "disqus": {
-            "shortName": "system-documents"
+            "shortName": "systemdocs"
         },
         "ga": {
             "token": "UA-32549768-3"
