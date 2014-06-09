@@ -5,11 +5,15 @@
     "github": null,
     "githubHost": "https://github.com/",
     "plugins": [
-        "disqus"
+        "disqus",
+        "ga"
     ],
     "pluginsConfig": {
         "disqus": {
             "shortName": "system-documents"
+        },
+        "ga": {
+            "token": "UA-32549768-3"
         }
     },
     "links": {
