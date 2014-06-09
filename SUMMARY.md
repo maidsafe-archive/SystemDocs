@@ -2,7 +2,7 @@
 
 * [User Perspective](user_perspective/README.md)
    * [Farmers](user_perspective/farmers.md)
-   * [Builders](user_perspective/builders.md)
+   * [Builders](user_perspective/app_devs.md)
    * [Safecoin](user_perspective/safecoin.md)
 * [Projects on SAFE](projects_on_safe/README.md)
    * [LifeStuff](projects_on_safe/lifestuff.md)
