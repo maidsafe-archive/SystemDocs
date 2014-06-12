@@ -102,6 +102,18 @@ As the network creates tokens, users may use these to purchase network resources
 
 Rank is an internal measure of the vaults stored verses lost data and is used to manage network authority in addition to the authority a vault has in relation to it's XOR closeness to an address. This rank is used to regulate the safecoin earning rate of vaults. This rate may decrease on oversupply of resources and increase on increased demand for resources. The external value of safecoin is a separate issue and discussed  extensively in the community.
 
+###Proof of storage
+
+A questions of proof of storage is often asked. This is referred to by some as proof of retrievabiltiy. This proof in MaidSafe uses a mechanism simiar to a [zero knowledge proof](http://en.wikipedia.org/wiki/Zero-knowledge_proof). In this case the check should not require to know the content of any data to be checked, but must know the data is in fact held and held in a manner that is accurate. This means zero corruption, virus etc. can have affected the data.  This is achived with the followign steps:
+
+1. A checking group creates a random string
+2. This random string is sent, ecnrypted to all holders of the data
+3. The data holder takes this string and appends to the original data and hashes the result
+4. The result is collected and decrypted at the checking group and compared
+5. If any node returns a different result then it is believed comprimised and de-ranked
+
+This mechanism triggers on Get requests and during account transfers etc. It is non deterministic and randomised by use by users. It is considred to be secure and uses zero knowledge, not to conceal content (as anyone can ask for any data), but to ensure any data wiht a contamination is not required to be transferred.
+
 ##Network churn (7)
 
 Network churn is a term to describe nodes going off line frequently and without notice much of the time. This is a situation that favours a very fast reconfiguring network. In the case of MaidSafe and the network distance from addresses which is used as a large part of the authorisation metric. In MaidSafe a nodes distance from an address is a measure of that nodes authority to make decisions on that address in a particular circumstance.
