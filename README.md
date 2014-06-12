@@ -4,7 +4,7 @@ Please see http://maidsafe.net/SystemDocs/ for the online version of this book.
 
 #What is MaidSafe?
 
-Maidsafe is the software project behind project SAFE. Project SAFE is an attempt to replace the current centralised and controlled Internet infrastructure into a fully decentralised trustless network. The projects vision through the development of MaidSafe has been **Privacy, Security** and **Freedom** for all of the worlds population. It is thought these goals can be achieved with an Internet that is more inclusive and controlled by no individuals or companies. 
+Maidsafe is the company behind project SAFE. Project SAFE aims to replace the current centralised and controlled Internet infrastructure into a fully decentralised trustless network. The projects vision through the development of MaidSafe has been **Privacy, Security** and **Freedom** for all of the worlds population. It is thought these goals can be achieved with an Internet that is more inclusive and controlled by no individuals or companies.
 
 MaidSafe is an open-source program that enables a decentralized internet platform, called the SAFE Network. MaidSafe autonomously handles static and dynamic data including communications. Data stored on the network is either encrypted and/or cryptographically signed by MaidSafe connected applications (clients). In either case the network itself cannot decrypt any of the data. MaidSafe also distributes all data on the network without the need for centralized servers. The idea was originally conceived by David Irvine who leads a small team building the base layer services. The system source code is open source and hosted on [GitHub](https://github.com/maidsafe).
 
@@ -12,7 +12,7 @@ MaidSafe is an open-source program that enables a decentralized internet platfor
 The MaidSafe system turns all connected devices into SAFE Network nodes that collectively store data for all MaidSafe users. MaidSafe allows public and private cloud data storage and processing within the SAFE Network. Data storage is automatically decentralized. This means a web application, using MaidSafe does not store its user's data on any central server, rather the data is spread across many disks and devices owned and managed by many different users. No one person or corporation has an intact copy of a user's file. An overview short video can be found [here](https://www.youtube.com/watch?v=RdGH40oUVDY)
 
 ##Terminology
- 
+
 Term | Meaning
 --- | ---
 Builder | A developer who creates applications for the SAFE Network in order to receive safecoin commissions.
