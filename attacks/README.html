@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="maidsafe/SystemDocs" data-level="5" data-basepath=".." data-revision="1402751395577">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="5" data-basepath=".." data-revision="1402874649279">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -564,12 +564,12 @@
 <li>delete a MaidAccount</li>
 <li>Fill up a Maid allowance (make the account full)
 Result of attack</li>
-<li>This would mean a chunk never actually gets deleted as they upset the count and it will never got to zero on successful deletes. Net effect, the network keeps data it maybe should not.
+<li>This would mean a chunk never actually gets deleted as they upset the count and it will never go to zero on successful deletes. Net effect, the network keeps data it maybe should not.
 1a. The ability to send deletes to every successive address would require several trillion years
 1b. Likely attack would be limited to known chunk names.
 1c. Attack is not limited by group size in this case, the MM could emulate a single Maid they are definitely responsible for.</li>
-<li>This requires the data, so this attack would emulate a Maid with no vault. So this is an attack against proof of resource. It is limited though as the store would mean there has to be a pmid hint. We do not catch that just now, but the DM could check the health of the pmid in question and find it&#39;s dead. This attack can be pretty securely locked down I think if we measured it every happened.</li>
-<li>This is a good thing for a Maid as they get all that space back. IT has no lasting effect on the user at all. If the attacker were the user as well it would mean the users could get unlimited space and perhaps bypass proof of resource, this again can be killed by a DM check on pmid hint.</li>
+<li>This requires the data, so this attack would emulate a Maid with no vault. So this is an attack against proof of resource. It is limited though as the store would mean there has to be a pmid hint. We do not catch that just now, but the DM could check the health of the pmid in question and find it&#39;s dead. This attack can be pretty securely locked down I think if we measured it every time it happened.</li>
+<li>This is a good thing for a Maid as they get all that space back. It has no lasting effect on the user at all. If the attacker were the user as well it would mean the users could get unlimited space and perhaps bypass proof of resource, this again can be killed by a DM check on pmid hint.</li>
 <li>This would work I think, it would inconvenience a Maid for sure. It is possible the Maid would spot this though at the users side. In this case creating a new Maid could be considered when the users vault is secured (as it probably is anyway).</li>
 </ol>
 <h2 id="the-attacker-becomes-a-group-of-datamanagers">The attacker becomes a group of DataManagers</h2>
@@ -596,7 +596,7 @@ Result of attack</li>
 2a. The user may note a vault fault and delete it and create another. The affect would be limited to this hassle. So it should be easy for a user to do this at the API level.</li>
 </ol>
 <h2 id="the-attacker-becomes-a-pmid">The attacker becomes a Pmid</h2>
-<p>The attack would be thwarted here, as the vault storage devices are heavily monitored by both DM and PM groups. The DM groups would equal the amount of chunks held which could be considerable. A rouge vault should be detected very fast and de-ranked, becoming useless.</p>
+<p>The attack would be thwarted here, as the vault storage devices are heavily monitored by both DM and PM groups. The DM groups would equal the amount of chunks held which could be considerable. A rogue vault should be detected very fast and de-ranked, becoming useless.</p>
 <h2 id="the-attacker-becomes-a-maid">The attacker becomes a Maid</h2>
 <p>In this case they are a user and are pretty much locked down in terms of attack vectors. They need a vault etc. and that is all checked by MaidManagers.</p>
 <p>It seems the most serious attack would be DM delete data attack. This is limited in it&#39;s ability, but does exist and we should think of this one as serious. At the moment if such an attack were carried out (it is extremely difficult) then the simple answer is to increase the group size of the nodes. Not the replicant count, only the close group size. It is extremely limited though to possibly a single chunk.</p>
