@@ -22,12 +22,12 @@ They could
 3. delete a MaidAccount
 4. Fill up a Maid allowance (make the account full)
 Result of attack
-1. This would mean a chunk never actually gets deleted as they upset the count and it will never got to zero on successful deletes. Net effect, the network keeps data it maybe should not.
+1. This would mean a chunk never actually gets deleted as they upset the count and it will never go to zero on successful deletes. Net effect, the network keeps data it maybe should not.
 1a. The ability to send deletes to every successive address would require several trillion years
 1b. Likely attack would be limited to known chunk names.
 1c. Attack is not limited by group size in this case, the MM could emulate a single Maid they are definitely responsible for.
-2. This requires the data, so this attack would emulate a Maid with no vault. So this is an attack against proof of resource. It is limited though as the store would mean there has to be a pmid hint. We do not catch that just now, but the DM could check the health of the pmid in question and find it's dead. This attack can be pretty securely locked down I think if we measured it every happened.
-3. This is a good thing for a Maid as they get all that space back. IT has no lasting effect on the user at all. If the attacker were the user as well it would mean the users could get unlimited space and perhaps bypass proof of resource, this again can be killed by a DM check on pmid hint.
+2. This requires the data, so this attack would emulate a Maid with no vault. So this is an attack against proof of resource. It is limited though as the store would mean there has to be a pmid hint. We do not catch that just now, but the DM could check the health of the pmid in question and find it's dead. This attack can be pretty securely locked down I think if we measured it every time it happened.
+3. This is a good thing for a Maid as they get all that space back. It has no lasting effect on the user at all. If the attacker were the user as well it would mean the users could get unlimited space and perhaps bypass proof of resource, this again can be killed by a DM check on pmid hint.
 4. This would work I think, it would inconvenience a Maid for sure. It is possible the Maid would spot this though at the users side. In this case creating a new Maid could be considered when the users vault is secured (as it probably is anyway).
 
 
@@ -52,9 +52,9 @@ Result of attack
 1. This is a valid act and would not harm the pmid or the chunks.
 2. This is a way to affect the Maid and would cause a (single) user some hassle. If the vault were shared the number of users may be increased.
 2a. The user may note a vault fault and delete it and create another. The affect would be limited to this hassle. So it should be easy for a user to do this at the API level.
- 
+
 ##The attacker becomes a Pmid
-The attack would be thwarted here, as the vault storage devices are heavily monitored by both DM and PM groups. The DM groups would equal the amount of chunks held which could be considerable. A rouge vault should be detected very fast and de-ranked, becoming useless.
+The attack would be thwarted here, as the vault storage devices are heavily monitored by both DM and PM groups. The DM groups would equal the amount of chunks held which could be considerable. A rogue vault should be detected very fast and de-ranked, becoming useless.
 
 
 ##The attacker becomes a Maid

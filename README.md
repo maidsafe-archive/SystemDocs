@@ -8,7 +8,7 @@ Maidsafe is the company behind project SAFE. Project SAFE (Secure Access For Eve
 
 The SAFE project is an Open Source piece of software that enables a decentralized Internet platform, called the SAFE Network. MaidSafe autonomously handles static and dynamic data including communications. Data stored on the network is either encrypted and/or cryptographically signed by SAFE connected applications (clients). In either case, the network itself cannot decrypt any of the data. The SAFE network also distributes all data without the need for centralized servers. The idea was originally conceived by David Irvine who leads a small team building the base layer services. The system source code is open source and hosted on [GitHub](https://github.com/maidsafe).
 
-#How does the Safe system work?
+#How does the SAFE system work?
 The SAFE software turns all connected devices into SAFE Network nodes that collectively store data for all system users. SAFE enables any service that is currently available on today's centralized Internet, including; cloud storage, VOIP, video streaming, social networks, app stores and many others without the need for any data centres or centralizing structures. This means a SAFE web application, for example, does not store its user's data on any central server, rather the data is spread across many disks and devices owned and managed by many different users. No one person or corporation has an intact copy of a user's file. An overview short video can be found [here](https://www.youtube.com/watch?v=RdGH40oUVDY)
 
 ##Terminology
@@ -17,14 +17,14 @@ Term | Meaning
 --- | ---
 Builder | A developer who creates applications for the SAFE Network in order to receive safecoin commissions.
 MAID | Massive Array of Internet Disks
-MaidSafe | The name of the project enabling the SAFE Network.
+MaidSafe | The name of the company who developed the SAFE Network.
 P.O.R. | Proof of Resource. A protocol used to measure a computer's resource contribution to the SAFE Network.
 SAFE | Secure Access For Everyone
-SAFE Network | A decentralized network of users, communicating through the distributed self-encryption technology created with MaidSafe.
+SAFE Network | A decentralized network of users, communicating through the distributed self-encryption technology created by MaidSafe.
 Safecoin | A virtual currency that exists only on the SAFE Network.
 User | Anyone who connects to the SAFE Network by running the MaidSafe program.
 Vault | The allocated portion of a user's disk space, contributed to the SAFE Network.
-Vault Farmer | A user who dedicates large amounts of storage space to the SAFE Network in order to farm safecoins.
+Vault Farmer | A user who dedicates more storage space to the SAFE Network than they are utilising in order to farm safecoins.
 
 #What is Safecoin?
 
