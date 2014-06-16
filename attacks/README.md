@@ -21,7 +21,9 @@ They could
 2. Issue put messages to DM
 3. delete a MaidAccount
 4. Fill up a Maid allowance (make the account full)
-Result of attack
+
+###Result of attack
+
 1. This would mean a chunk never actually gets deleted as they upset the count and it will never go to zero on successful deletes. Net effect, the network keeps data it maybe should not.
 1a. The ability to send deletes to every successive address would require several trillion years
 1b. Likely attack would be limited to known chunk names.
@@ -32,11 +34,14 @@ Result of attack
 
 
 ##The attacker becomes a group of DataManagers
+
 They could
 1. Delete data on Pmids
 2. Put data on Pmids
 3. Report failed integrity checks on a Pmid.
-Result of attack
+
+###Result of attack
+
 1. This would be valid and cause the pmid to delete the data at no reduction in rank. Very limited to perhaps a single chunk
 1a. This would remove a chunk from the network and is possible (limited as in note). Very limited to perhaps a single chunk
 2. as with MM this would require the data so is naturally limited.
@@ -48,15 +53,17 @@ Result of attack
 They could
 1. Delete all data from a Pmid
 2. Return false health from a pmid
-Result of attack
+
+###Result of attack
+
 1. This is a valid act and would not harm the pmid or the chunks.
 2. This is a way to affect the Maid and would cause a (single) user some hassle. If the vault were shared the number of users may be increased.
 2a. The user may note a vault fault and delete it and create another. The affect would be limited to this hassle. So it should be easy for a user to do this at the API level.
-
+ 
 ##The attacker becomes a Pmid
 The attack would be thwarted here, as the vault storage devices are heavily monitored by both DM and PM groups. The DM groups would equal the amount of chunks held which could be considerable. A rogue vault should be detected very fast and de-ranked, becoming useless.
 
-
+ 
 ##The attacker becomes a Maid
 In this case they are a user and are pretty much locked down in terms of attack vectors. They need a vault etc. and that is all checked by MaidManagers.
 
