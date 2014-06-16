@@ -41,9 +41,9 @@ The SAFE network allows many millions of transactions per second and the larger 
 * [Github](https://github.com/orgs/maidsafe)
 * [Developer wiki](https://github.com/maidsafe/MaidSafe/wiki)
 * [Developer task list](https://www.pivotaltracker.com/n/projects/852817)
-* [maidsafe.org](https//www.maidsafe.org). This is a great community run resource for questions, debate and research into all aspects of project SAFE.
+* [maidsafe.org](https://www.maidsafe.org/) This is a great community run resource for questions, debate and research into all aspects of project SAFE.
 * [WikiPedia](http://en.wikipedia.org/wiki/MaidSafe)
-* [Google scholar papers and patents](http://http://scholar.google.co.uk/scholar?hl=en&q=maidsafe)
+* [Google scholar papers and patents](http://scholar.google.co.uk/scholar?hl=en&q=maidsafe)
 
 There are a number of technical white papers explaining various parts of the system
 
