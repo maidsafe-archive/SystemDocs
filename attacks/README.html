@@ -1,40 +1,52 @@
 <!DOCTYPE HTML>
 <html lang="en-US" manifest="../manifest.appcache">
     
-    <head>
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
         
         <meta charset="UTF-8">
         <title>Attacks | SystemDocs</title>
+
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="">
-        <meta name="generator" content="GitBook 0.5.2">
-        <meta name="HandheldFriendly" content="true"/>
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="maidsafe">
+        <meta name="description" content="System Documents">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
+
+        
+        <link rel="next" href="../attacks/isp_simulates_network.html" />
+        
+        
+        <link rel="prev" href="../detail/Vault.html" />
+        
+
+        <meta property="og:title" content="Attacks | SystemDocs">
+        <meta property="og:site_name" content="SystemDocs">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
+
+        <meta property="book:author" content="https://github.com/maidsafe">
+        <meta property="book:tag" content="GitBook">
+
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
-    
-    
-    <meta name="author" content="maidsafe">
-    
-    
-    <link rel="next" href="../attacks/isp_simulates_network.html" />
-    
-    
-    <link rel="prev" href="../detail/Vault.html" />
-    
-
         
     </head>
     <body>
         
         
-<link rel="stylesheet" href="../gitbook/style.css">
+
+        <link rel="stylesheet" href="../gitbook/style.css">
+        
 
 
         
-    <div class="book" data-github="maidsafe/SystemDocs" data-level="5" data-basepath=".." data-revision="1402926064081">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="5" data-basepath=".." data-revision="1402932892849">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -546,7 +558,7 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_2">
+                    <section class="normal" id="section-gitbook_1">
                     
                         <h1 id="attacks">Attacks</h1>
 <p>We work very hard to ensure system attack vectors are analysed and (now) documented. This is an important aspect of any such system and will require constant updating as more vectors are discovered.</p>
@@ -562,8 +574,10 @@
 <li>Issue delete messages to DM&#39;s</li>
 <li>Issue put messages to DM</li>
 <li>delete a MaidAccount</li>
-<li>Fill up a Maid allowance (make the account full)
-Result of attack</li>
+<li>Fill up a Maid allowance (make the account full)</li>
+</ol>
+<h3 id="result-of-attack">Result of attack</h3>
+<ol>
 <li>This would mean a chunk never actually gets deleted as they upset the count and it will never go to zero on successful deletes. Net effect, the network keeps data it maybe should not.
 1a. The ability to send deletes to every successive address would require several trillion years
 1b. Likely attack would be limited to known chunk names.
@@ -577,8 +591,10 @@ Result of attack</li>
 <ol>
 <li>Delete data on Pmids</li>
 <li>Put data on Pmids</li>
-<li>Report failed integrity checks on a Pmid.
-Result of attack</li>
+<li>Report failed integrity checks on a Pmid.</li>
+</ol>
+<h3 id="result-of-attack">Result of attack</h3>
+<ol>
 <li>This would be valid and cause the pmid to delete the data at no reduction in rank. Very limited to perhaps a single chunk
 1a. This would remove a chunk from the network and is possible (limited as in note). Very limited to perhaps a single chunk</li>
 <li>as with MM this would require the data so is naturally limited.
@@ -589,8 +605,10 @@ Result of attack</li>
 <p>They could</p>
 <ol>
 <li>Delete all data from a Pmid</li>
-<li>Return false health from a pmid
-Result of attack</li>
+<li>Return false health from a pmid</li>
+</ol>
+<h3 id="result-of-attack">Result of attack</h3>
+<ol>
 <li>This is a valid act and would not harm the pmid or the chunks.</li>
 <li>This is a way to affect the Maid and would cause a (single) user some hassle. If the vault were shared the number of users may be increased.
 2a. The user may note a vault fault and delete it and create another. The affect would be limited to this hassle. So it should be easy for a user to do this at the API level.</li>
@@ -619,8 +637,12 @@ Result of attack</li>
 </div>
 
         
-<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-<script src="../gitbook/app.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../gitbook/app.js"></script>
+        
 
     
     <script src="../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
