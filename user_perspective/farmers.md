@@ -2,16 +2,16 @@
 
 Safecoin is farmed, this means farmers get safecoin for looking after data. In a similar way Builders get safecoin for supplying tools to manage and manipulate data (producer and consumer devices).  A coin type structure is a special type of digital asset. These require a mechanism to allow creation of the asset, otherwise anyone could create coins and become rich (well they would not become rich they would simply destroy the eco-system).  After creation then these coins are network types and can be handled with several very small and concise rules, all of which are cryptographically secured.
 
-##Installation and maintenance 
+##Installation and maintenance
 
-The farmer aspect of the SAFE network is actually two programs that are generally invisible to the end user. These programs are the vault and the vault manager. The vault manager keeps the software updated and the vault running, restarting it on any error. The vault manager starts the vault and passes any keys to the vault via IPC or local TCP connection. The vault itself is the 
+The farmer aspect of the SAFE network is actually two programs that are generally invisible to the end user. These programs are the vault and the vault manager. The vault manager keeps the software updated and the vault running, restarting it on any error. The vault manager starts the vault and passes any keys to the vault via IPC or local TCP connection. The vault itself is the
 
 
 ##Mining
 
 A safecoin is only able to be created under certain circumstances.
 
-A person Gets data from the network. This happens via the MaidManager group through the DataManager group and eventually to the PmidManager group.  The storing node (that is giving the data) takes the address of the data, the message ID and the address of it’s close nodes (the PmidManagers). It then hashes all of these into a mining request. The mining request is sent to the network to store a coin. If there is space in the safecoin address space (2^32) then the storing nodes there (Transaction Managers) can check the hash is correct. They can check the address of the requestors close group and the messageid of the Get request (this is intact and comes from the MaidManagers of the requesting node).  This means there is a lot of checking a request is valid and is still valid (if any nodes change the request is dropped as a failure).
+A person Gets data from the network. This happens via the MaidManager group through the DataManager group and eventually to the PmidManager group.  The storing node (that is giving the data) takes the address of the data, the message ID and the address of it’s close nodes (the PmidManagers). It then hashes all of these into a mining request. The mining request is sent to the network to store a coin. If there is space in the safecoin address space (2^32) then the storing nodes there, (Transaction Managers) can check the hash is correct. They can check the address of the requestors close group and the message id of the Get request (this is intact and comes from the MaidManagers of the requesting node).  This means there is a lot of checking a request is valid and is still valid (if any nodes change the request is dropped as a failure).
 
 mining request == Hash(messageid + Get Request message + coin owner (pmid Node) + pmid Managers + Data Managers of the requested chunk)
 
