@@ -32,7 +32,7 @@ Safecoin is the currency of the SAFE network and a mechanism to incentivise and 
 
 The network can confirm and exchange coin ownership via a digitally signed authority from the coins last owner. This operation is ‘network atomic’, meaning that the network will make sure all copies update to show the transaction. This is a different approach to the ‘blockchain’ mechanism employed by bitcoin.
 
-The SAFE network allows many millions of transactions per second and the larger the network the more transactions per second can be executed. Safecoin also only retains the previous and current owner. It does this to make sure the current owner has signed authority from the last owner to take ownership. This allows coins to be transferred between people very efficiently.  Safecoins use a proof of resource algorithmn to create coins and this is a system that is waste free, so the proof is that a node or application is providing immediate value to society. This can be considered proof of validated resource provision.
+The SAFE network allows many millions of transactions per second and the larger the network the more transactions per second can be executed. Safecoin also only retains the previous and current owner. It does this to make sure the current owner has signed authority from the last owner to take ownership. This allows coins to be transferred between people very efficiently.  Safecoins use a proof of resource algorithm to create coins and this is a system that is waste free, so the proof is that a node or application is providing immediate value to society. This can be considered proof of validated resource provision.
 
 
 ##Links and resources
