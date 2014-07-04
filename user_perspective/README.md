@@ -1,8 +1,8 @@
 # User Perspective
 
-The SAFE network or more accurately is a platform that developers can build applications on.
+The SAFE network is a platform that developers can build applications on.
 
-The SAFE network will appear to people as a range of applications, web sites and tools that are very familiar, in many cases indistinguishable from the applications in use today. A major difference though will be that on login to the network there should be no further requirements to login to any web site application or service. The SAFE network creates many cryptographically secure keys and these can effectively provide a challenge response mechanism to allow access to any service. This access can be recorded by the service in a manner that remembers previous actions such as shopping baskets, pages read...etc...
+The SAFE network will appear to users as a range of applications, web sites and tools that are very familiar, in many cases indistinguishable from the applications in use today. A major difference though will be that on login to the network there should be no further requirements to login to any web site application or service. The SAFE network creates many cryptographically secure keys and these can effectively provide a challenge response mechanism to allow access to any service. This access can be recorded by the service in a manner that remembers previous actions such as shopping baskets, pages read...etc...
 
 ##Advantages
 
