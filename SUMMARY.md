@@ -32,4 +32,5 @@
    * [Dishonest Vault Attack](attacks/dishonest_vault_attack.md)
    * [Birthday Paradox/Sybil attack](attacks/birthday_paradoxsybil_attack.md)
    * [Keylogger / virus](attacks/keylogger__virus.md)
+   * [Store bad data](attacks/store_bad_data.md)
 
