@@ -1,52 +1,40 @@
 <!DOCTYPE HTML>
 <html lang="en-US" manifest="../manifest.appcache">
     
-    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
-        
+    <head>
         
         <meta charset="UTF-8">
         <title>Farmers | SystemDocs</title>
-
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="robots" content="index, follow">
-        <meta name="author" content="maidsafe">
-        <meta name="description" content="System Documents">
-        <meta name="keywords" content="gitbook,github" >
-        <meta name="generator" content="www.gitbook.io">
-
-        
-        <link rel="next" href="../user_perspective/app_devs.html" />
-        
-        
-        <link rel="prev" href="../user_perspective/README.html" />
-        
-
-        <meta property="og:title" content="Farmers | SystemDocs">
-        <meta property="og:site_name" content="SystemDocs">
-        <meta property="og:type" content="book">
-        <meta property="og:locale" content="en_US">
-
-        <meta property="book:author" content="https://github.com/maidsafe">
-        <meta property="book:tag" content="GitBook">
-
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.2">
+        <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
+    
+    
+    <meta name="author" content="maidsafe">
+    
+    
+    <link rel="next" href="../user_perspective/app_devs.html" />
+    
+    
+    <link rel="prev" href="../user_perspective/README.html" />
+    
+
         
     </head>
     <body>
         
         
-
-        <link rel="stylesheet" href="../gitbook/style.css">
-        
+<link rel="stylesheet" href="../gitbook/style.css">
 
 
         
-    <div class="book" data-github="maidsafe/SystemDocs" data-level="1.1" data-basepath=".." data-revision="1404023619396">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="1.1" data-basepath=".." data-revision="1404467773378">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -572,14 +560,33 @@
                     <section class="normal" id="section-gitbook_30">
                     
                         <h1 id="farmers">Farmers</h1>
-<p>Safecoin is farmed, this means farmers get safecoin for looking after data. In a similar way Builders get safecoin for supplying tools to manage and manipulate data (producer and consumer devices).  A coin type structure is a special type of digital asset. These require a mechanism to allow creation of the asset, otherwise anyone could create coins and become rich (well they would not become rich they would simply destroy the eco-system).  After creation then these coins are network types and can be handled with several very small and concise rules, all of which are cryptographically secured.</p>
+<p>Safecoin is farmed, this means farmers get paid safecoin for looking after data, as they provide their unused computing resources to the SAFE network. In a similar way, Builders (application developers) are paid safecoin for supplying tools (apps) to manage and manipulate data (producer and consumer devices).  A coin type structure is a special type of digital asset. These require a mechanism to allow creation of the asset, otherwise anyone could create coins and become rich (well they would not become rich they would simply destroy the eco-system).  After creation then these coins are network types and can be handled with several very small and concise rules, all of which are cryptographically secured.</p>
 <h2 id="installation-and-maintenance">Installation and maintenance</h2>
 <p>The farmer aspect of the SAFE network is actually two programs that are generally invisible to the end user. These programs are the vault and the vault manager. The vault manager keeps the software updated and the vault running, restarting it on any error. The vault manager starts the vault and passes any keys to the vault via IPC or local TCP connection. The vault itself is the</p>
 <h2 id="mining">Mining</h2>
-<p>A safecoin is only able to be created under certain circumstances.</p>
+<p>A safecoin is only able to be created under certain circumstances, when a user Gets data from the network, for example.</p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+This process starts via the MaidManager group through the DataManager group and eventually to the PmidManager group.  The storing node (that is giving the data) takes the address of the data, the message ID and the address of its close nodes (the PmidManagers). It then hashes all of these into a mining request. The mining request is sent to the network to store a coin. If there is space in the safecoin address space (there should be, the address space is 2^32 in size) then the storing nodes (Transaction Managers) can check and validate that the hash is correct. The storing nodes also check the address of the requestors close group and the message ID of the Get request (this is intact and comes from the MaidManagers of the requesting node).</p>
+<h1 id="if-any-of-these-checks-by-the-network-show-the-requests-to-be-invalid-the-mining-request-is-immediately-dropped-as-a-failure-in-summary-">If any of these checks by the network show the requests to be invalid, the mining request is immediately dropped as a failure. In summary:</h1>
 <p>A person Gets data from the network. This happens via the MaidManager group through the DataManager group and eventually to the PmidManager group.  The storing node (that is giving the data) takes the address of the data, the message ID and the address of it’s close nodes (the PmidManagers). It then hashes all of these into a mining request. The mining request is sent to the network to store a coin. If there is space in the safecoin address space (2^32) then the storing nodes there, (Transaction Managers) can check the hash is correct. They can check the address of the requestors close group and the message id of the Get request (this is intact and comes from the MaidManagers of the requesting node).  This means there is a lot of checking a request is valid and is still valid (if any nodes change the request is dropped as a failure).</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>FETCH_HEAD</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <p>mining request == Hash(messageid + Get Request message + coin owner (pmid Node) + pmid Managers + Data Managers of the requested chunk)</p>
-<p>This happens every X Get attempts and this X is calculated by an algorithm that slows or speeds up mining requests based on network data stored and free space available. A hack attempt would be computationally infeasible and require an attack group possibly larger than the networks populatoin. So a safecoin mine attempt is a secure PUT of a transferable digital asset. These rules can be applied in similar systems, but is possibly only required here. A very similar approach allows Builders to receive rewards, but at a rate of X/10.</p>
+<p>This happens every X Get attempts and this X is calculated by an algorithm that slows or speeds up mining requests, based on network data stored and free space available. A hack attempt would be computationally infeasible and require an attack group possibly larger than the networks population.</p>
+<p>In conclusion, a safecoin mine attempt is a secure PUT of a transferable digital asset. These rules can be applied in similar systems, but is possibly only required here. A very similar approach allows Builders to receive rewards, but at a rate of X/10.</p>
 
                     
                     </section>
@@ -598,12 +605,8 @@
 </div>
 
         
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
-        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-        <script src="../gitbook/app.js"></script>
-        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
 
     
     <script src="../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
