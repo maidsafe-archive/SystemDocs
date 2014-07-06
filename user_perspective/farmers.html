@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="maidsafe/SystemDocs" data-level="1.1" data-basepath=".." data-revision="1404673477360">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="1.1" data-basepath=".." data-revision="1404675106643">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -565,25 +565,9 @@
 <p>The farmer aspect of the SAFE network is actually two programs that are generally invisible to the end user. These programs are the vault and the vault manager. The vault manager keeps the software updated and the vault running, restarting it on any error. The vault manager starts the vault and passes any keys to the vault via IPC or local TCP connection. The vault itself is the</p>
 <h2 id="mining">Mining</h2>
 <p>A safecoin is only able to be created under certain circumstances, when a user Gets data from the network, for example.</p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-This process starts via the MaidManager group through the DataManager group and eventually to the PmidManager group.  The storing node (that is giving the data) takes the address of the data, the message ID and the address of its close nodes (the PmidManagers). It then hashes all of these into a mining request. The mining request is sent to the network to store a coin. If there is space in the safecoin address space (there should be, the address space is 2^32 in size) then the storing nodes (Transaction Managers) can check and validate that the hash is correct. The storing nodes also check the address of the requestors close group and the message ID of the Get request (this is intact and comes from the MaidManagers of the requesting node).</p>
-<h1 id="if-any-of-these-checks-by-the-network-show-the-requests-to-be-invalid-the-mining-request-is-immediately-dropped-as-a-failure-in-summary-">If any of these checks by the network show the requests to be invalid, the mining request is immediately dropped as a failure. In summary:</h1>
+<p>This process starts via the MaidManager group through the DataManager group and eventually to the PmidManager group.  The storing node (that is giving the data) takes the address of the data, the message ID and the address of its close nodes (the PmidManagers). It then hashes all of these into a mining request. The mining request is sent to the network to store a coin. If there is space in the safecoin address space (there should be, the address space is 2^32 in size) then the storing nodes (Transaction Managers) can check and validate that the hash is correct. The storing nodes also check the address of the requestors close group and the message ID of the Get request (this is intact and comes from the MaidManagers of the requesting node).</p>
+<p>If any of these checks by the network show the requests to be invalid, the mining request is immediately dropped as a failure. In summary:</p>
 <p>A person Gets data from the network. This happens via the MaidManager group through the DataManager group and eventually to the PmidManager group.  The storing node (that is giving the data) takes the address of the data, the message ID and the address of it’s close nodes (the PmidManagers). It then hashes all of these into a mining request. The mining request is sent to the network to store a coin. If there is space in the safecoin address space (2^32) then the storing nodes there, (Transaction Managers) can check the hash is correct. They can check the address of the requestors close group and the message id of the Get request (this is intact and comes from the MaidManagers of the requesting node).  This means there is a lot of checking a request is valid and is still valid (if any nodes change the request is dropped as a failure).</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>FETCH_HEAD</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <p>mining request == Hash(messageid + Get Request message + coin owner (pmid Node) + pmid Managers + Data Managers of the requested chunk)</p>
 <p>This happens every X Get attempts and this X is calculated by an algorithm that slows or speeds up mining requests, based on network data stored and free space available. A hack attempt would be computationally infeasible and require an attack group possibly larger than the networks population.</p>
 <p>In conclusion, a safecoin mine attempt is a secure PUT of a transferable digital asset. These rules can be applied in similar systems, but is possibly only required here. A very similar approach allows Builders to receive rewards, but at a rate of X/10.</p>
