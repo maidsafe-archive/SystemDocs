@@ -11,12 +11,12 @@ The farmer aspect of the SAFE network is actually two programs that are generall
 
 A safecoin is only able to be created under certain circumstances, when a user Gets data from the network, for example.
 
-<<<<<<< HEAD
 This process starts via the MaidManager group through the DataManager group and eventually to the PmidManager group.  The storing node (that is giving the data) takes the address of the data, the message ID and the address of its close nodes (the PmidManagers). It then hashes all of these into a mining request. The mining request is sent to the network to store a coin. If there is space in the safecoin address space (there should be, the address space is 2^32 in size) then the storing nodes (Transaction Managers) can check and validate that the hash is correct. The storing nodes also check the address of the requestors close group and the message ID of the Get request (this is intact and comes from the MaidManagers of the requesting node).
+
 If any of these checks by the network show the requests to be invalid, the mining request is immediately dropped as a failure. In summary:
-=======
+
 A person Gets data from the network. This happens via the MaidManager group through the DataManager group and eventually to the PmidManager group.  The storing node (that is giving the data) takes the address of the data, the message ID and the address of it’s close nodes (the PmidManagers). It then hashes all of these into a mining request. The mining request is sent to the network to store a coin. If there is space in the safecoin address space (2^32) then the storing nodes there, (Transaction Managers) can check the hash is correct. They can check the address of the requestors close group and the message id of the Get request (this is intact and comes from the MaidManagers of the requesting node).  This means there is a lot of checking a request is valid and is still valid (if any nodes change the request is dropped as a failure).
->>>>>>> FETCH_HEAD
+
 
 mining request == Hash(messageid + Get Request message + coin owner (pmid Node) + pmid Managers + Data Managers of the requested chunk)
 
