@@ -1,15 +1,9 @@
-# What Gives Safecoin Value
+# What Gives safecoin Value
 
 [maidsafe.org](https://maidsafe.org/t/what-gives-safecoin-value-and-differentiates-it-from-altcoins/411)
 
-Safecoin will be useful because:
+Safecoin has value because it has utility. Users can earn safecoin by [farming](http://maidsafe.net/SystemDocs/user_perspective/farmers.html) safecoin and use it to buy more storage, and access premium applications and services on the network. It will also be possible to purchase safecoin via exchanges, as the network launches, and this will also provide safecoin with a direct fiat valuation.
 
-people can use it to buy extra stuff (extra storage, premium services, premium apps)
-people can earn it to pay for stuff
-people can buy it from exchanges, set up to exchange it for fiat and vice versa
-it will be attractive to people who need features bitcoin can't support (very high transaction rate, very low transaction latency)
-it will be attractive to users compared to other coin (including bitcoin) because the wallet is simple and built in (just look how hard it still is to figure out which bitcoin wallets to use for what, and how to avoid losing your whole stash - with Safecoin this is handled with a single FAQ)
-in time merchants will want to offer it because so many people have it and are used to purchasing with it
-All these things give people are reason to value Safecoin, and if it is reasonably stable (or they need to hold some for usage), an incentive to hold some quantity of it rather than cash it all in.
+The underlying network also provides safecoin with additional value in a less obvious way, via the transaction mechanism within the network (the SAFE network’s version of the block chain). Capable of processing millions of transactions per second and able to confirm transactions at network speed, the currency is instantly redeemable, secure and anonymous on wallets that are easy to use and built in to the network. These features are well suited to buying not only network services, but also products being sold on the network by merchants.
 
-This is completely different to Mastercoin (and almost every other altcoin) because they have little or negligable utility in themselves. No reason to value, no reason to hold.
+
