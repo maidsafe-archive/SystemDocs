@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="maidsafe/SystemDocs" data-level="5" data-basepath=".." data-revision="1406718408086">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="5" data-basepath=".." data-revision="1406733602386">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -550,18 +550,17 @@
                     
                         <h1 id="attacks">Attacks</h1>
 <p>We work very hard to ensure system attack vectors are analysed and (now) documented. This is an important aspect of any such system and will require constant updating as more vectors are discovered.</p>
-<p>Attacks can be classified in two seperate categories, system bugs and logic errors. This section focusses on any logic errors that could introduce an attack opportunity. It is recodnised, that, as with any system enough resources, cash and determination could kill it off. We try to limit the vectors here to be realistic, although we have addressed some seemingly unrealistic attacks as they have been discussed in the community.</p>
+<p>Attacks can be classified in two seperate categories, system bugs and logic errors. This section focusses on any logic errors that could introduce an attack opportunity. It is recognised that, as with any system, enough resources, cash and determination could kill it off. We try to limit the vectors here to be realistic, although we have addressed some seemingly unrealistic attacks as they have been discussed in the community.</p>
 <h2 id="notes">notes</h2>
-<p>To make things fast we removed many signature checks and now with such an accurate routing layer we base decisions on closeness to particular addresses for authority.  We make joining very cryptographically secure, so this is key that the join is very secure and it is. We have a small bit of code to do that will make this even more secure, but that&#39;s another mail. Imagine it is extremely difficult to get into the network at a known point. So your vault address is not able to be manipulated by anyone to give a known address for any attack of that order. for this experiment we assume the opposite though :-)</p>
-<p>I believe there is no single point of failure in any of the vault network. So for this thought experiment we imagine an attacker can get a group of closely connected nodes (which we think is near impossible to do, but for this experiment it makes sense to imagine there is a flaw we have not uncovered and this attack happens).</p>
-<p>So in these experiments in house we assume even a tiny chance is an attack, so it it&#39;s at all possible we imagine it&#39;s easy. This does not mean we ignore the laws of physics though, traversing the address range is considered not a possible attack. So any small chink in the armour is considered a full on attack.</p>
-<p>Note: a group of responsibility as below has a limited attack range. To attack the whole list of addresses managed by a group then the group size would have to be equal to our routing matrix size. This is 64 nodes as it stands. There could be a single address they can manipulate, but to manipulate all addresses within the group of 4 then our tests have shown that you need to attack all 64 nodes. When the matrix is less than 64 we get routing errors, therefore this is the size of group to be able to confirm the close 4 and also to be responsible for the addresses contained within that group. I think best case scenario is an attacker would have to acquire 64 nodes to control a whole groups internal data.</p>
+<p>To make things fast we removed many signature checks and now with such an accurate routing layer we base decisions on closeness to particular addresses for authority.  It is key that we make joining the network very cryptographically secure. Imagine it is extremely difficult to get into the network at a known point, and therefore your vault address is not able to be manipulated by anyone to give a known address.</p>
+<p>We believe there is no single point of failure in any of the vault network. So for this thought experiment we imagine an attacker can get a group of closely connected nodes (we think this is near impossible to do).</p>
+<p>Note: a group of responsibility as below has a limited attack range. To attack the whole list of addresses managed by a group then the group size would have to be equal to our routing matrix size. This is 64 nodes as it stands. There could be a single address they can manipulate, but to manipulate all addresses within the group of 4 then our tests have shown that you need to attack all 64 nodes. When the matrix is less than 64 we get routing errors, therefore this is the size of group to be able to confirm the close 4 and also to be responsible for the addresses contained within that group. We believe the best case scenario for an attacker is to acquire 64 nodes providing control to a whole groups internal data.</p>
 <h2 id="the-attacker-becomes-a-group-of-maidmanagers">The attacker becomes a group of MaidManagers</h2>
 <p>They could</p>
 <ol>
 <li>Issue delete messages to DM&#39;s</li>
 <li>Issue put messages to DM</li>
-<li>delete a MaidAccount</li>
+<li>Delete a MaidAccount</li>
 <li>Fill up a Maid allowance (make the account full)</li>
 </ol>
 <h3 id="result-of-attack">Result of attack</h3>
@@ -599,14 +598,13 @@
 <ol>
 <li>This is a valid act and would not harm the pmid or the chunks.</li>
 <li>This is a way to affect the Maid and would cause a (single) user some hassle. If the vault were shared the number of users may be increased.
-2a. The user may note a vault fault and delete it and create another. The affect would be limited to this hassle. So it should be easy for a user to do this at the API level.</li>
+2a. The user may note a vault fault,delete it and create another. The affect would be limited . So it should be easy for a user to do this at the API level.</li>
 </ol>
 <h2 id="the-attacker-becomes-a-pmid">The attacker becomes a Pmid</h2>
 <p>The attack would be thwarted here, as the vault storage devices are heavily monitored by both DM and PM groups. The DM groups would equal the amount of chunks held which could be considerable. A rogue vault should be detected very fast and de-ranked, becoming useless.</p>
 <h2 id="the-attacker-becomes-a-maid">The attacker becomes a Maid</h2>
 <p>In this case they are a user and are pretty much locked down in terms of attack vectors. They need a vault etc. and that is all checked by MaidManagers.</p>
 <p>It seems the most serious attack would be DM delete data attack. This is limited in it&#39;s ability, but does exist and we should think of this one as serious. At the moment if such an attack were carried out (it is extremely difficult) then the simple answer is to increase the group size of the nodes. Not the replicant count, only the close group size. It is extremely limited though to possibly a single chunk.</p>
-<p>All ideas and comments welcomed though to add to the continuous improvement.</p>
 
                     
                     </section>
