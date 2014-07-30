@@ -17,7 +17,6 @@
    * [Autonomous Network](system_components/autonomous_network.md)
    * [Self Authentication](system_components/self_authentication.md)
 * [Detail](detail/README.md)
-   * [Libraries](detail/libraries.md)
    * [Common](detail/Common.md)
    * [Passport](detail/Passport.md)
    * [RUDP](detail/RUDP.md)
