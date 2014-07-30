@@ -1,4 +1,5 @@
-## Overview
+## Routing Overview
+
 Routing is a Distributed Hash Table library based on [Kademlia](http://en.wikipedia.org/wiki/Kademlia)-like routing tables. Routing specifies the network structure and determines the path between pair of nodes in the network by using the local information at each intermediate node.
 Each routing node locally stores routing information about the nodes it is directly connected to. Moreover, every node has partial knowledge of the local information of its close nodes (neighbouring ID space).
 The information stored at every node, contributes to message passing infrastructure of routing. Exchanging information in routing typically involves traversing a number of intermediate nodes.  The communication between each pair of nodes is performed by employing [MaidSafe-RUDP](https://github.com/maidsafe/MaidSafe-RUDP/wiki). An acknowledgement/retransmission  mechanism is also provided to ensure reliable message delivery.
