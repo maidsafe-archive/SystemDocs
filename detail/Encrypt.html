@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="maidsafe/SystemDocs" data-level="4.5" data-basepath=".." data-revision="1406714986285">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="4.5" data-basepath=".." data-revision="1406715631718">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -549,24 +549,24 @@
                     <section class="normal" id="section-gitbook_10">
                     
                         <h3 id="overview">Overview</h3>
-<p>MaidSafe-Encrypt implements functions related to &#39;self-encryption&#39; of files and folders.  [This video][se_video] provides a brief overview of the process.</p>
+<p>MaidSafe-Encrypt implements functions related to &#39;self-encryption&#39; of files and folders.</p>
 <p>The library&#39;s interface is provided in the following files:</p>
 <ul>
-<li>[self_encryptor.h][se] - this is the main API and is discussed in more detail below</li>
-<li>[data_map.h][dm] - a struct which holds the encryption details of a single file</li>
-<li>[config.h][config] - provides const library configuration variables and return codes.  In the future, the use of return codes will be replaced with the error-handling mechanisms provided in the [MaidSafe-Common][common] library.</li>
+<li><a href="https://github.com/maidsafe/MaidSafe-Encrypt/blob/master/include/maidsafe/encrypt/self_encryptor.h" target="_blank">self_encryptor.h</a> - this is the main API and is discussed in more detail below</li>
+<li><a href="https://github.com/maidsafe/MaidSafe-Encrypt/blob/master/include/maidsafe/encrypt/data_map.h" target="_blank">data_map.h</a> - a struct which holds the encryption details of a single file</li>
+<li><a href="https://github.com/maidsafe/MaidSafe-Encrypt/blob/master/src/maidsafe/encrypt/config.h" target="_blank">config.h</a> - provides const library configuration variables and return codes.  In the future, the use of return codes will be replaced with the error-handling mechanisms provided in the <a href="https://github.com/maidsafe/MaidSafe-Common/wiki" target="_blank">MaidSafe Common library</a>.</li>
 </ul>
-<p>The library makes use of [OpenMP][omp] where available for parallelisation of tasks.  It also depends on the MaidSafe libraries [Common][common], [Private][private], [Passport][passport], [RUDP][rudp], [Routing][routing] and [Network-Filesystem][nfs]</p>
+<p>The library makes use of <a href="http://en.wikipedia.org/wiki/OpenMP" target="_blank">OpenMP</a> where available for parallelisation of tasks.  It also depends on the MaidSafe libraries <a href="https://github.com/maidsafe/MaidSafe-Common/wiki" target="_blank">Common</a>, <a href="https://github.com/maidsafe/MaidSafe-Vault-Manager/wiki" target="_blank">Private</a>, <a href="https://github.com/maidsafe/MaidSafe-Passport/wiki" target="_blank">Passport</a>, <a href="https://github.com/maidsafe/MaidSafe-RUDP/wiki" target="_blank">RUDP</a>, <a href="https://github.com/maidsafe/MaidSafe-Routing/wiki" target="_blank">Routing</a> and <a href="https://github.com/maidsafe/MaidSafe-Network-Filesystem/wiki" target="_blank">Network-Filesystem</a>.</p>
 <h3 id="background">Background</h3>
 <p>[Self-encrypting] (<a href="http://maidsafe.net/images/opportunistic-caching.png" target="_blank">http://maidsafe.net/images/opportunistic-caching.png</a>)
 a file needs no other input than the file itself. It results in several encrypted chunks of data which need to be put to a persistent key-value store (e.g. the MaidSafe Network&#39;s vault) and a &#39;DataMap&#39;.</p>
-<p>The DataMap is primarily two lists; one containing the pre-encryption [SHA512 hashes][sha2] of the chunks of the file and the other containing the post-encryption hashes. The pre-encryption hashes of two other chunks from the file are used in the encryption/decryption of a single chunk.  The post-encryption hashes are the names of the encrypted chunks, i.e. the key under which they are stored in the DHT.  The result is that given a DataMap, any user can retrieve the encrypted chunks and decrypt them into the original file.</p>
+<p>The DataMap is primarily two lists; one containing the pre-encryption <a href="https://en.wikipedia.org/wiki/SHA-2" target="_blank">SHA512 hashes</a> of the chunks of the file and the other containing the post-encryption hashes. The pre-encryption hashes of two other chunks from the file are used in the encryption/decryption of a single chunk.  The post-encryption hashes are the names of the encrypted chunks, i.e. the key under which they are stored in the DHT.  The result is that given a DataMap, any user can retrieve the encrypted chunks and decrypt them into the original file.</p>
 <p>In the case of directories, the assumption is that the contents (a collection of DataMap and meta information) can be serialised to a single file.  This file, if self-encrypted, yields its own DataMap which also needs to be put to the key-value store.  However, the DataMap cannot be stored unencrypted if the contents are to remain secret.  These directory DataMaps are encrypted/decrypted using two pieces of additional information.  In the case of the MaidSafe Network, the first piece is normally a random ID which is attributed to that folder.  The second is the ID of the parent folder.  The ID&#39;s are suitable for use as keys in the key-value store, i.e. they are strings of the same size as a SHA512 hash.  The ID for a given directory becomes the key under which it&#39;s encrypted DataMap is stored.</p>
 <h3 id="details">Details</h3>
-<p>[self_encryptor.h][se] provides free functions for the encryption and decryption of <code>DataMap</code>s.  It also declares the <code>SelfEncryptor</code> class which is used in the encryption/decryption of files.</p>
-<p>The <code>SelfEncryptor</code> class is designed to be compatible with the types of calls expected when using Encrypt under a virtual filesystem (VFS) like [FUSE][fuse].  It is designed to be a throwaway class; a new instance will be constructed when a file handle is opened in the VFS and will be destructed when the handle is released.  As such, the class is [conditionally thread safe][thread_safety].</p>
+<p><a href="https://github.com/maidsafe/MaidSafe-Encrypt/blob/master/include/maidsafe/encrypt/self_encryptor.h" target="_blank">self_encryptor.h</a> provides free functions for the encryption and decryption of <code>DataMap</code>s.  It also declares the <code>SelfEncryptor</code> class which is used in the encryption/decryption of files.</p>
+<p>The <code>SelfEncryptor</code> class is designed to be compatible with the types of calls expected when using Encrypt under a virtual filesystem (VFS) like <a href="http://fuse.sourceforge.net/" target="_blank">FUSE</a>.  It is designed to be a throwaway class; a new instance will be constructed when a file handle is opened in the VFS and will be destructed when the handle is released.  As such, the class is <a href="http://en.wikipedia.org/wiki/Thread_safety#Levels_of_thread_safety" target="_blank">conditionally thread safe</a>.</p>
 <p>The constructor requires a pointer to a <code>DataMap</code>, access to the DHT via a non-const ref to a <code>nfs::ClientMaidNfs</code> and access to a buffer for temporary chunks via a non-const ref to a <code>data_store::PermanentStore</code>.  Furthermore, the number of threads to be used when encrypting/decrypting can be provided.</p>
-<p>Further details of the individual functions can be found in the [self_encryptor.h][se] file itself.</p>
+<p>Further details of the individual functions can be found in the <a href="https://github.com/maidsafe/MaidSafe-Encrypt/blob/master/include/maidsafe/encrypt/self_encryptor.h" target="_blank">self_encryptor.h</a> file itself.</p>
 
                     
                     </section>
