@@ -34,6 +34,7 @@
    * [Store bad data](attacks/store_bad_data.md)
 * [FAQs](faqs/README.md)
    * [General](faqs/general.md)
-   * [Developers](faqs/developers)
+   * [Developers](faqs/developers.md)
+       * [I am a developer looking to build applications on the SAFE network, where do I start?](faqs/i_am_a_developer_looking_to_build_applications_on_the_safe_network,_where_do_i_start.md)
    * [Technical](faqs/technical)
 
