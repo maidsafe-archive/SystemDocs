@@ -1,11 +1,11 @@
 CACHE MANIFEST
-# Revision 1406734996703
+# Revision 1406735541811
 
 CACHE:
 detail/RUDP.html
 detail/Common.html
-detail/Network-Filesystem.html
 detail/Encrypt.html
+detail/Network-Filesystem.html
 detail/Passport.html
 detail/README.html
 detail/Drive.html
@@ -20,7 +20,9 @@ attacks/isp_simulates_network.html
 attacks/keylogger__virus.html
 attacks/store_bad_data.html
 faqs/README.html
+faqs/developers.html
 faqs/general.html
+faqs/i_am_a_developer_looking_to_build_applications_on_the_safe_network,_where_do_i_start.html
 projects_on_safe/README.html
 projects_on_safe/lifestuff.html
 system_components/autonomous_network.html
@@ -28,8 +30,8 @@ system_components/intro.html
 system_components/self_authentication.html
 system_components/self_encryption.html
 user_perspective/how_is_safecoin_valued.html
-user_perspective/farmers.html
 user_perspective/README.html
+user_perspective/farmers.html
 user_perspective/how_and_when_can_i_farm_safecoin.html
 user_perspective/how_is_data_stored_and_retrieved.html
 user_perspective/app_devs.html
@@ -67,9 +69,9 @@ gitbook/jsrepl/sandbox.html
 gitbook/jsrepl/sandbox.js
 gitbook/print.css
 gitbook/style.css
-gitbook/plugins/gitbook-plugin-mathjax/plugin.js
-gitbook/plugins/gitbook-plugin-ga/plugin.js
 gitbook/plugins/gitbook-plugin-disqus/plugin.js
+gitbook/plugins/gitbook-plugin-ga/plugin.js
+gitbook/plugins/gitbook-plugin-mathjax/plugin.js
 
 NETWORK:
 *
