@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1406716744348
+# Revision 1406718408087
 
 CACHE:
 index.html
@@ -65,9 +65,9 @@ gitbook/jsrepl/sandbox.html
 gitbook/jsrepl/sandbox.js
 gitbook/print.css
 gitbook/style.css
-gitbook/plugins/gitbook-plugin-mathjax/plugin.js
-gitbook/plugins/gitbook-plugin-ga/plugin.js
 gitbook/plugins/gitbook-plugin-disqus/plugin.js
+gitbook/plugins/gitbook-plugin-ga/plugin.js
+gitbook/plugins/gitbook-plugin-mathjax/plugin.js
 
 NETWORK:
 *
