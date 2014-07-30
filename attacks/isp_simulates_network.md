@@ -22,7 +22,7 @@ Have the ISP machines pretend to be your machine and ask for the bootstrap info 
 
 In this case the ISP machine could request the info and pass back to you. That information is encrypted to you, so the ISP cannot really access it (unless they break RSA 4096). You then connect to your closes nodes. If the closest nodes are fake they will not be able to process the connect request (encrypted to each end). So again this attack fails.
 
-[client]
+##Client
 
 This is only applicable for clients, not yet logged in. On receipt of the login packet, the client will then encrypt a close nodes request to the bootstrap node. Again this is returned encrypted. So the attack is circomvented.
 
