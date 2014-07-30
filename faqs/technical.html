@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Birthday Paradox/Sybil attack | SystemDocs</title>
+        <title>Technical | SystemDocs</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.2">
@@ -19,10 +19,10 @@
     <meta name="author" content="maidsafe">
     
     
-    <link rel="next" href="../attacks/keylogger__virus.html" />
+    <link rel="next" href="../faqs/can_isps_thwart_the_safe_network.html" />
     
     
-    <link rel="prev" href="../attacks/dishonest_vault_attack.html" />
+    <link rel="prev" href="../faqs/i_am_a_developer_looking_to_build_applications_on_the_safe_network,_where_do_i_start.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="maidsafe/SystemDocs" data-level="5.3" data-basepath=".." data-revision="1406736639981">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="6.3" data-basepath=".." data-revision="1406736639981">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/maidsafe/SystemDocs/edit/master/attacks/birthday_paradoxsybil_attack.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/maidsafe/SystemDocs/edit/master/faqs/technical.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -543,7 +543,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 78.94736842105263%;min-width: 76.3157894736842%;"></div>
+        <div class="inner" style="width: 97.36842105263158%;min-width: 94.73684210526316%;"></div>
     </div>
     <div class="chapters">
     
@@ -609,19 +609,19 @@
     
         <a href="../attacks/birthday_paradoxsybil_attack.html" title="Birthday Paradox/Sybil attack" class="chapter done " data-progress="5.3" style="left: 78.94736842105263%;"></a>
     
-        <a href="../attacks/keylogger__virus.html" title="Keylogger / virus" class="chapter  " data-progress="5.4" style="left: 81.57894736842105%;"></a>
+        <a href="../attacks/keylogger__virus.html" title="Keylogger / virus" class="chapter done " data-progress="5.4" style="left: 81.57894736842105%;"></a>
     
-        <a href="../attacks/store_bad_data.html" title="Store bad data" class="chapter  " data-progress="5.5" style="left: 84.21052631578948%;"></a>
+        <a href="../attacks/store_bad_data.html" title="Store bad data" class="chapter done " data-progress="5.5" style="left: 84.21052631578948%;"></a>
     
-        <a href="../faqs/README.html" title="FAQs" class="chapter  new-chapter" data-progress="6" style="left: 86.84210526315789%;"></a>
+        <a href="../faqs/README.html" title="FAQs" class="chapter done new-chapter" data-progress="6" style="left: 86.84210526315789%;"></a>
     
-        <a href="../faqs/general.html" title="General" class="chapter  " data-progress="6.1" style="left: 89.47368421052632%;"></a>
+        <a href="../faqs/general.html" title="General" class="chapter done " data-progress="6.1" style="left: 89.47368421052632%;"></a>
     
-        <a href="../faqs/developers.html" title="Developers" class="chapter  " data-progress="6.2" style="left: 92.10526315789474%;"></a>
+        <a href="../faqs/developers.html" title="Developers" class="chapter done " data-progress="6.2" style="left: 92.10526315789474%;"></a>
     
-        <a href="../faqs/i_am_a_developer_looking_to_build_applications_on_the_safe_network,_where_do_i_start.html" title="I am a developer looking to build applications on the SAFE network, where do I start?" class="chapter  " data-progress="6.2.1" style="left: 94.73684210526316%;"></a>
+        <a href="../faqs/i_am_a_developer_looking_to_build_applications_on_the_safe_network,_where_do_i_start.html" title="I am a developer looking to build applications on the SAFE network, where do I start?" class="chapter done " data-progress="6.2.1" style="left: 94.73684210526316%;"></a>
     
-        <a href="../faqs/technical.html" title="Technical" class="chapter  " data-progress="6.3" style="left: 97.36842105263158%;"></a>
+        <a href="../faqs/technical.html" title="Technical" class="chapter done " data-progress="6.3" style="left: 97.36842105263158%;"></a>
     
         <a href="../faqs/can_isps_thwart_the_safe_network.html" title="Can ISP&#39;s thwart the SAFE network" class="chapter  " data-progress="6.3.1" style="left: 100%;"></a>
     
@@ -630,19 +630,9 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_16">
+                    <section class="normal" id="section-gitbook_26">
                     
-                        <h1 id="birthday-paradox-sybil-attack">Birthday Paradox/Sybil attack</h1>
-<h2 id="attack-description">Attack Description</h2>
-<p>We identiﬁed through both simulation, and mathematical prediction, that it would be possible to carry out a ‘birthday paradox’ attack on the network, whereby an attacker simply wishing to cause harm or disruption could ﬂood the network with nodes it controlled, knowing they only need to surround a single address with 3 or more malicious nodes, in order to exert control over that node. While as previously discussed, it is not possible to deliberately position these nodes around a desired point in the network, we identiﬁed that with around 0.8% of the network’s nodes under the (temporary) control of an attacker, it was likely the attacker would have at least one node surrounded on the network, allowing it to exert control over that node as managers, reaching quorum on false actions.</p>
-<h2 id="attack-purpose">Attack Purpose</h2>
-<p>By way of example, we proposed a proof-of-concept attack,
-whereby an attacker would request deletion of any chunks it
-could, by acting as the chunk information managers (as deﬁned in section IV), thereby causing the chunk holders to delete the chunks in response to a legitimate request, preventing access to that data for legitimate users. If the attacker were inclined to act out of ﬁnancial motivation, they could request a copy of the chunk prior to its deletion, and request the user pay a ransom before uploading it to the network again.</p>
-<p>If parts of the network were attacked in such a manner then there may be opportunities to create fake rules to be introduced. In a large scale attack fo this kind considerable network damage could occur. Theft of safecoin, double spend, delete data etc. would all be possible.</p>
-<h2 id="attack-avoidance">Attack Avoidance</h2>
-<p>Requiring all requests be processed by (at least) two groups of nodes rather than one. Under this proposed modiﬁcation, a client would pass its request to its 4 managers, who verify the request based on the client’s signature, then pass this request to a deterministically selected group of 4 other nodes, which would also verify the request based on its signature. By deterministically selecting the second group of managers, the birthday paradox no longer holds true for the network, since it would not be possible for the attacker to gain control over a node by simply surrounding it - the attacker would require the ability to surround speciﬁc nodes in the
-network, which is believed to be a difﬁcult task which would require being able to effectively generate different values which, when hashed with SHA-512, result in close hashes around one particular point.</p>
+                        <h1 id="technical">Technical</h1>
 
                     
                     </section>
@@ -652,10 +642,10 @@ network, which is believed to be a difﬁcult task which would require being abl
         </div>
 
         
-        <a href="../attacks/dishonest_vault_attack.html" class="navigation navigation-prev " aria-label="Previous page: Dishonest Vault Attack"><i class="fa fa-angle-left"></i></a>
+        <a href="../faqs/i_am_a_developer_looking_to_build_applications_on_the_safe_network,_where_do_i_start.html" class="navigation navigation-prev " aria-label="Previous page: I am a developer looking to build applications on the SAFE network, where do I start?"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../attacks/keylogger__virus.html" class="navigation navigation-next " aria-label="Next page: Keylogger / virus"><i class="fa fa-angle-right"></i></a>
+        <a href="../faqs/can_isps_thwart_the_safe_network.html" class="navigation navigation-next " aria-label="Next page: Can ISP&#39;s thwart the SAFE network"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
