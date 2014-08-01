@@ -1,9 +1,9 @@
 CACHE MANIFEST
-# Revision 1406886868538
+# Revision 1406890349965
 
 CACHE:
-detail/Common.html
 detail/RUDP.html
+detail/Common.html
 detail/Encrypt.html
 detail/Network-Filesystem.html
 detail/Passport.html
@@ -22,11 +22,9 @@ attacks/store_bad_data.html
 faqs/README.html
 faqs/can_isps_thwart_the_safe_network.html
 faqs/developers.html
-faqs/does_maidsafe_require_continuous_internet_connection_from_all_participants.html
 faqs/general.html
 faqs/i_am_a_developer_looking_to_build_applications_on_the_safe_network,_where_do_i_start.html
 faqs/technical.html
-faqs/why_the_name_maidsafe.html
 projects_on_safe/README.html
 projects_on_safe/lifestuff.html
 system_components/autonomous_network.html
@@ -74,8 +72,8 @@ gitbook/jsrepl/sandbox.js
 gitbook/print.css
 gitbook/style.css
 gitbook/plugins/gitbook-plugin-disqus/plugin.js
-gitbook/plugins/gitbook-plugin-ga/plugin.js
 gitbook/plugins/gitbook-plugin-mathjax/plugin.js
+gitbook/plugins/gitbook-plugin-ga/plugin.js
 
 NETWORK:
 *
