@@ -34,8 +34,6 @@
    * [Store bad data](attacks/store_bad_data.md)
 * [FAQs](faqs/README.md)
    * [General](faqs/general.md)
-       * [Why the name MaidSafe?](faqs/why_the_name_maidsafe.md)
-       * [Does MaidSafe require continuous Internet connection from all participants?](faqs/does_maidsafe_require_continuous_internet_connection_from_all_participants.md)
    * [Developers](faqs/developers.md)
        * [I am a developer looking to build applications on the SAFE network, where do I start?](faqs/i_am_a_developer_looking_to_build_applications_on_the_safe_network,_where_do_i_start.md)
    * [Technical](faqs/technical.md)
