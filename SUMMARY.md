@@ -5,7 +5,6 @@
    * [Builders](user_perspective/app_devs.md)
    * [Safecoin](user_perspective/safecoin.md)
    * [Questions](user_perspective/questions.md)
-       * [What does decentralised mean in SAFE](user_perspective/what_does_decentralised_mean_in_safe.md)
        * [How is Data Stored and Retrieved](user_perspective/how_is_data_stored_and_retrieved.md)
        * [What Gives Safecoin Value](user_perspective/what_gives_safecoin_value.md)
        * [How Is Safecoin Valued](user_perspective/how_is_safecoin_valued.md)
