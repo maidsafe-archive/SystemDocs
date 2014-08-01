@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1406890349965
+# Revision 1406890690780
 
 CACHE:
 detail/RUDP.html
@@ -23,23 +23,22 @@ faqs/README.html
 faqs/can_isps_thwart_the_safe_network.html
 faqs/developers.html
 faqs/general.html
-faqs/i_am_a_developer_looking_to_build_applications_on_the_safe_network,_where_do_i_start.html
 faqs/technical.html
+faqs/i_am_a_developer_looking_to_build_applications_on_the_safe_network,_where_do_i_start.html
 projects_on_safe/README.html
 projects_on_safe/lifestuff.html
 system_components/autonomous_network.html
 system_components/intro.html
 system_components/self_authentication.html
 system_components/self_encryption.html
-user_perspective/how_is_safecoin_valued.html
 user_perspective/README.html
+user_perspective/app_devs.html
 user_perspective/farmers.html
 user_perspective/how_and_when_can_i_farm_safecoin.html
 user_perspective/how_is_data_stored_and_retrieved.html
-user_perspective/app_devs.html
+user_perspective/how_is_safecoin_valued.html
 user_perspective/questions.html
 user_perspective/safecoin.html
-user_perspective/what_does_decentralised_mean_in_safe.html
 user_perspective/what_gives_safecoin_value.html
 gitbook/app.js
 gitbook/fonts/fontawesome/FontAwesome.otf
@@ -72,8 +71,8 @@ gitbook/jsrepl/sandbox.js
 gitbook/print.css
 gitbook/style.css
 gitbook/plugins/gitbook-plugin-disqus/plugin.js
-gitbook/plugins/gitbook-plugin-mathjax/plugin.js
 gitbook/plugins/gitbook-plugin-ga/plugin.js
+gitbook/plugins/gitbook-plugin-mathjax/plugin.js
 
 NETWORK:
 *
