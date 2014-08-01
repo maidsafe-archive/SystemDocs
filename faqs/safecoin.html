@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Self Authentication | SystemDocs</title>
+        <title>Safecoin | SystemDocs</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.5.2">
@@ -19,10 +19,10 @@
     <meta name="author" content="maidsafe">
     
     
-    <link rel="next" href="../detail/README.html" />
+    <link rel="next" href="../projects_on_safe/README.html" />
     
     
-    <link rel="prev" href="../system_components/autonomous_network.html" />
+    <link rel="prev" href="../faqs/technical.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="maidsafe/SystemDocs" data-level="4.3" data-basepath=".." data-revision="1406891665428">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="2.4" data-basepath=".." data-revision="1406891665428">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/maidsafe/SystemDocs/edit/master/system_components/self_authentication.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/maidsafe/SystemDocs/edit/master/faqs/safecoin.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -462,7 +462,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 48.38709677419355%;min-width: 45.16129032258065%;"></div>
+        <div class="inner" style="width: 29.032258064516128%;min-width: 25.806451612903224%;"></div>
     </div>
     <div class="chapters">
     
@@ -486,17 +486,17 @@
     
         <a href="../faqs/safecoin.html" title="Safecoin" class="chapter done " data-progress="2.4" style="left: 29.032258064516128%;"></a>
     
-        <a href="../projects_on_safe/README.html" title="Projects on SAFE" class="chapter done new-chapter" data-progress="3" style="left: 32.25806451612903%;"></a>
+        <a href="../projects_on_safe/README.html" title="Projects on SAFE" class="chapter  new-chapter" data-progress="3" style="left: 32.25806451612903%;"></a>
     
-        <a href="../projects_on_safe/lifestuff.html" title="LifeStuff" class="chapter done " data-progress="3.1" style="left: 35.483870967741936%;"></a>
+        <a href="../projects_on_safe/lifestuff.html" title="LifeStuff" class="chapter  " data-progress="3.1" style="left: 35.483870967741936%;"></a>
     
-        <a href="../system_components/intro.html" title="System Components" class="chapter done new-chapter" data-progress="4" style="left: 38.70967741935484%;"></a>
+        <a href="../system_components/intro.html" title="System Components" class="chapter  new-chapter" data-progress="4" style="left: 38.70967741935484%;"></a>
     
-        <a href="../system_components/self_encryption.html" title="Self Encryption" class="chapter done " data-progress="4.1" style="left: 41.935483870967744%;"></a>
+        <a href="../system_components/self_encryption.html" title="Self Encryption" class="chapter  " data-progress="4.1" style="left: 41.935483870967744%;"></a>
     
-        <a href="../system_components/autonomous_network.html" title="Autonomous Network" class="chapter done " data-progress="4.2" style="left: 45.16129032258065%;"></a>
+        <a href="../system_components/autonomous_network.html" title="Autonomous Network" class="chapter  " data-progress="4.2" style="left: 45.16129032258065%;"></a>
     
-        <a href="../system_components/self_authentication.html" title="Self Authentication" class="chapter done " data-progress="4.3" style="left: 48.38709677419355%;"></a>
+        <a href="../system_components/self_authentication.html" title="Self Authentication" class="chapter  " data-progress="4.3" style="left: 48.38709677419355%;"></a>
     
         <a href="../detail/README.html" title="Detail" class="chapter  new-chapter" data-progress="5" style="left: 51.61290322580645%;"></a>
     
@@ -535,39 +535,22 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_30">
+                    <section class="normal" id="section-gitbook_24">
                     
-                        <h1 id="self-authentication">Self Authentication</h1>
-<p>A critical requirement of a network that will not leak privacy is to allow people to interact with it in a manner that only that person is aware of. Self authentication is a mechanism which provides such a service.</p>
-<h2 id="introduction">Introduction</h2>
-<p>Authentication allows access to a system at a certain level or privilege. This is generally accepted as the privilege granted by an authoritative 3rd party, who owns or manages the particular service or resource being accessed. In cloud-computing or personal computing this is a limiting factor and a significant security risk.</p>
-<p>Within many current systems, data is spread across multiple locations for improved physical security and ease of access. This has created privacy concerns and increased awareness of ownership of data. Many systems offer some level of encryption to ensure privacy of data, but few, if any, provide physical security of data in a manner that maintains privacy. All known systems to date cannot offer physical security as any of these systems can access even encrypted data and delete it or give others access to it. This physical security requires that a person can store data out of reach of all other people.</p>
-<p>In almost every case today there is some form of contract, whether implied or actual between the 3rd party service provider and the client. Furthermore, the supplier may independently decide or be forced to act on the data, whether deleting encrypted data, going out of business or becoming a victim of damage or theft.  This situation is a crucial impediment to personal freedom and without a change in technical capabilities that allow the mindset change that appears more prevalent as time goes by, there will be a significant gulf between people’s individual desires and technology’s ability to deliver. This in itself may impede progress and innovation, which would be an enormous failure of Science and Engineering.</p>
-<h2 id="trust-less-systems">Trust-less systems</h2>
-<p>Given a traditional resource exchange, the bargain between involved parties tends to be direct and physically local. However, the de-facto replacement of barter by monetary systems in modern societies introduced the requirement of trust in third parties, providing and controlling the necessary infrastructure, such as banks and financial authorities.</p>
-<p>It is an illogical consideration to have created a technology based solution which requires this demand of trust and to do so in a manner that is almost uncontrolled. Technology tends to be based on logic, thus it would appear obvious that creating, sharing and retrieving information fed into a computing device by a person should not require that computer to connect to a network of computers with a controller or guardian, that is not a system of pure logic.  A significant reason for the current situation is the inability for identities to be created, managed and personally controlled.  This is a reasonable request from people to make from their technology, but so far has been regarded as impossible by technology professionals. A system of personal identity management is fundamental for the removal of the illogical situation of today.</p>
-<h2 id="overview">Overview</h2>
-<h3 id="requirements">Requirements</h3>
-<p>Self authentication requires a storage mechanism accessible by the users of the system. This may be public (such as a peer-to-peer network) or private (such a a storage area network) and the the case of the SAFE network, is linked to
-a key addressable storage system.</p>
-<h3 id="methodology">Methodology</h3>
-<p>Self authentication relies on a system where an entity can create a unique key, to store a value in the storage system. The value stored with this key should contain an encrypted passport to data. This passport may be cryptographically secure keys and or a list of other keys to make use of the information to be stored and or shared as well as any additional components required.  The location of this initial key should be masked or at least not obvious in the storage mechanism. Further masking should be considered. This simplified approach is the basis for self authentication and is extended into a system that is capable of security in a manner that allows access data to be stored publicly and with no additional requirement such as firewalls or access controls.</p>
-<h3 id="pseudo-implementation">Pseudo implementation</h3>
-<p>This is a simplified process to describe the bare mechanism that underpins the self authentication process.</p>
-<h4 id="creation-of-an-account">Creation of an Account</h4>
-<p>Here we will assume there are two inputs from the user of the system: keyword K, and password W. A <a href="http://en.wikipedia.org/wiki/Salt_(cryptography" target="_blank">salt</a> (S) is also supplied or derived (in a repeatable way) from K and W.</p>
-<p>To generate a unique identifier, we hash the concatenation of the keyword and the salt, H(U + S).  PBKDF2 Password Based Key Derivation File) is used here to strengthen any password keys used.  This is required as user selected passwords are commonly weak. In this example Account specifies session data, i.e. user details or an index of references to further data.</p>
-<p>Store On Network[H(K+S)] Symmetric Encrypt<a href="Account">PBKDF2[P][S]</a></p>
-<h4 id="login">Login</h4>
-<p>Symmetric Decrypt[PBKDF2[P][S]] (Get from network[H(K+S)])</p>
-<h2 id="issues">Issues</h2>
-<h3 id="guessing-login-information">Guessing login information</h3>
-<p>One issue people may note is the ability for an intruder or hostile person on the network to simply test for the presence of a user and download the login token. This is similar to continual testing of password on a centralised server. In centralised servers this is alleviated (apprently not too sucessfully) by backing off login attempts.</p>
-<p>In MaidSafe this is alleviated in almost the opposite manner. As a person requests a login token, they are provided with one. Invalid tokens are provided on every attempt. This means that an attacker will have to decrypt many millions or more likely trillions of strongly encrypted login tokens. This process should render such attacks computationally infeasible.</p>
-<h3 id="multi-factor-authentication">Multi factor authentication</h3>
-<p>A relatively modern phenomenon in computer login security is multi factor authentication or sometimes 2fa (2 factor). This involves a second out of band (meaning using a secondary communication mechanism such as a mobile phone) where a central server or similar requests both the user password and the second factor (via phone etc.) to enable the login to be successful.</p>
-<p>In a decentralised network this introduction of a server would in fact compromise security (the server owner has to know at least something about you and can control your access).</p>
-<p>In a decentralised network there are opportunities for implementing multi factor authentication via projects such as Trezor or similar. It is anticipated a similar applications will be created for project SAFE to ensure protection against key-loggers and similar attacks on modern day operating systems and public access terminals.</p>
+                        <h3 id="what-gives-safecoin-value">What Gives safecoin Value</h3>
+<p><a href="https://maidsafe.org/t/what-gives-safecoin-value-and-differentiates-it-from-altcoins/411" target="_blank">maidsafe.org</a></p>
+<p>Safecoin has value because it has utility. Users can earn safecoin by <a href="http://maidsafe.net/SystemDocs/user_perspective/farmers.html" target="_blank">farming</a> safecoin and use it to buy more storage, and access premium applications and services on the network. It will also be possible to purchase safecoin via exchanges, as the network launches, and this will also provide safecoin with a direct fiat valuation.</p>
+<p>The underlying network also provides safecoin with additional value in a less obvious way, via the transaction mechanism within the network (the SAFE network’s version of the block chain). Capable of processing millions of transactions per second and able to confirm transactions at network speed, the currency is instantly redeemable, secure and anonymous on wallets that are easy to use and built in to the network. These features are well suited to buying not only network services, but also products being sold on the network by merchants.</p>
+<h3 id="how-is-safecoin-valued">How Is Safecoin Valued</h3>
+<p><a href="https://maidsafe.org/t/what-gives-safecoin-value-and-differentiates-it-from-altcoins/411" target="_blank">maidsafe.org</a></p>
+<p>While the number of users is increasing there is a virtuous circle: more and more safecoin will be held in new wallets (most users will be farmers by default). This will increase liquidity and distribute wealth, providing almost all users with at least a few safecoin in their wallet. Users may wish to exchange their safecoin for network services, or for cash (or another digital currency) via an exchange.The ratio of Safecoin being saved (left in new wallets) versus the ratio being issued to farmers, will produce a value point.</p>
+<p>The volume of supply and demand will grow with the network, which tends to create an increasingly stable currency that increases in value over time. Value grows because it is linked to its usefulness (incentive to hold, which also increases over time), and the increasing number of users of the network (people wanting to hold it).</p>
+<p>Over time the virtuous circle becomes stronger (volume increases) because the number of users is growing. The incentive to hold and use safecoin will also increase due to the addition of premium apps and services. Speculation will disrupt this of course, but the network provides a real value anchor that will help to dampen this impact.</p>
+<h3 id="how-and-when-can-i-farm-safecoin">How and when can I farm safecoin</h3>
+<p><a href="https://maidsafe.org/t/how-and-when-can-i-farm-safecoin/419" target="_blank">maidsafe.org</a></p>
+<p>The estimated beta launch date is in Q4 2014. Our development <a href="https://github.com/maidsafe/MaidSafe/wiki/Roadmap" target="_blank">roadmap</a> includes 3 test networks and our ability to launch on time is dependent on how well all 3 test nets perform. Unexpected issues could delay the launch.</p>
+<p>Once we launch the SAFE Network, you will be able to download/install the MaidSafe program and connect to the network. Once you set up a Vault account, you can start farming, it is a very simple process.</p>
+<p>As we get closer to this date, we will make a &quot;Getting Started&quot; guide or video to help people join easily.</p>
 
                     
                     </section>
@@ -577,10 +560,10 @@ a key addressable storage system.</p>
         </div>
 
         
-        <a href="../system_components/autonomous_network.html" class="navigation navigation-prev " aria-label="Previous page: Autonomous Network"><i class="fa fa-angle-left"></i></a>
+        <a href="../faqs/technical.html" class="navigation navigation-prev " aria-label="Previous page: Technical"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../detail/README.html" class="navigation navigation-next " aria-label="Next page: Detail"><i class="fa fa-angle-right"></i></a>
+        <a href="../projects_on_safe/README.html" class="navigation navigation-next " aria-label="Next page: Projects on SAFE"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
