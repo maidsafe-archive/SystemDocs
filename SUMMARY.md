@@ -35,4 +35,5 @@
    * [General](faqs/general.md)
    * [Developers](faqs/developers.md)
    * [Technical](faqs/technical.md)
+   * [Safecoin](faqs/safecoin)
 
