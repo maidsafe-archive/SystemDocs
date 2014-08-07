@@ -4,7 +4,7 @@ Safecoin is farmed, this means farmers get paid safecoin for looking after data,
 
 ##Installation and maintenance
 
-The farmer aspect of the SAFE network is actually two programs that are generally invisible to the end user. These programs are the vault and the vault manager. The vault manager keeps the software updated and the vault running, restarting it on any error. The vault manager starts the vault and passes any keys to the vault via IPC or local TCP connection. The vault itself is the
+The farmer aspect of the SAFE network is actually two programs that are generally invisible to the end user. These programs are the vault and the vault manager. The vault manager keeps the software updated and the vault running, restarting it on any error. The vault manager starts the vault and passes any keys to the vault via IPC or local TCP connection.
 
 
 ##Mining
