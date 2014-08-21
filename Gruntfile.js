@@ -4,6 +4,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-gitbook');
     grunt.loadNpmTasks('grunt-gh-pages');
     grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-string-replace');
 
     grunt.initConfig({
         'gitbook': {
@@ -20,13 +21,31 @@ module.exports = function (grunt) {
         },
         'clean': {
             files: ['.grunt' , '_book']
-        }
+        },
+		'string-replace': {
+          dist: {
+            files: {
+              '_book/': '_book/**/style.css'
+            },
+            options: {
+              replacements: [{
+                pattern: '.book .book-body .navigation.navigation-next{right:0',
+                replacement: '.book .book-body .navigation.navigation-next{right:15px'
+              }]
+            }
+          }
+		}
     });
 
     grunt.registerTask('publish', [
-        'gitbook',
+    	'gitbook',
+		'string-replace',
         'gh-pages',
         'clean'
     ]);
-    grunt.registerTask('default', 'gitbook');
+	
+    grunt.registerTask('default', [
+      	'gitbook',
+      	'string-replace'
+    ]);
 };
