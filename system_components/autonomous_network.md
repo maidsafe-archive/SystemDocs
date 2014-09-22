@@ -51,7 +51,7 @@ All of this proved to be less than acceptable, although arguably this was one of
 
 ###A new DHT
 
-To overcome these limitations there had to be some serious changes. This solution required the speed and accuracy of [D1HT](http://www.cos.ufrj.br/~monnerat/.../Monnerat_et_Amorim_D1HT_2006.pdf) with the scalability of Kademlia. Not only that, but iterative lookups would have to be replaced with a recursive solution to alleviate the router issues. Such a recursive solution would alter Kadmelia significantly. Several improvements were made to Kademlia, including:
+To overcome these limitations there had to be some serious changes. This solution required the speed and accuracy of [D1HT](http://www.cos.ufrj.br/~monnerat/papers/Monnerat_et_Amorim_D1HT_2006.pdf) with the scalability of Kademlia. Not only that, but iterative lookups would have to be replaced with a recursive solution to alleviate the router issues. Such a recursive solution would alter Kadmelia significantly. Several improvements were made to Kademlia, including:
 
 * Recursive lookup (parallelism of 4, with bad node detection and bypassing)
 * Continuously connected to each node in routing table (required a rewrite of UDP, called [reliable UDP](https://github.com/maidsafe/MaidSafe-RUDP))
