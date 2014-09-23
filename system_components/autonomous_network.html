@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.2" data-basepath=".." data-revision="1410431180952">
+    <div class="book"  data-level="4.2" data-basepath=".." data-revision="1411455297028">
     
 
 <div class="book-summary">
@@ -726,7 +726,7 @@
 </ul>
 <p>All of this proved to be less than acceptable, although arguably this was one of the most accurate implementations of Kademlia. After involving academia via research projects, there was very little that could be done to make Kademlia accurate or fast enough for our needs. Another issue was the iterative approach to convergence on a target meant that routers were being tested to extreme as they opened up ports for each node with each iteration. In many examples of  published research, it was also found systems like emule and gnutella had up to 30% of addresses which were duplicates. This was a serious concern as it would prove to be far from acceptable for any accuracy. It appears that DHT implementations were largely insecure and less than efficient. This would be acceptable for public file sharing networks, or even video sharing where limited loss is acceptable, but not for a global data and communications network.</p>
 <h3 id="a-new-dht">A new DHT</h3>
-<p>To overcome these limitations there had to be some serious changes. This solution required the speed and accuracy of <a href="http://www.cos.ufrj.br/~monnerat/.../Monnerat_et_Amorim_D1HT_2006.pdf" target="_blank">D1HT</a> with the scalability of Kademlia. Not only that, but iterative lookups would have to be replaced with a recursive solution to alleviate the router issues. Such a recursive solution would alter Kadmelia significantly. Several improvements were made to Kademlia, including:</p>
+<p>To overcome these limitations there had to be some serious changes. This solution required the speed and accuracy of <a href="http://www.cos.ufrj.br/~monnerat/papers/Monnerat_et_Amorim_D1HT_2006.pdf" target="_blank">D1HT</a> with the scalability of Kademlia. Not only that, but iterative lookups would have to be replaced with a recursive solution to alleviate the router issues. Such a recursive solution would alter Kadmelia significantly. Several improvements were made to Kademlia, including:</p>
 <ul>
 <li>Recursive lookup (parallelism of 4, with bad node detection and bypassing)</li>
 <li>Continuously connected to each node in routing table (required a rewrite of UDP, called <a href="https://github.com/maidsafe/MaidSafe-RUDP" target="_blank">reliable UDP</a>)</li>
