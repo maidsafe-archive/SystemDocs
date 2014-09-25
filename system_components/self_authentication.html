@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.3" data-basepath=".." data-revision="1411455297028">
+    <div class="book"  data-level="4.3" data-basepath=".." data-revision="1411621544073">
     
 
 <div class="book-summary">
@@ -685,7 +685,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_29">
+                    <section class="normal" id="section-gitbook_30">
                     
                         <h1 id="self-authentication">Self Authentication</h1>
 <p>A critical requirement of a network that will not leak privacy is to allow people to interact with it in a manner that only that person is aware of. Self authentication is a mechanism which provides such a service.</p>
@@ -705,7 +705,7 @@ a key addressable storage system.</p>
 <h3 id="pseudo-implementation">Pseudo implementation</h3>
 <p>This is a simplified process to describe the bare mechanism that underpins the self authentication process.</p>
 <h4 id="creation-of-an-account">Creation of an Account</h4>
-<p>Here we will assume there are two inputs from the user of the system: keyword K, and password W. A <a href="http://en.wikipedia.org/wiki/Salt_(cryptography" target="_blank">salt</a> (S) is also supplied or derived (in a repeatable way) from K and W.</p>
+<p>Here we will assume there are two inputs from the user of the system: keyword K, and password W. A <a href="http://en.wikipedia.org/wiki/Salt_(cryptography" target="_blank">salt</a>) (S) is also supplied or derived (in a repeatable way) from K and W.</p>
 <p>To generate a unique identifier, we hash the concatenation of the keyword and the salt, H(U + S).  PBKDF2 Password Based Key Derivation File) is used here to strengthen any password keys used.  This is required as user selected passwords are commonly weak. In this example Account specifies session data, i.e. user details or an index of references to further data.</p>
 <p>Store On Network[H(K+S)] Symmetric Encrypt<a href="Account">PBKDF2[P][S]</a></p>
 <h4 id="login">Login</h4>
