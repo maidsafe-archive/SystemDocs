@@ -32,7 +32,7 @@ Self authentication relies on a system where an entity can create a unique key, 
 This is a simplified process to describe the bare mechanism that underpins the self authentication process.
 
 ####Creation of an Account
-Here we will assume there are two inputs from the user of the system: keyword K, and password W. A [salt](http://en.wikipedia.org/wiki/Salt_(cryptography)) (S) is also supplied or derived (in a repeatable way) from K and W.
+Here we will assume there are two inputs from the user of the system: keyword K, and password W. A [salt][wikipedia-salt-crypto] (S) is also supplied or derived (in a repeatable way) from K and W.
 
 To generate a unique identifier, we hash the concatenation of the keyword and the salt, H(U + S).  PBKDF2 Password Based Key Derivation File) is used here to strengthen any password keys used.  This is required as user selected passwords are commonly weak. In this example Account specifies session data, i.e. user details or an index of references to further data.
 
@@ -59,3 +59,5 @@ In a decentralised network this introduction of a server would in fact compromis
 
 In a decentralised network there are opportunities for implementing multi factor authentication via projects such as Trezor or similar. It is anticipated a similar applications will be created for project SAFE to ensure protection against key-loggers and similar attacks on modern day operating systems and public access terminals.
 
+
+[wikipedia-salt-crypto]: http://en.wikipedia.org/wiki/Salt_(cryptography)
