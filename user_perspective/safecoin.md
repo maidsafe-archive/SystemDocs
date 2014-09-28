@@ -65,7 +65,7 @@ The safecoin data also served as "wallet" to itself, i.e. a wallet that holds on
 
 [ref Routing] MaidSafe Routing github site : https://github.com/maidsafe/MaidSafe-Routing/wiki
 
-[ref BitCoin] Bitcoin : A Peer-to-Peer Electronic Cash System, Satoshi Nakamoto, https://bitcoin.org/bitcoin.pdf‎
+[ref BitCoin] Bitcoin : A Peer-to-Peer Electronic Cash System, Satoshi Nakamoto, https://bitcoin.org/bitcoin.pdf
 
 [ref RUDP] MaidSafe RUDP github site : https://github.com/maidsafe/MaidSafe-RUDP/wiki
 
