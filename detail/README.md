@@ -1,4 +1,4 @@
-# Detail
+# Libraries
 
 The SAFE network is comprised of 9 individual libraries. The following section, aimed at the more technical reader, provides a more detailed explanation of what role each library performs and how they work.
 

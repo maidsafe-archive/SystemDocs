@@ -1,17 +1,19 @@
-# Dishonest Vault Attack
+# Dishonest Vault attack
 
-##Attack Description
+##Attack description
 
-This attack assumes that a vault falsely claims to offer more storage capacity to the ability to join particular areas of the network.
+In this attack, a Vault falsely claims to offer a higher storage capacity than it actually has available.
 
-##Attack Purpose
+##Attack purpose
 
-If parts of the network were attacked in such a manner then there may be opportunities to create fake rules to be introduced. In a large scale attack fo this kind considerable network damage could occur. Theft of safecoin, double spend, delete data etc. would all be possible.
+The purpose of this attack is to gain the ability to join particular areas of the SAFE Network and to create fake rules affecting it's behaviour, similar to the "50% attack" often seen in cryptographic currencies.
 
-##Attack Avoidance
+In large scale attacks of this kind, considerable damage to the SAFE Network would be possible including theft or double spend of safecoins, or the deletion of data.
 
-Possible mitigations for this attack include legitimate nodes on the network being instructed to increase the required quorum level required for a request to be accepted. Whether this attack is viable, and the point at which it would become viable, is a topic for further research. This is an ongoing research area.
+The goal of this may be simply to destroy user trust in the SAFE Network.
 
-Further research into the number of malicious nodes necessary to make the network effectively unavailable is also likely necessary. Theoretically, if a botnet or other group of malicious nodes were to make up around 75% of the network, they could achieve false quorum over invalid requests, and thus request erase data, or modify mutable data.
+##Attack avoidance
 
-It is more likely that an attacker obtaining control of around 75% of the network would pose more signiﬁcant threats though, such as simply destroying user trust in the network, such as the so-called 50% attack often seen in cryptographic currencies.
+The SAFE Network requires a quorum level of legitimate Vaults to be instructed in order for a request to be accepted, which mitigates the risk of this attack.
+
+A botnet or other group of malicious Vaults would require to make up around 75% of the whole SAFE Network to achieve false quorum over invalid requests, making a successful attack of this type very unlikely.

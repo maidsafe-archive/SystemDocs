@@ -1,28 +1,25 @@
-# ISP simulates network
+# An ISP simulates a network
 
-This attack was actually discussed and brought to our attention by somebody thought to be senior in the crypto world.
+##Attack description
 
-##Attack Description
+In this attack an ISP creates a simulated or fake network. On this network the ISP gets data that the user has requested, but does not actually store data the user has attempted to store.
 
-In this case the ISP, creates a simulated or fake network. On this network they get data you request, but do not actually store data you attempt to store.
+##Attack purpose
 
-##Attack Purpose
+The purpose of this attack is to force users to lose data that may be important to them or simply discredit the SAFE Network.
 
-To force users to lose data that may be important to them or simply discredit the system.
+##Attack avoidance
 
-##Attack Avoidance
+In this case the bootstrapping MaidSafe client or Vault will not be able to connect to the bootstrap Vaults listed in the cache file. This file contains the IP port and public key of bootstrap Vaults.
 
-In this case the bootstrapping client or vault will not be able to connect to the bootstrap nodes listed in the cache file. This file contains the IP port and public key of bootstrap nodes (nodes determined in last session to be directly connected or full cone NAT). As the boostrap session is encrypted with the public key of any bootstrap nodes then the connect request will fail. The client will then detect this is not a valid network.
+As the bootstrap session is encrypted with the public key of any bootstrap Vaults then the connect request will fail. The Maidsafe client then detects this is not a valid network.
 
-##Improved Attack
+##Improved attack description
 
-Have the ISP machines pretend to be your machine and ask for the bootstrap info on your behalf.
+An ISP's machine pretends to be the user's machine and asks for the bootstrap information on the users behalf.
 
-##Attack Avoidance
+##Improved attack avoidance
 
-In this case the ISP machine could request the info and pass back to you. That information is encrypted to you, so the ISP cannot really access it (unless they break RSA 4096). You then connect to your closes nodes. If the closest nodes are fake they will not be able to process the connect request (encrypted to each end). So again this attack fails.
+In this case an ISP's machine could request the information and pass it back to the user. That information is encrypted to the user, so an ISP cannot really access it (unless they can break RSA 4096). The user then connects to their closest Vaults. If the closest Vaults are fake they will not be able to process the connect request, which is encrypted to each end. So again this attack fails.
 
-##Client
-
-This is only applicable for clients, not yet logged in. On receipt of the login packet, the client will then encrypt a close nodes request to the bootstrap node. Again this is returned encrypted. So the attack is circomvented.
-
+This is only applicable for MaidSafe clients that have not yet logged in. On receipt of the login packet, the MaidSafe client encrypts a close Vault request to the bootstrap Vault. Again this is returned encrypted, so the attack is circumvented.

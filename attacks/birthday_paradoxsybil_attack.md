@@ -1,19 +1,20 @@
 # Birthday Paradox/Sybil attack
-##Attack Description
 
-We identiﬁed through both simulation, and mathematical prediction, that it would be possible to carry out a ‘birthday paradox’ attack on the network, whereby an attacker simply wishing to cause harm or disruption could ﬂood the network with nodes it controlled, knowing they only need to surround a single address with 3 or more malicious nodes, in order to exert control over that node. While as previously discussed, it is not possible to deliberately position these nodes around a desired point in the network, we identiﬁed that with around 0.8% of the network’s nodes under the (temporary) control of an attacker, it was likely the attacker would have at least one node surrounded on the network, allowing it to exert control over that node as managers, reaching quorum on false actions.
+##Attack description
+In this attack, an attacker ﬂoods the network with Vaults it controls, to surround a single Vault with 3 or more malicious Vaults in order to exert control over that Vault.
 
-##Attack Purpose
+##Attack purpose
 
-By way of example, we proposed a proof-of-concept attack,
-whereby an attacker would request deletion of any chunks it
-could, by acting as the chunk information managers (as deﬁned in section IV), thereby causing the chunk holders to delete the chunks in response to a legitimate request, preventing access to that data for legitimate users. If the attacker were inclined to act out of ﬁnancial motivation, they could request a copy of the chunk prior to its deletion, and request the user pay a ransom before uploading it to the network again.
+Using this case, an attacker could request deletion of data chunks by acting as Data managers with the controlled Vaults. This could cause the Data holders to delete the chunks in response to a seemingly legitimate request, and prevent access to that data for legitimate users.
 
+While it is not possible to deliberately position the malicious Vaults around a desired point in the SAFE Network, with around 0.8% of the network’s Vaults under the (temporary) control of an attacker, it is likely the attacker will have at least one Vault surrounded on the SAFE Network, allowing it to exert control over that Vault and reach quorum on such false actions.
 
+##Attack avoidance
 
-If parts of the network were attacked in such a manner then there may be opportunities to create fake rules to be introduced. In a large scale attack fo this kind considerable network damage could occur. Theft of safecoin, double spend, delete data etc. would all be possible.
+The SAFE Network requires all requests be processed by at least two groups of Vaults.
 
-##Attack Avoidance
+A MaidSafe client passes a request to its 4 Data managers, who verify the request based on the client’s signature. The request is then passed to a deterministically selected group of 4 other Vaults which also verify the request based on its signature.
 
-Requiring all requests be processed by (at least) two groups of nodes rather than one. Under this proposed modiﬁcation, a client would pass its request to its 4 managers, who verify the request based on the client’s signature, then pass this request to a deterministically selected group of 4 other nodes, which would also verify the request based on its signature. By deterministically selecting the second group of managers, the birthday paradox no longer holds true for the network, since it would not be possible for the attacker to gain control over a node by simply surrounding it - the attacker would require the ability to surround speciﬁc nodes in the
-network, which is believed to be a difﬁcult task which would require being able to effectively generate different values which, when hashed with SHA-512, result in close hashes around one particular point.
+By deterministically selecting the second group of Data managers, this attack no longer holds true for the SAFE Network, since it is not possible for the attacker to gain control over a Vault by simply surrounding it.
+
+To circumvent this, the attacker would require the ability to surround speciﬁc Vaults in the SAFE Network. This cannot be achieved, as it would require being able to effectively generate different values which, when hashed with SHA-512, result in close hashes around one particular point.
