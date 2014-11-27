@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Store bad data | SystemDocs</title>
+        <title>The SAFE Network | SystemDocs</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../how_to_use_it/README.html" />
+    <link rel="next" href="../faqs/developers.html" />
     
     
-    <link rel="prev" href="../attacks/birthday_paradoxsybil_attack.html" />
+    <link rel="prev" href="../faqs/infrastructure.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.7.4" data-basepath=".." data-revision="1417101520631">
+    <div class="book"  data-level="5.1.2" data-basepath=".." data-revision="1417101520631">
     
 
 <div class="book-summary">
@@ -495,7 +495,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="2.7.4" data-path="attacks/store_bad_data.html">
+        <li class="chapter " data-level="2.7.4" data-path="attacks/store_bad_data.html">
             
                 
                     <a href="../attacks/store_bad_data.html">
@@ -829,7 +829,7 @@
         </li>
     
         
-        <li class="chapter " data-level="5.1.2" data-path="faqs/the_safe_network.html">
+        <li class="chapter active" data-level="5.1.2" data-path="faqs/the_safe_network.html">
             
                 
                     <a href="../faqs/the_safe_network.html">
@@ -975,19 +975,38 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8">
+                    <section class="normal" id="section-gitbook_26">
                     
-                        <h1 id="store-bad-data">Store bad data</h1>
-<h2 id="attack-description">Attack description</h2>
-<p>If an attacker was to subvert the self encryption to attempt to create illegal or immoral data of under 1Mb in size, and named with the hash of its content, then potentially the attacker would be able to store this immoral data on the SAFE Network.</p>
-<p>As self encrypted data is highly obfuscated and nearly impossible to decode, then storing data normally would not yield this attack. There is no mechanism to force the data onto any specific Vault, but the data would simply be on the SAFE Network.</p>
-<h2 id="attack-purpose">Attack purpose</h2>
-<p>The purpose of this attack would be purely to discredit the network. It is unlikely any attacker would know where the data was stored and the network does not disclose this information at any rate. In any case an attacker could state they did manage to do this to alarm users.</p>
-<h2 id="attack-avoidance">Attack avoidance</h2>
-<p>Due to not knowing where the immoral data is stored in the SAFE Network, this attack is already thwarted as the attacker could not retrieve it. In itself this is a form of protection, however the SAFE Network also goes a step further.</p>
-<p>As data is stored in the SAFE Network, the key used to store it is also used to encrypt the content. This key is then hashed itself and the content renamed to this key. The original key and content are then deleted. In this manner, the Vault storing the data has no ability to decrypt its stored chunks of data.</p>
-<p>The SAFE Network can ask for a chunk, and the Vault will hash this request and look in its storage for the hash of the requested chunk. On finding this, the Vault will use the requested key to decode the content in memory and send the data on named with the requesting key. This will then be able to reform as an immutable data chunk, but only for the requesting Vault.</p>
-<p>This therefore is similar to an attacker fully encrypting the data themselves and storing on any computer or network.</p>
+                        <h1 id="the-safe-network">The SAFE Network</h1>
+<p>These FAQs relate to additional details about the SAFE Network.</p>
+<h3 id="what-kind-of-research-and-validation-has-been-carried-out-to-affirm-the-safe-network-will-live-up-to-the-claims">What kind of research and validation has been carried out to affirm the SAFE Network will live up to the claims?</h3>
+<p>With such a radical solution, validation is extremely important. MaidSafe&#39;s technology has been peer reviewed with papers published and presented at the Wireless World Research Forum and the IEEE Computer Society. During development, MaidSafe has engaged with Scotland&#39;s leading technical Universities; Stirling, Strathclyde, St Andrews and the University of Abertay.</p>
+<p>Furthermore, MaidSafe&#39;s founder, David Irvine, has showcased the company&#39;s technology at the Google Scalability conference and at the British Computer Society&#39;s (Scotland) 50th Anniversary Christmas lecture.</p>
+<p>A fully decentralised test network is now up and running, with 200 nodes spread across three continents.</p>
+<h3 id="the-web-as-it-is-needs-no-gatekeeper-shouldnt-your-system-be-designed-this-way-as-well">The web as it is needs no gatekeeper, shouldn&#39;t your system be designed this way as well?</h3>
+<p>We agree that the Internet should never have a gatekeeper and we don&#39;t intend to start, that is why all our code is Open Source and we have transferred ownership to all the people of the world. The SAFE Network is also completely free from human intervention (the weakest and most corruptible part of any system), relying totally on maths and logic.</p>
+<h3 id="what-are-the-benefits-of-using-the-safe-network">What are the benefits of using the Safe Network?</h3>
+<p>The benefits of using the SAFE Network are numerous and for end users these are as follows:</p>
+<ul>
+<li>Private and secure communications</li>
+<li>Secure storage of all data</li>
+<li>Being control of your own data and personal information</li>
+<li>Websites that go faster the more popular they get</li>
+</ul>
+<h3 id="where-can-i-download-the-safe-network-software">Where can I download the SAFE Network software?</h3>
+<p>We plan beta launch at the end of this year/early 2015, at which point users will be able to start providing resource (earning safecoins) to the network and start using SAFE applications.</p>
+<p>When the network is launched a simple software download is all you require and we will inform users where to go nearer the time using our forum, blog and social media channels.</p>
+<h3 id="where-is-the-information-of-who-has-which-chunks-of-a-given-file-stored">Where is the information of who has which chunks of a given file stored?</h3>
+<p>As a user saves their data, or interacts with applications, their data is broken up, encrypted and then distributed randomly throughout the network to other vaults. This process is irreversible and therefore during the chunking and encryption process a data map is created for each file recording the identity of each of the files chunks that enable the file to be reconstituted.</p>
+<p>This data map is treated as any file on the network and is also run through the chunking and encryption process and then stored as encrypted chunks, spread randomly throughout the network. Only the correct combination of PIN, username and password will enable a file(s) to become readable.</p>
+<h3 id="what-language-are-the-safe-network-apps-written-in">What language are the SAFE Network apps written in?</h3>
+<p>The API / libraries are written in C++, however, application developers will not be restricted as it is MaidSafe’s intention to make the network as accessible as possible.</p>
+<p>Anyone will be able to write their own wrappers to add support for a new language.</p>
+<h3 id="can-maidsafe-clients-host-on-different-operating-systems-access-the-same-vaults">Can MaidSafe clients host on different operating systems access the same vaults?</h3>
+<p>Yes, the SAFE Network and client are completely supported cross-platform.</p>
+<h3 id="what-kind-of-equipment-will-be-required-for-dedicated-farming">What kind of equipment will be required for dedicated farming?</h3>
+<p>At this point we don’t know what type of equipment will offer the most efficient farming and only through testing of the live network will we know definitively. The farming algorithms within the network are designed to favour small commodity devices to avoid some of the centralising aspects experienced within the Bitcoin mining community.</p>
+<p>Farming is discussed quite frequently on our forum <a href="http://www.maidsafe.org" target="_blank">www.maidsafe.org</a> and many of the community members are experimenting with single board computers that are powerful, yet have very low power consumption, well suited to being left on 24/7.</p>
 
                     
                     </section>
@@ -998,10 +1017,10 @@
         </div>
 
         
-        <a href="../attacks/birthday_paradoxsybil_attack.html" class="navigation navigation-prev " aria-label="Previous page: Birthday Paradox/Sybil attack"><i class="fa fa-angle-left"></i></a>
+        <a href="../faqs/infrastructure.html" class="navigation navigation-prev " aria-label="Previous page: Infrastructure"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../how_to_use_it/README.html" class="navigation navigation-next " aria-label="Next page: How to use it"><i class="fa fa-angle-right"></i></a>
+        <a href="../faqs/developers.html" class="navigation navigation-next " aria-label="Next page: Developers"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

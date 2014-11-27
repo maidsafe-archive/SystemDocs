@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Store bad data | SystemDocs</title>
+        <title>Vaults | SystemDocs</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../how_to_use_it/README.html" />
+    <link rel="next" href="../how_it_works/safecoin.html" />
     
     
-    <link rel="prev" href="../attacks/birthday_paradoxsybil_attack.html" />
+    <link rel="prev" href="../system_components/self_authentication.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.7.4" data-basepath=".." data-revision="1417101520631">
+    <div class="book"  data-level="2.4" data-basepath=".." data-revision="1417101520631">
     
 
 <div class="book-summary">
@@ -382,7 +382,7 @@
         </li>
     
         
-        <li class="chapter " data-level="2.4" data-path="how_it_works/vault.html">
+        <li class="chapter active" data-level="2.4" data-path="how_it_works/vault.html">
             
                 
                     <a href="../how_it_works/vault.html">
@@ -495,7 +495,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="2.7.4" data-path="attacks/store_bad_data.html">
+        <li class="chapter " data-level="2.7.4" data-path="attacks/store_bad_data.html">
             
                 
                     <a href="../attacks/store_bad_data.html">
@@ -975,19 +975,37 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8">
+                    <section class="normal" id="section-gitbook_29">
                     
-                        <h1 id="store-bad-data">Store bad data</h1>
-<h2 id="attack-description">Attack description</h2>
-<p>If an attacker was to subvert the self encryption to attempt to create illegal or immoral data of under 1Mb in size, and named with the hash of its content, then potentially the attacker would be able to store this immoral data on the SAFE Network.</p>
-<p>As self encrypted data is highly obfuscated and nearly impossible to decode, then storing data normally would not yield this attack. There is no mechanism to force the data onto any specific Vault, but the data would simply be on the SAFE Network.</p>
-<h2 id="attack-purpose">Attack purpose</h2>
-<p>The purpose of this attack would be purely to discredit the network. It is unlikely any attacker would know where the data was stored and the network does not disclose this information at any rate. In any case an attacker could state they did manage to do this to alarm users.</p>
-<h2 id="attack-avoidance">Attack avoidance</h2>
-<p>Due to not knowing where the immoral data is stored in the SAFE Network, this attack is already thwarted as the attacker could not retrieve it. In itself this is a form of protection, however the SAFE Network also goes a step further.</p>
-<p>As data is stored in the SAFE Network, the key used to store it is also used to encrypt the content. This key is then hashed itself and the content renamed to this key. The original key and content are then deleted. In this manner, the Vault storing the data has no ability to decrypt its stored chunks of data.</p>
-<p>The SAFE Network can ask for a chunk, and the Vault will hash this request and look in its storage for the hash of the requested chunk. On finding this, the Vault will use the requested key to decode the content in memory and send the data on named with the requesting key. This will then be able to reform as an immutable data chunk, but only for the requesting Vault.</p>
-<p>This therefore is similar to an attacker fully encrypting the data themselves and storing on any computer or network.</p>
+                        <h1 id="vaults">Vaults</h1>
+<p>Vaults are created on a user&#39;s computer when they install the MaidSafe client and join the SAFE Network.</p>
+<p>The Vault on the user&#39;s computer can not be seen by the user. Instead the user sees a virtual mounted drive that provides access to their distributed data.</p>
+<p>When a user creates or alters files on their virtual drive, the file goes through several processes to ensure the file is secure and makes best use of the SAFE Network resources.</p>
+<h2 id="vault-persona">Vault persona</h2>
+<p>Vaults can have a different data handling persona. Each persona serves a different role in the SAFE Network.</p>
+<ul>
+<li><strong>Client managers</strong><br/>
+Client manager Vaults receives the chunks of self encrypted data from the user&#39;s Vault.</li>
+<li><strong>Data managers</strong><br/>
+These Vaults manage the chunks of data from the Client manager Vaults. They also monitor the status of the SAFE Network.</li>
+<li><strong>Data holders</strong><br/>
+Data holder Vaults are used to hold the chunks of data.</li>
+<li><strong>Data holder managers</strong><br/>
+Data holder managers monitor the Data holder Vaults. They report to the Data manager if any of the chunks are corrupted or changed. They also report when a Data holder has gone offline.</li>
+<li><strong>Vault managers</strong><br/>
+The Vault manager keeps the software updated and the Vault running; restarting it on any error.</li>
+<li><strong>Transaction managers</strong><br/>
+The Transaction manager helps to manage safecoin tranfers.</li>
+</ul>
+<h2 id="data-on-the-safe-network">Data on the SAFE Network</h2>
+<p>When a file is encrypted and broken up into chunks as part of the self authentication process it is  passed to Client managers.</p>
+<p>The Client managers then pass the chunks to the Data managers who the distribute the chunks around at least another four Data holders.</p>
+<p>The Data holders are constantly checked by the Data holder managers.</p>
+<p>If a Data holder manager reports that a Data holder has gone offline, the Data manager decides, based on rankings assigned to Vaults, into which other Vault to put the chunk of data.</p>
+<p>This way the chunks of data from the original file are constantly being monitored and supported to ensure the original data can be accessed and decrypted by the original user.</p>
+<p>Any movement of data chunks can only be made if there is a consensus from the surrounding Vaults. The Vaults cannot act in isolation.</p>
+<p>Finally, to ensure security and resilience, Vaults are non-geographically located using an exclusive OR (XOR) function.</p>
+<p><a href="https://www.youtube.com/watch?v=txvKSeCaEP0" target="_blank">Click here to see a short video on how Vaults work</a></p>
 
                     
                     </section>
@@ -998,10 +1016,10 @@
         </div>
 
         
-        <a href="../attacks/birthday_paradoxsybil_attack.html" class="navigation navigation-prev " aria-label="Previous page: Birthday Paradox/Sybil attack"><i class="fa fa-angle-left"></i></a>
+        <a href="../system_components/self_authentication.html" class="navigation navigation-prev " aria-label="Previous page: Efficient - Self authentication"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../how_to_use_it/README.html" class="navigation navigation-next " aria-label="Next page: How to use it"><i class="fa fa-angle-right"></i></a>
+        <a href="../how_it_works/safecoin.html" class="navigation navigation-next " aria-label="Next page: Safecoins"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

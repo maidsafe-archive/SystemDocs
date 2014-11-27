@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Store bad data | SystemDocs</title>
+        <title>Guaranteed Vault identification | SystemDocs</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../how_to_use_it/README.html" />
+    <link rel="next" href="../system_components/accurate_p2p_network_proximity_assessment.html" />
     
     
-    <link rel="prev" href="../attacks/birthday_paradoxsybil_attack.html" />
+    <link rel="prev" href="../system_components/cryptographically_secure.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.7.4" data-basepath=".." data-revision="1417101520631">
+    <div class="book"  data-level="2.2.2" data-basepath=".." data-revision="1417101520631">
     
 
 <div class="book-summary">
@@ -249,7 +249,7 @@
         </li>
     
         
-        <li class="chapter " data-level="2.2.2" data-path="system_components/guaranteed_vault_identification.html">
+        <li class="chapter active" data-level="2.2.2" data-path="system_components/guaranteed_vault_identification.html">
             
                 
                     <a href="../system_components/guaranteed_vault_identification.html">
@@ -495,7 +495,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="2.7.4" data-path="attacks/store_bad_data.html">
+        <li class="chapter " data-level="2.7.4" data-path="attacks/store_bad_data.html">
             
                 
                     <a href="../attacks/store_bad_data.html">
@@ -975,19 +975,16 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8">
+                    <section class="normal" id="section-gitbook_38">
                     
-                        <h1 id="store-bad-data">Store bad data</h1>
-<h2 id="attack-description">Attack description</h2>
-<p>If an attacker was to subvert the self encryption to attempt to create illegal or immoral data of under 1Mb in size, and named with the hash of its content, then potentially the attacker would be able to store this immoral data on the SAFE Network.</p>
-<p>As self encrypted data is highly obfuscated and nearly impossible to decode, then storing data normally would not yield this attack. There is no mechanism to force the data onto any specific Vault, but the data would simply be on the SAFE Network.</p>
-<h2 id="attack-purpose">Attack purpose</h2>
-<p>The purpose of this attack would be purely to discredit the network. It is unlikely any attacker would know where the data was stored and the network does not disclose this information at any rate. In any case an attacker could state they did manage to do this to alarm users.</p>
-<h2 id="attack-avoidance">Attack avoidance</h2>
-<p>Due to not knowing where the immoral data is stored in the SAFE Network, this attack is already thwarted as the attacker could not retrieve it. In itself this is a form of protection, however the SAFE Network also goes a step further.</p>
-<p>As data is stored in the SAFE Network, the key used to store it is also used to encrypt the content. This key is then hashed itself and the content renamed to this key. The original key and content are then deleted. In this manner, the Vault storing the data has no ability to decrypt its stored chunks of data.</p>
-<p>The SAFE Network can ask for a chunk, and the Vault will hash this request and look in its storage for the hash of the requested chunk. On finding this, the Vault will use the requested key to decode the content in memory and send the data on named with the requesting key. This will then be able to reform as an immutable data chunk, but only for the requesting Vault.</p>
-<p>This therefore is similar to an attacker fully encrypting the data themselves and storing on any computer or network.</p>
+                        <h1 id="guaranteed-vault-identification">Guaranteed Vault identification</h1>
+<p>Vault identification is essential if Vaults are to be responsible in a measured way for resource management.</p>
+<p>Without identification any Vault could impersonate another. There are known methods to identify digital identities, such as a certificate authority (such as Verisign) or in some cases a web of trust. As this network has no servers, no human involvement and is completely trust less, these options are not suitable.</p>
+<p>The Vault identification process involves creating two key pairs. One key pair is a revocation key and is used only to create and invalidate a real key.</p>
+<p>The real key pair is created and the public key is signed by the revocation private key and this packet (public key plus signature) is stored on the network as a Vault Identification key type. This Hash is then used as the Vault identity.</p>
+<p>The SAFE Network can retrieve this identification packet on request from any Vault. The only way to alter this packet is by a message signed by the same ID as the one that signed the packet.</p>
+<p>This process allows Vaults to identify themselves by advertising the hash of the identification packet that they created and stored.</p>
+<p>As only the creator has the private key paired with the public key contained in the identification packet then we can assume this is the correct Vault. All messages are encrypted with this ID, so fraudulent Vaults would not be able to decrypt such messages, including connect requests which are required to join the network.</p>
 
                     
                     </section>
@@ -998,10 +995,10 @@
         </div>
 
         
-        <a href="../attacks/birthday_paradoxsybil_attack.html" class="navigation navigation-prev " aria-label="Previous page: Birthday Paradox/Sybil attack"><i class="fa fa-angle-left"></i></a>
+        <a href="../system_components/cryptographically_secure.html" class="navigation navigation-prev " aria-label="Previous page: Cryptographically secure"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../how_to_use_it/README.html" class="navigation navigation-next " aria-label="Next page: How to use it"><i class="fa fa-angle-right"></i></a>
+        <a href="../system_components/accurate_p2p_network_proximity_assessment.html" class="navigation navigation-next " aria-label="Next page: Accurate p2p network proximity assessment"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

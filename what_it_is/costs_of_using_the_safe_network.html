@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Store bad data | SystemDocs</title>
+        <title>Accessing the SAFE Network | SystemDocs</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="../how_to_use_it/README.html" />
+    <link rel="next" href="../what_it_is/vaults.html" />
     
     
-    <link rel="prev" href="../attacks/birthday_paradoxsybil_attack.html" />
+    <link rel="prev" href="../what_it_is/apps_and_programs_on_the_safe_network.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="2.7.4" data-basepath=".." data-revision="1417101520631">
+    <div class="book"  data-level="1.3" data-basepath=".." data-revision="1417101520631">
     
 
 <div class="book-summary">
@@ -114,7 +114,7 @@
         </li>
     
         
-        <li class="chapter " data-level="1.3" data-path="what_it_is/costs_of_using_the_safe_network.html">
+        <li class="chapter active" data-level="1.3" data-path="what_it_is/costs_of_using_the_safe_network.html">
             
                 
                     <a href="../what_it_is/costs_of_using_the_safe_network.html">
@@ -495,7 +495,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="2.7.4" data-path="attacks/store_bad_data.html">
+        <li class="chapter " data-level="2.7.4" data-path="attacks/store_bad_data.html">
             
                 
                     <a href="../attacks/store_bad_data.html">
@@ -975,19 +975,26 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8">
+                    <section class="normal" id="section-gitbook_47">
                     
-                        <h1 id="store-bad-data">Store bad data</h1>
-<h2 id="attack-description">Attack description</h2>
-<p>If an attacker was to subvert the self encryption to attempt to create illegal or immoral data of under 1Mb in size, and named with the hash of its content, then potentially the attacker would be able to store this immoral data on the SAFE Network.</p>
-<p>As self encrypted data is highly obfuscated and nearly impossible to decode, then storing data normally would not yield this attack. There is no mechanism to force the data onto any specific Vault, but the data would simply be on the SAFE Network.</p>
-<h2 id="attack-purpose">Attack purpose</h2>
-<p>The purpose of this attack would be purely to discredit the network. It is unlikely any attacker would know where the data was stored and the network does not disclose this information at any rate. In any case an attacker could state they did manage to do this to alarm users.</p>
-<h2 id="attack-avoidance">Attack avoidance</h2>
-<p>Due to not knowing where the immoral data is stored in the SAFE Network, this attack is already thwarted as the attacker could not retrieve it. In itself this is a form of protection, however the SAFE Network also goes a step further.</p>
-<p>As data is stored in the SAFE Network, the key used to store it is also used to encrypt the content. This key is then hashed itself and the content renamed to this key. The original key and content are then deleted. In this manner, the Vault storing the data has no ability to decrypt its stored chunks of data.</p>
-<p>The SAFE Network can ask for a chunk, and the Vault will hash this request and look in its storage for the hash of the requested chunk. On finding this, the Vault will use the requested key to decode the content in memory and send the data on named with the requesting key. This will then be able to reform as an immutable data chunk, but only for the requesting Vault.</p>
-<p>This therefore is similar to an attacker fully encrypting the data themselves and storing on any computer or network.</p>
+                        <h1 id="accessing-the-safe-network">Accessing the SAFE Network</h1>
+<p>The MaidSafe client is a program used to log in to and access the SAFE Network. After starting the MaidSafe client you are asked to provide login details.</p>
+<ul>
+<li>Keyword</li>
+<li>PIN</li>
+<li>Password</li>
+</ul>
+<p>With these details the SAFE Network authenticates the user on the SAFE Network and decrypts their data atlas, which provides them with access to all their encrypted data.</p>
+<p>The MaidSafe client is a small, cross-platform and non-resource intensive program that does not impact your computer&#39;s performance. After you have been authenticated through the MaidSafe client you do not have to enter further passwords or keys to access other shared data or apps on the SAFE Network.</p>
+<p>No passwords or log in details are cached by the MaidSafe client or stored on the network. This means that no details about you or your access security is left on the PC you have used to access the SAFE Network. You can log in to the SAFE Network from another PC that has the MaidSafe client installed.</p>
+<p>As well as the MaidSafe client, users also require safecoins to access the SAFE Network. Safecoins are the token-based currency of the SAFE Network.</p>
+<p>To earn safecoins users can do the following:</p>
+<ul>
+<li>Donating spare computer resources to the network</li>
+<li>Creating network applications</li>
+<li>Contributing to the underlying SAFE Network codebase.</li>
+</ul>
+<p>It is anticipated that soon after public launch, it will also be possible to buy safecoins from decentralised exchanges that will exist on the SAFE Network.</p>
 
                     
                     </section>
@@ -998,10 +1005,10 @@
         </div>
 
         
-        <a href="../attacks/birthday_paradoxsybil_attack.html" class="navigation navigation-prev " aria-label="Previous page: Birthday Paradox/Sybil attack"><i class="fa fa-angle-left"></i></a>
+        <a href="../what_it_is/apps_and_programs_on_the_safe_network.html" class="navigation navigation-prev " aria-label="Previous page: Apps and programs on the SAFE Network"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../how_to_use_it/README.html" class="navigation navigation-next " aria-label="Next page: How to use it"><i class="fa fa-angle-right"></i></a>
+        <a href="../what_it_is/vaults.html" class="navigation navigation-next " aria-label="Next page: Vaults"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
