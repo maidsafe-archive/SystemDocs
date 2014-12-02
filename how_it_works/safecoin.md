@@ -8,7 +8,7 @@ While the coins themselves increase in value, the amount of network services (re
 
 
 ## Safecoin transfer mechanism
-On the SAFE Network, Vaults assume various [personas or roles](../vault.html), depending on the requests they receive.  For example, the Data manager persona is responsible for managing the integrity and availability of a given piece of data on the network.
+On the SAFE Network, Vaults assume various [personas or roles](http://maidsafe.net/SystemDocs/what_it_is/vaults.html), depending on the requests they receive.  For example, the Data manager persona is responsible for managing the integrity and availability of a given piece of data on the network.
 
 The Transaction manager, another Vault persona, handles all the safecoin transactions. The Transaction manager is responsible for the logic that enables transactions to be completed. A Transaction manager group is a trusted group of Vaults which are closest to any given transaction identity.
 
