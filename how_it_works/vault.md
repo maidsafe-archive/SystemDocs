@@ -21,9 +21,9 @@ The Vault manager keeps the software updated and the Vault running; restarting i
 The Transaction manager helps to manage safecoin tranfers.
 
 ## Data on the SAFE Network
-When a file is encrypted and broken up into chunks as part of the self authentication process it is  passed to Client managers.
+When a file is encrypted and broken up into chunks as part of the self authentication process it is passed to Client managers.
 
-The Client managers then pass the chunks to the Data managers who the distribute the chunks around at least another four Data holders.
+The Client managers then pass the chunks to the Data managers who the distribute the chunks around at least another three Data holders.
 
 The Data holders are constantly checked by the Data holder managers.
 
