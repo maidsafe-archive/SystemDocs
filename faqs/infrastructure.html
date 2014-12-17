@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="maidsafe/SystemDocs" data-level="5.1.1" data-basepath=".." data-revision="1418195432979">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="5.1.1" data-basepath=".." data-revision="1418812100945">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1129,6 +1129,16 @@ The MaidSafe client passes a request to its four Data managers, who verify the r
 <p>Data is stored and retrieved using the self encryption process. Self encryption is used to mix up and encrypt data before it is sent out to the SAFE Network. This process is automatic and happens instantaneously. As data is saved to a user’s virtual hard-drive it is broken up into at least three chunks. A data map is created and for each chunk a hash, (a unique digital finger print) is created and written to the data map. For additional security the data map is also run through this self encryption process.</p>
 <p>Each chunk is then encrypted to create random, non-repeating data. Finally, combined with the original hashes, the chunks are further encrypted. The output of each chunk is then added to the data map.</p>
 <p>The data map, with hashes before and after encryption, is used when retrieving and decoding the user’s data, as the encryption process is non reversible. The data is decrypted and reconstituted with the users PIN, keyword and password.</p>
+<h3 id="when-files-are-split-into-chunks-the-network-takes-a-hash-a-digital-fingerprint-of-each-can-the-original-hash-be-traced-back-to-a-user-">When files are split into chunks, the network takes a hash (a digital fingerprint) of each. Can the original hash be traced back to a user?</h3>
+<p>In short, no. Chunks are not linked to a specific user on the network and anonymity (and security as arguably they are the same thing) is at the very heart of the network. At a very high level, there are a number of features that provide anonymity.</p>
+<ul>
+<li>RUDP (Reliable UDP) encrypts every message hop to hop as they traverse the network</li>
+<li>The routing layer scrubs IP addresses after hop1</li>
+<li>The storage and retrieval of data is carried out using an identifier known only to the network that is not linked to a person or public name</li>
+<li>There is no server login and therefore no central point of knowledge or attack</li>
+<li>Passwords are not stored or transmitted on the network</li>
+<li>All messages are encrypted and the identifier of the sender/receiver is not what the user logs in as, the identifier is stored inside an encrypted packet</li>
+</ul>
 
                     
                     </section>
