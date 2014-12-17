@@ -69,3 +69,16 @@ Data is stored and retrieved using the self encryption process. Self encryption 
 Each chunk is then encrypted to create random, non-repeating data. Finally, combined with the original hashes, the chunks are further encrypted. The output of each chunk is then added to the data map.
 
 The data map, with hashes before and after encryption, is used when retrieving and decoding the user’s data, as the encryption process is non reversible. The data is decrypted and reconstituted with the users PIN, keyword and password.
+
+###When files are split into chunks, the network takes a hash (a digital fingerprint) of each. Can the original hash be traced back to a user?
+
+In short, no. Chunks are not linked to a specific user on the network and anonymity (and security as arguably they are the same thing) is at the very heart of the network. At a very high level, there are a number of features that provide anonymity.
+
+* RUDP (Reliable UDP) encrypts every message hop to hop as they traverse the network
+* The routing layer scrubs IP addresses after hop1
+* The storage and retrieval of data is carried out using an identifier known only to the network that is not linked to a person or public name
+* There is no server login and therefore no central point of knowledge or attack
+* Passwords are not stored or transmitted on the network
+* All messages are encrypted and the identifier of the sender/receiver is not what the user logs in as, the identifier is stored inside an encrypted packet
+
+
