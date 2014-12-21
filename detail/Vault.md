@@ -112,7 +112,7 @@ These VM personas all must agree on the request as it is received. To accomplish
 ## Generalised Communications Management
 | Node Management      | Node      |
 | ----------------------|----------:|
-| [**MpidManager**](#midnodemanager)    | [_MpidNode_](#mpidnode)  |
+| [**MpidManager**](#mpidmanager)    | [_MpidNode_](#mpidnode)  |
 
 
 
@@ -254,7 +254,7 @@ Uses the AccountDb
 * *   | **PmidManager** [So]-> | **PmidNode**
 
 
-### Mpid Manager<a id="PmidManager"></a>
+### Mpid Manager<a id="MpidManager"></a>
 
 The MPAH (Mpid Account Holder) function is to manage the Mpid client. This means ensuring the client has an account and a blacklist or whitelist if required by the client. This persona will also hold messages destined for an Mpid client who is currently off-line.
 

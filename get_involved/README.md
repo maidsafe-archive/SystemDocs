@@ -2,7 +2,7 @@
 
 The following links provide information on where to go if you want to get involved.
 
-* [MaidSafe.net](http://www.maidsafe.net)<br/>
+* [MaidSafe.net](http://maidsafe.net)<br/>
 The company coordinating the development and launch of the SAFE Network.
 
 * [Contacting MaidSafe](http://maidsafe.net/contact)<br />

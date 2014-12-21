@@ -2,11 +2,11 @@
 
 ### What gives safecoin value?
 
-Safecoin has value because it has utility. Users can earn safecoin by [farming](http://maidsafe.net/SystemDocs/how_to_use_it/farmers.html) safecoin and use it to buy more storage, and access applications and services on the network. It will also be possible to purchase safecoin via exchanges, as the network launches, and this will also provide safecoin with a direct fiat valuation.
+Safecoin has value because it has utility. Users can earn safecoin by [farming](http://www.maidsafe.net/SystemDocs/how_to_use_it/farmers.html) safecoin and use it to buy more storage, and access applications and services on the network. It will also be possible to purchase safecoin via exchanges, as the network launches, and this will also provide safecoin with a direct fiat valuation.
 
 The underlying network also provides safecoin with additional value in a less obvious way, via the transaction mechanism within the network (the SAFE Network’s version of the block chain). Capable of processing millions of transactions per second and able to confirm transactions at network speed, the currency is instantly redeemable, secure and anonymous on wallets that are easy to use and built in to the network. These features are well suited to buying not only network services, but also products being sold on the network by merchants.
 
-For more information about this FAQ, refer to the full answer on [maidsafe.org](https://maidsafe.org/t/what-gives-safecoin-value-and-differentiates-it-from-altcoins/411).
+For more information about this FAQ, refer to the full answer on [maidsafe.org](https://www.maidsafe.org/t/what-gives-safecoin-value-and-differentiates-it-from-altcoins/411).
 
 ### How is safecoin valued?
 
@@ -22,7 +22,7 @@ The volume of supply and demand will grow with the network, which tends to creat
 
 Over time this virtuous circle becomes stronger (as the volume increases) because the number of users is growing. The incentive to hold and use safecoin will also increase due to the addition of applications and services. Speculation will disrupt this of course, but the network provides a real value anchor that will help to dampen this impact.
 
-For more information about this FAQ, refer to the full answer on [maidsafe.org](https://maidsafe.org/t/what-gives-safecoin-value-and-differentiates-it-from-altcoins/411).
+For more information about this FAQ, refer to the full answer on [maidsafe.org](https://www.maidsafe.org/t/what-gives-safecoin-value-and-differentiates-it-from-altcoins/411).
 
 ###Where do I trade my MaidSafe coins?
 

@@ -5,17 +5,17 @@ Maidsafe-Common library provides many components that are widely used by other M
 Generally, the components it presents can be divided into the following groups :
 
 _**Concurrency Helpers**_
-* [Active Object](Active-Object) An implementation of [Active Object Design Pattern](http://en.wikipedia.org/wiki/Active_object). Useful for running operations in a thread safe manner.
-* [Asio Service](Asio-Service) Asynchronous helpers for asynchronous operations and timers based on [Boost ASIO](http://www.boost.org/doc/libs/release/doc/html/boost_asio.html).
-* [Safe Queue](Safe-Queue) An internally synchronised (not lock free) queue based on a [deque](http://en.cppreference.com/w/cpp/container/deque). Please consider [boost lock free](http://www.boost.org/doc/libs/release/doc/html/lockfree.html) structures instead. This container is likely to be deprecated.
+* [Active-Object](https://github.com/maidsafe/MaidSafe-Common/wiki/Active-Object) - An implementation of [Active Object Design Pattern](http://en.wikipedia.org/wiki/Active_object). Useful for running operations in a thread safe manner.
+* [Asio-Service](https://github.com/maidsafe/MaidSafe-Common/wiki/Asio-Service) - Asynchronous helpers for asynchronous operations and timers based on [Boost ASIO](http://www.boost.org/doc/libs/release/doc/html/boost_asio.html).
+* [Safe-Queue](https://github.com/maidsafe/MaidSafe-Common/wiki/Safe-Queue) - An internally synchronised (not lock free) queue based on a [deque](http://en.cppreference.com/w/cpp/container/deque). Please consider [boost lock free](http://www.boost.org/doc/libs/release/doc/html/lockfree.html) structures instead. This container is likely to be deprecated.
 
 _**Type Safety**_
-* [Bounded String](Bounded-String) Create string types with upper and lower 'bounds'
-* [Tagged Value](Tagged-Value) An implementation of [the whole value idiom](http://martin-moene.blogspot.co.uk/2012/07/light-on-whole-value.html)
+* [Bounded-String](https://github.com/maidsafe/MaidSafe-Common/wiki/Bounded-String) - Create string types with upper and lower 'bounds'
+* [Tagged-Value](https://github.com/maidsafe/MaidSafe-Common/wiki/Tagged-Value) - An implementation of [the whole value idiom](http://martin-moene.blogspot.co.uk/2012/07/light-on-whole-value.html)
 
 _**Exception Safety**_
-* [Errors and Exceptions](Errors-Exceptions) Error handling system extending ```std::error_code``` and ```std::exception```
-* [On Scope Exit](On-Scope-Exit) A very handy utility to revert values or perform functions on the event of an exception being thrown.
+* [Errors-Exceptions](https://github.com/maidsafe/MaidSafe-Common/wiki/Errors-Exceptions) - Error handling system extending ```std::error_code``` and ```std::exception```
+* [On-Scope-Exit](https://github.com/maidsafe/MaidSafe-Common/wiki/On-Scope-Exit) - A very handy utility to revert values or perform functions on the event of an exception being thrown.
 
 _**Data Storage**_
 
@@ -41,13 +41,13 @@ The interface is provided in the following files:
 * [data_name_variant.h](https://github.com/maidsafe/MaidSafe-Common/blob/master/include/maidsafe/common/data_types/data_name_variant.h) - A [`boost::variant`][boost_variant] of the names of the various types which the network handles.  This is primarily used in the Data Stores, where there is a requirement to hold various types of similarly-structured data, but with different actual name types.
 
 _**General Utilities**_
-* [Utils](https://github.com/maidsafe/MaidSafe-Common/wiki/Utils) A varied mix of utilities, such as hex conversions, random number generators etc.
-* [Key Value Buffer](https://github.com/maidsafe/MaidSafe-Common/wiki/Key-Value-Buffer) A buffered disk writing system with caching ability.
-* [Node Id](https://github.com/maidsafe/MaidSafe-Common/wiki/Node-Id) Utilities to handle 512 bit addresses as used throughout MaidSafe libraries.
+* [Utils](https://github.com/maidsafe/MaidSafe-Common/wiki/Utils) - A varied mix of utilities, such as hex conversions, random number generators etc.
+* [Key Value Buffer](https://github.com/maidsafe/MaidSafe-Common/wiki/Key-Value-Buffer) - A buffered disk writing system with caching ability.
+* [Node Id](https://github.com/maidsafe/MaidSafe-Common/wiki/Node-Id) - Utilities to handle 512 bit addresses as used throughout MaidSafe libraries.
 
 _**Cryptographic Helpers**_
-* [Crypto Utils](https://github.com/maidsafe/MaidSafe-Common/wiki/Crypto-Utils) Symmetric encryption, Hash wrappers, secure password wrapper, N+P key sharing (based on Shamir's algorithm)
-* [Asymmetric Encryption](https://github.com/maidsafe/MaidSafe-Common/wiki/Asymmetric-Encryption) Wrapper for asymmetric encryption methods (including safe encrypt), currently supporting RSA.
+* [Crypto Utils](https://github.com/maidsafe/MaidSafe-Common/wiki/Crypto-Utils) - Symmetric encryption, Hash wrappers, secure password wrapper, N+P key sharing (based on Shamir's algorithm)
+* [Asymmetric Encryption](https://github.com/maidsafe/MaidSafe-Common/wiki/Asymmetric-Encryption) - Wrapper for asymmetric encryption methods (including safe encrypt), currently supporting RSA.
 
 _**Debug helpers**_
 * [Test Runner](https://github.com/maidsafe/MaidSafe/wiki/Running-Tests)
