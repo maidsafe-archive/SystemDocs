@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en-US" >
+<html lang="en-US" manifest="../manifest.appcache">
     
     <head>
         
@@ -7,15 +7,16 @@
         <title>Resilience - Autonomous network | SystemDocs</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="generator" content="GitBook 0.5.6">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
     
+    
+    <meta name="author" content="maidsafe">
     
     
     <link rel="next" href="../system_components/cryptographically_secure.html" />
@@ -33,19 +34,96 @@
 
 
         
-    <div class="book"  data-level="2.2" data-basepath=".." data-revision="1419158601151">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="2.2" data-basepath=".." data-revision="1419353967898">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/maidsafe/systemdocs/tree/master" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/maidsafe/SystemDocs/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/maidsafe/SystemDocs/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >SystemDocs</a>
+    </h1>
+</div>
+
     
 
 <div class="book-summary">
     <div class="book-search">
-        <input type="text" placeholder="Type to search" class="form-control" />
+        <input type="text" placeholder="Search" class="form-control" />
     </div>
     <ul class="summary">
         
-    	
-    	
-    	
+        
+        
+        <li>
+            <a href="http://maidsafe.net" target="blank" class="author-link">About the author</a>
+        </li>
+        
 
+        
+        
+        <li>
+            <a href="https://github.com/maidsafe/systemdocs/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/maidsafe/SystemDocs/edit/master/system_components/autonomous_network.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
         
 
         
@@ -216,7 +294,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="2.2" data-path="system_components/autonomous_network.html">
+        <li class="chapter " data-level="2.2" data-path="system_components/autonomous_network.html">
             
                 
                     <a href="../system_components/autonomous_network.html">
@@ -891,7 +969,7 @@
         
         <li class="divider"></li>
         <li>
-            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
         </li>
         
     </ul>
@@ -899,85 +977,119 @@
 
     <div class="book-body">
         <div class="body-inner">
-            <div class="book-header">
-    <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
-    
-    <div id="font-settings-wrapper" class="dropdown pull-left">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
-        </a>
-        <div class="dropdown-menu font-settings">
-    <div class="dropdown-caret">
-        <span class="caret-outer"></span>
-        <span class="caret-inner"></span>
-    </div>
-
-    <div class="buttons">
-        <button type="button" id="reduce-font-size" class="button size-2">A</button>
-        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
-    </div>
-
-    <div class="buttons font-family-list">
-        <button type="button" data-font="0" class="button">Serif</button>
-        <button type="button" data-font="1" class="button">Sans</button>
-    </div>
-
-    <div class="buttons color-theme-list">
-        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
-        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
-        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
-    </div>
-</div>
-
-    </div>
-
-    <!-- Actions Right -->
-    
-    <div class="dropdown pull-right">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
-        </a>
-        <div class="dropdown-menu font-settings dropdown-left">
-            <div class="dropdown-caret">
-                <span class="caret-outer"></span>
-                <span class="caret-inner"></span>
-            </div>
-            <div class="buttons">
-                <button type="button" data-sharing="twitter" class="button">Twitter</button>
-                <button type="button" data-sharing="google-plus" class="button">Google</button>
-                <button type="button" data-sharing="facebook" class="button">Facebook</button>
-                <button type="button" data-sharing="weibo" class="button">Weibo</button>
-                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
-            </div>
-        </div>
-    </div>
-    
-
-    
-    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
-    
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >SystemDocs</a>
-    </h1>
-</div>
-
             <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 20.833333333333332%;min-width: 18.75%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../what_it_is/README.html" title="What it is" class="chapter done new-chapter" data-progress="1" style="left: 2.0833333333333335%;"></a>
+    
+        <a href="../what_it_is/data_on_the_safe_network.html" title="Data on the SAFE Network" class="chapter done " data-progress="1.1" style="left: 4.166666666666667%;"></a>
+    
+        <a href="../what_it_is/apps_and_programs_on_the_safe_network.html" title="Apps and programs on the SAFE Network" class="chapter done " data-progress="1.2" style="left: 6.25%;"></a>
+    
+        <a href="../what_it_is/costs_of_using_the_safe_network.html" title="Accessing the SAFE Network" class="chapter done " data-progress="1.3" style="left: 8.333333333333334%;"></a>
+    
+        <a href="../what_it_is/vaults.html" title="Vaults" class="chapter done " data-progress="1.4" style="left: 10.416666666666666%;"></a>
+    
+        <a href="../what_it_is/safecoins.html" title="Safecoins" class="chapter done " data-progress="1.5" style="left: 12.5%;"></a>
+    
+        <a href="../what_it_is/wallets.html" title="Wallets" class="chapter done " data-progress="1.6" style="left: 14.583333333333334%;"></a>
+    
+        <a href="../how_it_works/README.html" title="How it works" class="chapter done new-chapter" data-progress="2" style="left: 16.666666666666668%;"></a>
+    
+        <a href="../system_components/self_encryption.html" title="Security - Self encryption" class="chapter done " data-progress="2.1" style="left: 18.75%;"></a>
+    
+        <a href="../system_components/autonomous_network.html" title="Resilience - Autonomous network" class="chapter done " data-progress="2.2" style="left: 20.833333333333332%;"></a>
+    
+        <a href="../system_components/cryptographically_secure.html" title="Cryptographically secure" class="chapter  " data-progress="2.2.1" style="left: 22.916666666666668%;"></a>
+    
+        <a href="../system_components/guaranteed_vault_identification.html" title="Guaranteed Vault identification" class="chapter  " data-progress="2.2.2" style="left: 25%;"></a>
+    
+        <a href="../system_components/accurate_p2p_network_proximity_assessment.html" title="Accurate p2p network proximity assessment" class="chapter  " data-progress="2.2.3" style="left: 27.083333333333332%;"></a>
+    
+        <a href="../system_components/routers_with_connections_both_ways.html" title="Routers with connections both ways" class="chapter  " data-progress="2.2.4" style="left: 29.166666666666668%;"></a>
+    
+        <a href="../system_components/proof_of_resources.html" title="Proof of resource" class="chapter  " data-progress="2.2.5" style="left: 31.25%;"></a>
+    
+        <a href="../system_components/measurement_and_reward.html" title="Measurement and reward" class="chapter  " data-progress="2.2.6" style="left: 33.333333333333336%;"></a>
+    
+        <a href="../system_components/network_churn.html" title="Network churn" class="chapter  " data-progress="2.2.7" style="left: 35.416666666666664%;"></a>
+    
+        <a href="../system_components/remove_administration.html" title="Remove administration" class="chapter  " data-progress="2.2.8" style="left: 37.5%;"></a>
+    
+        <a href="../system_components/self_authentication.html" title="Efficient - Self authentication" class="chapter  " data-progress="2.3" style="left: 39.583333333333336%;"></a>
+    
+        <a href="../how_it_works/vault.html" title="Vaults" class="chapter  " data-progress="2.4" style="left: 41.666666666666664%;"></a>
+    
+        <a href="../how_it_works/safecoin.html" title="Safecoins" class="chapter  " data-progress="2.5" style="left: 43.75%;"></a>
+    
+        <a href="../how_it_works/wallet.html" title="Wallet" class="chapter  " data-progress="2.6" style="left: 45.833333333333336%;"></a>
+    
+        <a href="../attacks/README.html" title="Securing the SAFE Network" class="chapter  " data-progress="2.7" style="left: 47.916666666666664%;"></a>
+    
+        <a href="../attacks/isp_simulates_network.html" title="ISP simulates network" class="chapter  " data-progress="2.7.1" style="left: 50%;"></a>
+    
+        <a href="../attacks/dishonest_vault_attack.html" title="Dishonest Vault attack" class="chapter  " data-progress="2.7.2" style="left: 52.083333333333336%;"></a>
+    
+        <a href="../attacks/birthday_paradoxsybil_attack.html" title="Birthday Paradox/Sybil attack" class="chapter  " data-progress="2.7.3" style="left: 54.166666666666664%;"></a>
+    
+        <a href="../attacks/store_bad_data.html" title="Store bad data" class="chapter  " data-progress="2.7.4" style="left: 56.25%;"></a>
+    
+        <a href="../how_to_use_it/README.html" title="How to use it" class="chapter  new-chapter" data-progress="3" style="left: 58.333333333333336%;"></a>
+    
+        <a href="../how_to_use_it/farmers.html" title="A Farmer" class="chapter  " data-progress="3.1" style="left: 60.416666666666664%;"></a>
+    
+        <a href="../how_to_use_it/app_devs.html" title="An App Builder" class="chapter  " data-progress="3.2" style="left: 62.5%;"></a>
+    
+        <a href="../how_to_use_it/a_core_developer.html" title="A Core Developer" class="chapter  " data-progress="3.3" style="left: 64.58333333333333%;"></a>
+    
+        <a href="../get_involved/README.html" title="Get involved" class="chapter  new-chapter" data-progress="4" style="left: 66.66666666666667%;"></a>
+    
+        <a href="../detail/README.html" title="Libraries" class="chapter  " data-progress="4.1" style="left: 68.75%;"></a>
+    
+        <a href="../detail/Common.html" title="Common" class="chapter  " data-progress="4.1.1" style="left: 70.83333333333333%;"></a>
+    
+        <a href="../detail/Passport.html" title="Passport" class="chapter  " data-progress="4.1.2" style="left: 72.91666666666667%;"></a>
+    
+        <a href="../detail/RUDP.html" title="RUDP" class="chapter  " data-progress="4.1.3" style="left: 75%;"></a>
+    
+        <a href="../detail/Routing.html" title="Routing" class="chapter  " data-progress="4.1.4" style="left: 77.08333333333333%;"></a>
+    
+        <a href="../detail/Encrypt.html" title="Encrypt" class="chapter  " data-progress="4.1.5" style="left: 79.16666666666667%;"></a>
+    
+        <a href="../detail/Drive.html" title="Drive" class="chapter  " data-progress="4.1.6" style="left: 81.25%;"></a>
+    
+        <a href="../detail/Network-Filesystem.html" title="Network Filesystem" class="chapter  " data-progress="4.1.7" style="left: 83.33333333333333%;"></a>
+    
+        <a href="../detail/Vault-Manager.html" title="Vault Manager" class="chapter  " data-progress="4.1.8" style="left: 85.41666666666667%;"></a>
+    
+        <a href="../detail/Vault.html" title="Vault" class="chapter  " data-progress="4.1.9" style="left: 87.5%;"></a>
+    
+        <a href="../faqs/README.html" title="FAQs" class="chapter  new-chapter" data-progress="5" style="left: 89.58333333333333%;"></a>
+    
+        <a href="../faqs/general.html" title="General" class="chapter  " data-progress="5.1" style="left: 91.66666666666667%;"></a>
+    
+        <a href="../faqs/infrastructure.html" title="Infrastructure" class="chapter  " data-progress="5.1.1" style="left: 93.75%;"></a>
+    
+        <a href="../faqs/the_safe_network.html" title="The SAFE Network" class="chapter  " data-progress="5.1.2" style="left: 95.83333333333333%;"></a>
+    
+        <a href="../faqs/developers.html" title="Developers" class="chapter  " data-progress="5.2" style="left: 97.91666666666667%;"></a>
+    
+        <a href="../faqs/safecoin.html" title="Safecoins" class="chapter  " data-progress="5.3" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
                 <div class="page-inner">
                 
-                
-                    <section class="normal" id="section-gitbook_39">
+                    <section class="normal" id="section-gitbook_40">
                     
-                        <h1 id="resilience---autonomous-network">Resilience - Autonomous network</h1>
+                        <h1 id="resilience-autonomous-network">Resilience - Autonomous network</h1>
 <p>The SAFE Network is a resilient and autonomous network. There are many factors that have an impact on a network&#39;s performance and its ability to adapt to a changing environment. These factors have to be assessed and handled without the intervention of humans or large server systems.</p>
 <p>The requirements of the resilient SAFE Network are as follows:</p>
 <ul>
@@ -995,7 +1107,6 @@
                     
                     </section>
                 
-                
                 </div>
             </div>
         </div>
@@ -1010,6 +1121,7 @@
 </div>
 
         
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
 <script src="../gitbook/app.js"></script>
 
     
@@ -1021,7 +1133,7 @@
     
 
     
-    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     
@@ -1030,7 +1142,7 @@
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"disqus":{"shortName":"systemdocs"},"ga":{"token":"UA-32549768-3","configuration":"auto"}};
+    var config = {"disqus":{"shortName":"systemdocs"},"ga":{"token":"UA-32549768-3","configuration":"auto"}};
     gitbook.start(config);
 });
 </script>
