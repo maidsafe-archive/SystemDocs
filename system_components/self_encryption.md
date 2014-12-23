@@ -9,7 +9,7 @@ Each chunk is then encrypted to create random, non-repeating data. Finally, comb
 
 The data map, with hashes before and after encryption, is used when retrieving and decoding the user's data, as the encryption process is non reversible.
 
-The SAFE Network uses [data deduplication](http://en.wikipedia.org/wiki/Data_deduplication) to ensure that space is used efficiently when storing multiple copies of data which have been uniquely encrypted. The network is able to distinguish identical pieces of data by comparing the hashes of each chunk.
+The SAFE Network uses [data deduplication](http://en.wikipedia.org/wiki/Data_deduplication) to ensure that space is used efficiently when storing multiple copies of data which have been uniquely encrypted. The network is able to distinguish identical pieces of data by comparing the hashes of each chunk. As is described in [2.2.2](http://maidsafe.net/SystemDocs/system_components/guaranteed_vault_identification.html), vaults also use hashes to identify themselves.
 
 [Click here to see a video explaining the self encryption process](https://www.youtube.com/watch?v=Jnvwv4z17b4)
 
