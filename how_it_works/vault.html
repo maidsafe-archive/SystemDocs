@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="maidsafe/SystemDocs" data-level="2.4" data-basepath=".." data-revision="1419353967898">
+    <div class="book" data-github="maidsafe/SystemDocs" data-level="2.4" data-basepath=".." data-revision="1419941427324">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -1110,12 +1110,12 @@ The Vault manager keeps the software updated and the Vault running; restarting i
 The Transaction manager helps to manage safecoin tranfers.</li>
 </ul>
 <h2 id="data-on-the-safe-network">Data on the SAFE Network</h2>
-<p>When a file is encrypted and broken up into chunks as part of the self authentication process it is passed to Client managers.</p>
-<p>The Client managers then pass the chunks to the Data managers who the distribute the chunks around at least another three Data holders.</p>
+<p>When a file is encrypted and broken up into chunks as part of the self authentication process it is passed to a close group of Client managers. This close group is selected at random by the network and at least twenty eight of the thirty two Client managers much reach consensus before any network operations are carried out.</p>
+<p>The Client managers then pass the chunks to thirty two Data managers who the distribute the chunks around thirty two Data holders.</p>
 <p>The Data holders are constantly checked by the Data holder managers.</p>
 <p>If a Data holder manager reports that a Data holder has gone offline, the Data manager decides, based on rankings assigned to Vaults, into which other Vault to put the chunk of data.</p>
 <p>This way the chunks of data from the original file are constantly being monitored and supported to ensure the original data can be accessed and decrypted by the original user.</p>
-<p>Any movement of data chunks can only be made if there is a consensus from the surrounding Vaults. The Vaults cannot act in isolation.</p>
+<p>Any movement of data chunks can only be made if there is a consensus (28 of 32) from the surrounding Vaults. The Vaults cannot act in isolation.</p>
 <p>Finally, to ensure security and resilience, Vaults are non-geographically located using an exclusive OR (XOR) function.</p>
 <p><a href="https://www.youtube.com/watch?v=txvKSeCaEP0" target="_blank">Click here to see a short video on how Vaults work</a></p>
 
