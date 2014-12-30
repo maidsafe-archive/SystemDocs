@@ -21,9 +21,9 @@ The Vault manager keeps the software updated and the Vault running; restarting i
 The Transaction manager helps to manage safecoin tranfers.
 
 ## Data on the SAFE Network
-When a file is encrypted and broken up into chunks as part of the self authentication process it is passed to Client managers.
+When a file is encrypted and broken up into chunks as part of the self authentication process it is passed to a close group of Client managers. This close group is selected at random by the network and at least twenty eight of the thirty two Client managers much reach consensus before any network operations are carried out.
 
-The Client managers then pass the chunks to the Data managers who the distribute the chunks around at least another three Data holders.
+The Client managers then pass the chunks to thirty two Data managers who the distribute the chunks around thirty two Data holders.
 
 The Data holders are constantly checked by the Data holder managers.
 
@@ -31,7 +31,7 @@ If a Data holder manager reports that a Data holder has gone offline, the Data m
 
 This way the chunks of data from the original file are constantly being monitored and supported to ensure the original data can be accessed and decrypted by the original user.
 
-Any movement of data chunks can only be made if there is a consensus from the surrounding Vaults. The Vaults cannot act in isolation.
+Any movement of data chunks can only be made if there is a consensus (28 of 32) from the surrounding Vaults. The Vaults cannot act in isolation.
 
 
 Finally, to ensure security and resilience, Vaults are non-geographically located using an exclusive OR (XOR) function.

@@ -7,6 +7,6 @@ Vaults can also have a Transaction manager or Transaction validator persona. The
 
 Vaults know nothing of the data they have been asked to store (it can only be decrypted by the client) and because the data is only a small chunk, it is not possible to decipher what the original source data was, for example, a document or communications.
 
-For every Vault that holds data there are at least another three more Vaults holding the same data. This means that if a Vault goes offline or a data chunk becomes corrupted, that data is not lost. Each Vault automatically finds another Vault to store the data.
+For every Vault that holds data there are another thirty one Vaults holding the same data. This means that if a Vault goes offline or a data chunk becomes corrupted, that data is not lost. Each Vault automatically finds another Vault to store the data.
 
 Vaults are not visible to the users of the SAFE Network. Instead the user only sees a virtual mounted drive on their computer. With the Vaults constantly talking to, and monitoring each other, a user accesses data instantaneously from the mounted drive.
