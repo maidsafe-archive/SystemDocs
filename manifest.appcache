@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Revision 1420797867272
+# Revision 1420798687862
 
 CACHE:
 get_involved/README.html
@@ -30,6 +30,7 @@ how_it_works/vault.html
 how_it_works/wallet.html
 how_to_use_it/README.html
 how_to_use_it/a_core_developer.html
+how_to_use_it/an_end_user.html
 how_to_use_it/app_devs.html
 how_to_use_it/farmers.html
 system_components/network_churn.html
@@ -82,8 +83,8 @@ gitbook/jsrepl/sandbox.js
 gitbook/print.css
 gitbook/style.css
 gitbook/plugins/gitbook-plugin-disqus/plugin.js
-gitbook/plugins/gitbook-plugin-ga/plugin.js
 gitbook/plugins/gitbook-plugin-mathjax/plugin.js
+gitbook/plugins/gitbook-plugin-ga/plugin.js
 
 NETWORK:
 *
