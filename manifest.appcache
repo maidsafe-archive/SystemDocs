@@ -1,12 +1,11 @@
 CACHE MANIFEST
-# Revision 1419955614707
+# Revision 1420797867272
 
 CACHE:
-index.html
 get_involved/README.html
 attacks/README.html
-attacks/dishonest_vault_attack.html
 attacks/birthday_paradoxsybil_attack.html
+attacks/dishonest_vault_attack.html
 attacks/isp_simulates_network.html
 attacks/store_bad_data.html
 detail/README.html
@@ -51,6 +50,7 @@ what_it_is/data_on_the_safe_network.html
 what_it_is/safecoins.html
 what_it_is/vaults.html
 what_it_is/wallets.html
+index.html
 gitbook/app.js
 gitbook/fonts/fontawesome/FontAwesome.otf
 gitbook/fonts/fontawesome/fontawesome-webfont.eot
