@@ -1,6 +1,6 @@
 # SAFE Network description
 
-This book is written for anyone who wants to know more about the **SAFE (Secure Access For Everyone) Network** from MaidSafe. The book explains the details and benefits of using the SAFE Network. The following areas are covered:-
+This book is written for anyone who wants to know more about the **SAFE (Secure Access For Everyone) Network** from MaidSafe. The book explains the details and benefits of using the SAFE Network. The following areas are covered:
 
 * **What it is**<br />
 Provides an overview of the components that make up the SAFE Network.
