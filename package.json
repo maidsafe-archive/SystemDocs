@@ -16,7 +16,7 @@
     "grunt-contrib-clean": "latest",
     "gitbook-plugin-disqus": "latest",
     "gitbook-plugin-ga": "latest",
-    "gitbook-plugin-customtheme": "latest"
+    "gitbook-plugin-customtheme": "0.1.1"
   },
   "peerDependencies": {
     "grunt": "~0.4.1"
