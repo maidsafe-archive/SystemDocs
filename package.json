@@ -14,9 +14,9 @@
     "grunt-gitbook": "latest",
     "grunt-gh-pages": "latest",
     "grunt-contrib-clean": "latest",
-    "grunt-string-replace":"latest",
     "gitbook-plugin-disqus": "latest",
-    "gitbook-plugin-ga": "latest"
+    "gitbook-plugin-ga": "latest",
+    "gitbook-plugin-customtheme": "0.1.1"
   },
   "peerDependencies": {
     "grunt": "~0.4.1"
