@@ -6,8 +6,7 @@
     "githubHost": "https://github.com/",
     "plugins": [
         "disqus",
-        "ga",
-        "customtheme"
+        "ga"
     ],
     "pluginsConfig": {
         "disqus": {
@@ -15,11 +14,6 @@
         },
         "ga": {
             "token": "UA-32549768-3"
-        },
-        "customtheme": {
-            "css": [
-                "../custom/scroll-fix.css"
-            ]
         }
     },
     "links": {
