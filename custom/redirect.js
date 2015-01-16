@@ -1,4 +1,4 @@
-var path = window.location.pathname.toLowerCase().split('/systemdocs/')[1];
+var path = window.location.pathname.split(/SystemDocs/i)[1];
 if (path) {
  path = 'content/' + path;
 }
