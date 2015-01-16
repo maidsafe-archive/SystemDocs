@@ -30,7 +30,7 @@
        * [Store bad data](attacks/store_bad_data.md)
 * [How to use it](how_to_use_it/README.md)
    * [A Farmer](how_to_use_it/farmers.md)
-   * [An End User](how_to_use_it/an_end_user)
+   * [An End User](how_to_use_it/an_end_user.md)
    * [An App Builder](how_to_use_it/app_devs.md)
    * [A Core Developer](how_to_use_it/a_core_developer.md)
 * [Get involved](get_involved/README.md)
