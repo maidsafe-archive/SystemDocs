@@ -1,0 +1,49 @@
+{
+  "name": "gitbook-plugin-customtheme",
+  "version": "0.1.1",
+  "description": "Gitbook plugin for custom theming integration",
+  "main": "index.js",
+  "engines": {
+    "gitbook": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krishnaIndia/gitbook-plugin-customtheme.git"
+  },
+  "keywords": [
+    "Gitbook",
+    "plugin",
+    "custom theme"
+  ],
+  "author": {
+    "name": "Krishna"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krishnaIndia/gitbook-plugin-customtheme/issues"
+  },
+  "homepage": "https://github.com/krishnaIndia/gitbook-plugin-customtheme",
+  "_id": "gitbook-plugin-customtheme@0.1.1",
+  "dist": {
+    "shasum": "de63f5cc355ece1e94b6b4d21c27373023616c04",
+    "tarball": "http://registry.npmjs.org/gitbook-plugin-customtheme/-/gitbook-plugin-customtheme-0.1.1.tgz"
+  },
+  "_from": "gitbook-plugin-customtheme@latest",
+  "_npmVersion": "1.4.3",
+  "_npmUser": {
+    "name": "wallprodigy",
+    "email": "krishnaof1988@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "wallprodigy",
+      "email": "krishnaof1988@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_shasum": "de63f5cc355ece1e94b6b4d21c27373023616c04",
+  "_resolved": "https://registry.npmjs.org/gitbook-plugin-customtheme/-/gitbook-plugin-customtheme-0.1.1.tgz"
+}
