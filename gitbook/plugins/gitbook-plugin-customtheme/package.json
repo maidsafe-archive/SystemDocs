@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-customtheme",
-  "version": "0.1.1",
+  "version": "0.1.9",
   "description": "Gitbook plugin for custom theming integration",
   "main": "index.js",
   "engines": {
@@ -26,10 +26,10 @@
     "url": "https://github.com/krishnaIndia/gitbook-plugin-customtheme/issues"
   },
   "homepage": "https://github.com/krishnaIndia/gitbook-plugin-customtheme",
-  "_id": "gitbook-plugin-customtheme@0.1.1",
+  "_id": "gitbook-plugin-customtheme@0.1.9",
   "dist": {
-    "shasum": "de63f5cc355ece1e94b6b4d21c27373023616c04",
-    "tarball": "http://registry.npmjs.org/gitbook-plugin-customtheme/-/gitbook-plugin-customtheme-0.1.1.tgz"
+    "shasum": "a67f10ed6f842532231eb419afab9f5a4500203c",
+    "tarball": "http://registry.npmjs.org/gitbook-plugin-customtheme/-/gitbook-plugin-customtheme-0.1.9.tgz"
   },
   "_from": "gitbook-plugin-customtheme@latest",
   "_npmVersion": "1.4.3",
@@ -44,6 +44,6 @@
     }
   ],
   "directories": {},
-  "_shasum": "de63f5cc355ece1e94b6b4d21c27373023616c04",
-  "_resolved": "https://registry.npmjs.org/gitbook-plugin-customtheme/-/gitbook-plugin-customtheme-0.1.1.tgz"
+  "_shasum": "a67f10ed6f842532231eb419afab9f5a4500203c",
+  "_resolved": "https://registry.npmjs.org/gitbook-plugin-customtheme/-/gitbook-plugin-customtheme-0.1.9.tgz"
 }

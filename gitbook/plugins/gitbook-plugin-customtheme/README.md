@@ -1,7 +1,7 @@
 # gitbook-plugin-customtheme
 
-Custom theme plugin enables to inject css and js into the html body of the gitbook. Thus custom Styling or behaviour to the
-gitbook can be integrated by passing the styles along with configurations.
+Custom theme plugin enables to inject css and js into the html body of the gitbook. Thus custom Styling or behaviour
+to the gitbook can be integrated by passing the styles along with configurations.
 
 # Usage Example
 
@@ -15,12 +15,9 @@ gitbook can be integrated by passing the styles along with configurations.
 
          "pluginsConfig": {
             "customtheme": {
-              "css": ['../custom/css/app.css'], // custom is a folder on the root level
-              "js": ['../custom/js/app.js'],
+              "css": ['custom/css/app.css'], // custom is a folder on the root level
+              "js": ['custom/js/app.js']
             }
          }
 
    Pass the list of files to be added on to the body of the gitbook in the configuration section.
-
-Note: Only css and js supported
-
