@@ -23,11 +23,11 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('publish', [
+  /*grunt.registerTask('publish', [
     'gitbook',
     'gh-pages',
     'clean'
-  ]);
+  ]);*/
 
   grunt.registerTask('default', [
     'gitbook'
