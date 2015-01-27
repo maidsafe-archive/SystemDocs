@@ -40,3 +40,9 @@ Any movement of data chunks can only be made if there is a consensus (28 of 32) 
 All communications on the SAFE Network are carried out through close groups of 32 nodes. This prevents a rogue node(s) from behaving maliciously. It is not possible for a user to choose their own node ID, or to decide where their data is stored, this is calculated by the network. Every time a node disconnects from the network and reconnects, it is assigned a totally new and random ID.
 
 [Click here to see a short video on how Vaults work](https://www.youtube.com/watch?v=txvKSeCaEP0)
+
+** Cryptographic Signatures**<br/>
+When End Users are making changes to existing data, such as changing the content of a file, or sending another End User safecoin, the network does not use group consensus as this layer of complexity and increased network load is not required. 
+
+Cryptographic signatures mathematically validate the owner of any piece of data and can prove this beyond any doubt, provided the End User has kept their private key safe. If the End User is the owner of any piece of data and can prove this, by digitally signing their request with their private key, the network permits them access to change the data. 
+
