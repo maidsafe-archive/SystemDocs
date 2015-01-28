@@ -15,6 +15,37 @@ Safecoins are used to access services on the SAFE Network. This encourages const
 
 ![](safecoin resources.png)
 
+## Farming rates 
+
+Farming is a process whereby users provide resource
+(storage space, CPU and bandwidth) to the network.
+
+As figure 1 demonstrates, the safecoin earning algorithm is based on a Sigmoid curve,
+in that all vaults earn, slowly at first and the rate
+increases as the farmer stores up to the network
+average. The earning rate also takes into account
+the rank of the vault, a process whereby the network
+scores the usefulness of each node from 0
+(being the worst) to 1 (the best). The safecoin
+farming rate is ultimately the result of the network
+rate, a balance of the demand and supply
+on the network, multiplied by the vault rank.
+The network rate will start to level at 20% above
+average, thus discouraging massive vaults which
+would bring centralisation to the network’s farming
+process. Safecoin is allocated to them by the
+network and is paid to the successful node as
+data is retrieved from it (GETS), as opposed to
+when it is stored (PUTS).
+
+![](safecoin farming speed.png)
+
+The network automatically increases farming
+rewards as space is required and reduces them
+as space becomes abundant. Data is evenly distributed on the network and therefore farmers
+looking to maximise their earnings may do so
+by running several average performance nodes
+rather than one high specification node.
 
 ## Safecoin transfer mechanism
 On the SAFE Network, Vaults assume various [personas or roles](http://maidsafe.net/SystemDocs/what_it_is/vaults.html), depending on the requests they receive.  For example, the Data manager persona is responsible for managing the integrity and availability of a given piece of data on the network.
