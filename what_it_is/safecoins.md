@@ -7,20 +7,18 @@ While consuming data is free of charge, many of the services will require safeco
 
 Safecoin can be obtained through (a) farming,(b) assisting with the maintenance of the underlying code, (c) creating applications or (d) by purchasing them.
 
-Farming is a process whereby users provide resource
+a) Farming is a process whereby users provide resource
 (storage space, CPU and bandwidth) to the network. When each user creates their credentials, they will set up a safecoin wallet via their SAFE Network client and this wallet identity
 will be cryptographically linked to their account. The network will allocate safecoins to a user based on how much resource they provide.
 
-It is also possible for core developers to earn safecoin
+b) It is also possible for core developers to earn safecoin
 by fixing bugs and developing new features
 for the underlying network.
 
-People or companies building applications on the SAFE Network will also be able to earn safecoins. As they create and release new applications, they will code their SAFE wallet address into their application. Based on how much the
+c) People or companies building applications on the SAFE Network will also be able to earn safecoins. As they create and release new applications, they will code their SAFE wallet address into their application. Based on how much the
 application is used, the network will pay safecoins to the safecoin wallet address of the app creator. This provides a built in revenue stream for app developers, one that is directly proportional to how successful their application is.
 
-It will also be possible to buy safecoin. It is anticipated
-that these purchases will be made from decentralised peer to peer exchanges that will be built by third party developers. These exchanges will serve as platforms, enabling a buyer and
-seller to trade directly
+d) It will also be possible to buy safecoin. It is anticipated that these purchases will be made from decentralised peer to peer exchanges that will be built by third party developers. These exchanges will serve as platforms, enabling a buyer and seller to trade directly.
 
 Transfers of safecoins between users is managed automatically by Transaction managers. The Transaction managers are Vault personas whose priority is to ensure that safecoins are digitally signed and are never deleted or corrupted.
 
