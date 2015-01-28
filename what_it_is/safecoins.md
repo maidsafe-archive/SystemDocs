@@ -1,5 +1,9 @@
 # Safecoins
-Safecoins are the currency of the SAFE Network. They are a token-based scheme that is only used inside the SAFE Network. Safecoins are used for buying additional resources, for example, storage space, or access to network applications. All safecoins are saved in a user's wallet.
+Safecoins are the currency of the SAFE Network. They are a token-based scheme that is only used inside the SAFE Network.
+Safecoin's distribution is handled entirely by the network on
+a per use basis and approximately 4.3 billion coins will be produced during the network's life.
+
+While consuming data in free of charge, many of the services will require safecoins, such as buying additional storage space, or access to network applications. All safecoins are saved in a user's wallet.
 
 When a user provides space for the SAFE Network that is greater than the amount they use, they start to earn safecoins. This is called farming and a user who farms is called a Farmer. With safecoins, a user can buy more storage, exchange them for network services, reward content creators, or exchange them for another currency (or cash) using a SAFE Network exchange.
 
