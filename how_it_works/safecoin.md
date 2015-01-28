@@ -48,31 +48,25 @@ by running several average performance nodes
 rather than one high specification node.
 
 ## Safecoin transfer mechanism
-On the SAFE Network, Vaults assume various [personas or roles](http://maidsafe.net/SystemDocs/what_it_is/vaults.html), depending on the requests they receive.  For example, the Data manager persona is responsible for managing the integrity and availability of a given piece of data on the network.
+Unlike bitcoin, the SAFE Network does not use
+a blockchain to manage ownership of coins. Conversely,
+the SAFE Network’s Transaction Managers
+are unchained, meaning that only the past
+and current coin owner is known. It is helpful to
+think of safecoin as digital cash in this respect. 
 
-The Transaction manager, another Vault persona, handles all the safecoin transactions. The Transaction manager is responsible for the logic that enables transactions to be completed. A Transaction manager group is a trusted group of Vaults which are closest to any given transaction identity.
+One of the major problems any virtual currency
+or coin must overcome is the ability
+to avoid double spending. Within the SAFE
+Network, transfer of data, safecoin included,
+is atomic, using a cryptographic signature to
+transfer ownership.
 
-The transaction is open and is read-only to public. This allows an upper layer Third Party Transaction validators to validate that the transaction is happening or completed.
+Safecoin, the currency of the SAFE network, is generated in response to network use. As data is stored, or as apps are created and used, the network generates safecoins, each with their own  unique ID. As these coins are divisible, each new denomination is allocated a new and completely unique ID.
 
-[Click here to see a video that explains what happens when someone makes a safecoin transaction](https://www.youtube.com/watch?v=Bs95jLq_cy0)
+As the coins are allocated to users by the network, only that specific user can transfer ownership of that coin by cryptographic signature. For illustrative purposes, when Alice pays a coin to Bob via the client, she submits a payment request. The Transaction Managers check that Alice is the current owner of the coin by retrieving her public key and confirming that it has been signed by the correct and corresponding private key. The Transaction Managers will only accept a signed message from the existing owner. This proves beyond doubt that Alice is the owner of the coin and the ownership of that specific coin is then transferred to Bob and now only Bob is able to transfer that coin to another user.This process is highlighted in figure 3.
 
-##An example safecoin transaction
-The following is an example of a transfer of credit from **Alice** to **Bob**.
-
-1.	**Alice** contacts the SAFE Network using a transfer instruction to **Bob**.
-
-2.	When **Alice's** Transaction manager group receives the instruction it debits the amount from **Alice's** wallet.
-
-3. **Alice's** Transaction manager group generates a transaction.<br/>
-At the same time the transaction is highlighted to Third Party Transaction validators.
-
-4.	**Bob** is notified that a transaction is taking place and acknowledges it.
-
-5.	**Bob's** Transaction manager group credits **Bob's** wallet.
-
-6.	**Bob's** Transaction manager group updates the transaction to say the transaction has been completed.<br/>
-At the same time the transaction is validated by the Third Party Transaction validators.
+![](safecoin transfer mech.png)
 
 
-![Transfer Mechanism](https://raw.githubusercontent.com/maidsafe/Whitepapers/master/resources/transfer_mechanism_diagram.png)
 
