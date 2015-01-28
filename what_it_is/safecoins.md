@@ -18,7 +18,9 @@ for the underlying network.
 People or companies building applications on the SAFE Network will also be able to earn safecoins. As they create and release new applications, they will code their SAFE wallet address into their application. Based on how much the
 application is used, the network will pay safecoins to the safecoin wallet address of the app creator. This provides a built in revenue stream for app developers, one that is directly proportional to how successful their application is.
 
-
+It will also be possible to buy safecoin. It is anticipated
+that these purchases will be made from decentralised peer to peer exchanges that will be built by third party developers. These exchanges will serve as platforms, enabling a buyer and
+seller to trade directly
 
 Transfers of safecoins between users is managed automatically by Transaction managers. The Transaction managers are Vault personas whose priority is to ensure that safecoins are digitally signed and are never deleted or corrupted.
 
@@ -26,4 +28,6 @@ As there can be multiple Transaction managers coordinating different safecoin tr
 
 A safecoin is a piece of digital information. The only historical data held with a safecoin is the current and previous owner's details. These details are used for verification purposes. This means that safecoins can be thought of as digital cash, leaving no audit trail.
 
-As the network grows, the amount of available safecoins also grows. This means that the amount of safecoins available is directly linked to the amount of resource available in the SAFE Network. As a result the value of the safecoin is maintained and is relative to the network size.
+
+
+
