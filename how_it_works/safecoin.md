@@ -1,10 +1,15 @@
 #Safecoins
 
-Safecoins can be earned, traded or purchased. The value of safecoins is determined by the demand for them.
+Safecoins can be earned, traded or purchased. The value of safecoins will be determined by market, through the combination of supply and demand. 
 
-Safecoins are used to access services on the SAFE Network. This encourages constant reuse which results in increasing demand for a finite resource. As a result, the value of the safecoins increases over time.
+## Market price
+The number of safecoins in circulation will increase based on network use. Almost all early safecoin holders will be farmers with this supply of resource creating both liquidity
+and distribution of wealth. It is anticipated that almost all users will possess at least a few safecoins in their wallet. 
 
-While the coins themselves increase in value, the amount of network services (resources) they buy also increases.
+Users may trade their safecoin for services on the network, or for cash (or another digital currency) using an exchange.
+The ratio of safecoin being saved (left in new wallets) versus the ratio being issued to Farmers will produce a price point. This point will be the market value of safecoin
+
+Safecoins are used to access services on the SAFE Network. This encourages constant reuse which results in increasing demand for a finite resource. As a result, the value of the safecoins increases over time. While the coins themselves increase in value, the amount of network services (resources) they buy also increases.
 
 
 ## Safecoin transfer mechanism
