@@ -9,7 +9,6 @@ Here are some examples of the type of apps that can be used on the SAFE Network.
 * Web sites
 * VoIP
 * Social networks
-* Document processing of any data provided by any program
 * Distributed databases
 * Document or contract signing
 * Any existing service that runs on the Internet
