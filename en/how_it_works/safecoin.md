@@ -20,7 +20,7 @@ Safecoins are used to access services on the SAFE Network. This encourages const
 Farming is a process whereby users provide resource
 (storage space, CPU and bandwidth) to the network.
 
-As figure 1 demonstrates, the safecoin earning algorithm is based on a Sigmoid curve,
+As figure 2 demonstrates, the safecoin earning algorithm is based on a Sigmoid curve,
 in that all vaults earn, slowly at first and the rate
 increases as the farmer stores up to the network
 average. The earning rate also takes into account
