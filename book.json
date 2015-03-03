@@ -18,7 +18,7 @@
         },
         "customtheme": {
             "css": [
-                "../../custom/scroll-fix.css"
+                "custom/scroll-fix.css"
             ]
         }
     },
