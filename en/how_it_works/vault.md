@@ -6,19 +6,17 @@ The Vault on the user's computer can not be seen by the user. Instead the user s
 When a user creates or alters files on their virtual drive, the file goes through several processes to ensure the file is secure and makes best use of the SAFE Network resources.
 
 ## Vault persona
-Vaults can have a different data handling persona. Each persona serves a different role in the SAFE Network.
+Vaults have different persona and each persona serves a different role in the functioning of the network. These persona can be organised into 4 main groups:
 * **Client managers**<br/>
-Client manager Vaults receives the chunks of self encrypted data from the user's Vault.
-* **Data managers**<br/>
-These Vaults manage the chunks of data from the Client manager Vaults. They also monitor the status of the SAFE Network.
-* **Data holders**<br/>
-Data holder Vaults are used to hold the chunks of data.
-* **Data holder managers**<br/>
-Data holder managers monitor the Data holder Vaults. They report to the Data manager if any of the chunks are corrupted or changed. They also report when a Data holder has gone offline.
-* **Vault managers**<br/>
-The Vault manager keeps the software updated and the Vault running; restarting it on any error.
-* **Transaction managers**<br/>
-The Transaction manager helps to manage safecoin tranfers.
+This is a group of persona of routing nodes closest to a client node. They are aware of their role as they have a connection that is not a routing table node, it therefore must be a client. Examples of Client Manager types are MaidManager (the group that looks after a Maid account) and MpidManager, the group that looks after public name and public shares/drive for public clients.
+* **NAE manager**<br/>
+Network Addressable Element manager groups. The NAE Managers understand their function as they are close to the address that equals the name of the network addressable element (not a Network Addressable Node, but data or function elements). Examples of these are DataManagers (look after data pointers) and VersionManagers (responsible for directory versions and any other mutating directly addressable node).
+* **Node manager**<br/>
+Node Manager – This is the group surrounding a node and they understand that they are Node Managers as the node appears in their routing table. PmidManagers (the group looking after nodes holding data) represent an example of a Node Manager type.
+* **Managed node**<br/>
+This is a routing node in a group of Node Managers such as a PmidNode (a node holding a data element).
+
+It is vital that these persona groups obtain authority to act in these roles, otherwise a node could claim to belong to any group and perform any function. This authority is gained by each persona sending their persona type in a message to the next group. The next group then accumulates the results, checking and validating the signatures of the entire group.
 
 ## Data on the SAFE Network
 
