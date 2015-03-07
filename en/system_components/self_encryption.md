@@ -9,7 +9,7 @@ Each chunk is then broken up and key value pairs are added to a table on the use
 This entire process takes place on the client so that data is always encrypted on the network and only users with the correct credentials can decrypt the file. This also means that passwords can never be stolen from the network as they never pass beyond the users computer.
 For additional security the data map is also run through the self encryption process.
 
-The SAFE Network uses [data deduplication](http://en.wikipedia.org/wiki/Data_deduplication) to ensure that space is used efficiently when storing multiple copies of data which have been uniquely encrypted. The network is able to distinguish identical pieces of data by comparing the hashes of each chunk. As is described in [2.2.2](http://maidsafe.net/SystemDocs/system_components/guaranteed_vault_identification.html), vaults also use hashes to identify themselves.
+The SAFE Network uses [data deduplication](http://en.wikipedia.org/wiki/Data_deduplication) to ensure that space is used efficiently when storing multiple copies of data which have been uniquely encrypted. The network is able to distinguish identical pieces of data by comparing the hashes of each chunk. As is described in [2.2.2](./guaranteed_vault_identification.html), vaults also use hashes to identify themselves.
 
 [Click here to see a video explaining the self encryption process](https://www.youtube.com/watch?v=Jnvwv4z17b4)
 
