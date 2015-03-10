@@ -19,7 +19,10 @@
         "customtheme": {
             "css": [
                 "custom/scroll-fix.css"
-            ]
+            ],
+            "options": {
+                "ignoreChooseLang": true
+            }
         }
     },
     "links": {
