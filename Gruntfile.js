@@ -60,7 +60,11 @@ module.exports = function (grunt) {
   ]);*/
 
   grunt.registerTask('default', [
-    'gitbook',
+    'gitbook'
+  ]);
+
+  grunt.registerTask('test', [
+    'default',
     'connect:serve',
     'link-checker'
   ]);
