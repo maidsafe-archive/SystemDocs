@@ -25,7 +25,7 @@ The GitHub repository that provides details of the open source libraries.
 * [Developer task list](https://maidsafe.atlassian.net/secure/Dashboard.jspa)<br />
 The current list of bugs and tasks that are part of the SAFE Network development.
 
-* [maidsafe.org](https://www.maidsafe.org/)<br />
+* [forum.safenetwork.io](https://forum.safenetwork.io/)<br />
 A community run resource for questions, debate and research into all aspects of the SAFE Network.
 
 ###White papers
