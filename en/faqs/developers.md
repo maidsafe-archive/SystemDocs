@@ -6,4 +6,4 @@ You can get started right now by going to the [GitHub Wiki](https://github.com/m
 
 The [SAFE examples](http://maidsafe.net/maidsafe-examples/) focus on how to use the API project to build apps and explore the different parts of the system. Please note that this work is on-going so be ready for more updates to the examples project.
 
-For support, please go to our [dev mailing list](https://groups.google.com/forum/#!forum/maidsafe-development) or to the community run [forum](https://www.maidsafe.org/).
+For support, please go to our [dev mailing list](https://groups.google.com/forum/#!forum/maidsafe-development) or to the community run [forum](https://forum.safenetwork.io/).
