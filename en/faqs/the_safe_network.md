@@ -54,4 +54,4 @@ Yes, the SAFE Network and client are completely supported cross-platform.
 
 At this point we don’t know what type of equipment will offer the most efficient farming and only through testing of the live network will we know definitively. The farming algorithms within the network are designed to favour small commodity devices to avoid some of the centralising aspects experienced within the Bitcoin mining community.
 
-Farming is discussed quite frequently on our forum [www.maidsafe.org](http://www.maidsafe.org) and many of the community members are experimenting with single board computers that are powerful, yet have very low power consumption, well suited to being left on 24/7.
+Farming is discussed quite frequently on our forum [forum.safenetwork.io](https://forum.safenetwork.io/) and many of the community members are experimenting with single board computers that are powerful, yet have very low power consumption, well suited to being left on 24/7.
