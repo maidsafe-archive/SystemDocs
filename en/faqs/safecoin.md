@@ -6,7 +6,7 @@ Safecoin has value because it has utility. Users can earn safecoin by [farming](
 
 The underlying network also provides safecoin with additional value in a less obvious way, via the transaction mechanism within the network (the SAFE Network’s version of the block chain). Capable of processing millions of transactions per second and able to confirm transactions at network speed, the currency is instantly redeemable, secure and anonymous on wallets that are easy to use and built in to the network. These features are well suited to buying not only network services, but also products being sold on the network by merchants.
 
-For more information about this FAQ, refer to the full answer on [maidsafe.org](https://www.maidsafe.org/t/what-gives-safecoin-value-and-differentiates-it-from-altcoins/411).
+For more information about this FAQ, refer to the full answer on [https://forum.safenetwork.io/](https://forum.safenetwork.io/t/what-gives-safecoin-value-and-differentiates-it-from-altcoins/411).
 
 ### How is safecoin valued?
 
@@ -21,8 +21,6 @@ The ratio of safecoin being saved (left in new wallets) versus the ratio being i
 The volume of supply and demand will grow with the network, which tends to create an increasingly stable currency that increases in value over time. Value grows because it is linked to its usefulness (incentive to hold, which also increases over time), and the increasing number of users of the network (people wanting to hold it).
 
 Over time this virtuous circle becomes stronger (as the volume increases) because the number of users is growing. The incentive to hold and use safecoin will also increase due to the addition of applications and services. Speculation will disrupt this of course, but the network provides a real value anchor that will help to dampen this impact.
-
-For more information about this FAQ, refer to the full answer on [maidsafe.org](https://www.maidsafe.org/t/what-gives-safecoin-value-and-differentiates-it-from-altcoins/411).
 
 ###Where do I trade my MaidSafe coins?
 
