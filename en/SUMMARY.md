@@ -23,7 +23,7 @@
    * [Vaults](how_it_works/vault.md)
    * [Safecoins](how_it_works/safecoin.md)
    * [Wallet](how_it_works/wallet.md)
-   * [Securing the SAFE Network](attacks/README.md)
+   * [Threats to the SAFE Network](attacks/README.md)
        * [ISP simulates network](attacks/isp_simulates_network.md)
        * [Dishonest Vault attack](attacks/dishonest_vault_attack.md)
        * [Birthday Paradox/Sybil attack](attacks/birthday_paradoxsybil_attack.md)
