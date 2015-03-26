@@ -1,4 +1,4 @@
-# Securing the SAFE Network
+# Threats to the SAFE Network
 
 The SAFE Network, like any network that handles data and important information, is open to attack. These attacks could be for malicious reasons or, more typically, for financial gain.
 
