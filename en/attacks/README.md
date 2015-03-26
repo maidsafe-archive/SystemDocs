@@ -6,4 +6,4 @@ If an attacker can access a user's data and even decrypt their files, they could
 
 The SAFE Network has been designed to resist, or completely remove, the potential damage that can be caused by the most common attack methods.
 
-Security improvements to the SAFE Network are constantly being developed and enhanced.
+Security improvements to the SAFE Network are constantly being developed and enhanced..
