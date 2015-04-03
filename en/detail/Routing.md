@@ -113,7 +113,7 @@ In a P2P network, joining and leaving are common events. Peer turnover, often re
 
 ###Matrix Change (Churn Event)
 
-In the routing network, data is usually stored at a logical group ID. This means that data is stored at the nodes which are among the first [Parameters::node_group_size](https://github.com/maidsafe/MaidSafe-Routing/blob/master/src/maidsafe/routing/parameters.cc) closest to a given group ID.
+In the routing network, data is usually stored at a logical group ID. This means that data is stored at the nodes which are among the [Parameters::node_group_size](https://github.com/maidsafe/MaidSafe-Routing/blob/master/src/maidsafe/routing/parameters.cc) closest to a given group ID.
 Any churn in the network may result in moving a node near or far from a group ID in that segment of the network. This means that many of the logical groups reconfigure by having new members in the group and losing some old members of the group.
 
 In event of:
