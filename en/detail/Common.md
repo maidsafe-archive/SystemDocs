@@ -53,9 +53,9 @@ _**Debug helpers**_
 * [Test Runner](https://github.com/maidsafe/MaidSafe/wiki/Running-Tests)
 * [Logging](https://github.com/maidsafe/MaidSafe/wiki/Logging-Options)
 
-## NetWork_Viewer
+_**NetWork Viewer**_
 
-[NetWork Viewer](http://visualiser.maidsafe.net:8080/auth) is a UI tool presented by MaidSafe to visualize the MaidSafe-Routing network. It can help you understanding how the network works and debugging routing algorithms.
+[NetWork Viewer](http://visualiser.maidsafe.net:8080/auth) is a UI tool presented by MaidSafe to visualize the MaidSafe-Routing network. It can aid your understanding of how the network functions while facilitating the debugging of routing algorithms.
 
 
 
