@@ -5,6 +5,6 @@ When a user joins the SAFE Network, they automatically have a wallet. As a rewar
 
 These safecoins can then be used to buy more resources, applications, or traded for other digital currencies or cash through an exchange service.
 
-A user can view the contents of their wallet through the MaidSafe client.
+A user can view the contents of their wallet through the SAFE Network client.
 
 When safecoins are transferred from one wallet to another, the transfer is a process of signing over ownership (with the private key) to the other user. The SAFE Network confirms the transfer via the Transaction managers and coin holders, who all require collaboration and agreement that the transaction is valid.
