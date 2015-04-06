@@ -13,7 +13,7 @@ While it is not possible to deliberately position the malicious Vaults around a 
 
 The SAFE Network requires all requests be processed by at least two groups of Vaults.
 
-A MaidSafe client passes a request to its 4 Data managers, who verify the request based on the client’s signature. The request is then passed to a deterministically selected group of 4 other Vaults which also verify the request based on its signature.
+A SAFE Network client passes a request to its 4 Data managers, who verify the request based on the client’s signature. The request is then passed to a deterministically selected group of 4 other Vaults which also verify the request based on its signature.
 
 By deterministically selecting the second group of Data managers, this attack no longer holds true for the SAFE Network, since it is not possible for the attacker to gain control over a Vault by simply surrounding it.
 
