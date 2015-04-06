@@ -1,6 +1,6 @@
 ## Network Filesystem Overview
 
-The Maidsafe-Network-Filesystem, NFS, is a policy-based library implementing a RESTful API. Specifically, the main NFS class template accepts template parameters, themselves class types, either template or otherwise, that define the network operations put, get, delete and post. The design scales over various parameters and simplifies the logic required to package up messages for distribution, via [Routing](https://github.com/maidsafe/MaidSafe-Routing/wiki), on behalf of a client or [Vault](https://github.com/maidsafe/MaidSafe-Vault/wiki) persona.
+The SAFE-Network-Filesystem, NFS, is a policy-based library implementing a RESTful API. Specifically, the main NFS class template accepts template parameters, themselves class types, either template or otherwise, that define the network operations put, get, delete and post. The design scales over various parameters and simplifies the logic required to package up messages for distribution, via [Routing](https://github.com/maidsafe/MaidSafe-Routing/wiki), on behalf of a client or [Vault](https://github.com/maidsafe/MaidSafe-Vault/wiki) persona.
 
 ### Details
 
