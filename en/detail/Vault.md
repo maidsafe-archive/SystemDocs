@@ -1,8 +1,8 @@
 ## Vault Overview
 
-The MaidSafe Network consists of software processes (nodes), referred to as vaults. These vaults perform many functions on the network and these functional components are referred to as personas. The underlying network, when linked with [MaidSafe-Routing](https://github.com/maidsafe/MaidSafe-Routing/wiki), is an XOR network and as such a node may express closeness or responsibility to any other node or element on the network, if the node is in relative close proximity to the target. In this summary the phrase **NAE** (Network Addressable Element) is used to refer to anything with a network address including data.
+The SAFE Network consists of software processes (nodes), referred to as vaults. These vaults perform many functions on the network and these functional components are referred to as personas. The underlying network, when linked with [Routing](https://github.com/maidsafe/MaidSafe-Routing/wiki), is an XOR network and as such a node may express closeness or responsibility to any other node or element on the network, if the node is in relative close proximity to the target. In this summary the phrase **NAE** (Network Addressable Element) is used to refer to anything with a network address including data.
 
-The vaults rely on [MaidSafe-Routing](https://github.com/maidsafe/MaidSafe-Routing/wiki) to calculate responsibilities for NAE via the relevant [API calls](https://github.com/maidsafe/MaidSafe-Routing/blob/master/include/maidsafe/routing/routing_api.h) such as
+The vaults rely on [Routing](https://github.com/maidsafe/MaidSafe-Routing/wiki) to calculate responsibilities for NAE via the relevant [API calls](https://github.com/maidsafe/MaidSafe-Routing/blob/master/include/maidsafe/routing/routing_api.h) such as
 ```C++
 GroupRangeStatus IsNodeIdInGroupRange(const NodeId& group_id, const NodeId& node_id) const;
 GroupRangeStatus IsNodeIdInGroupRange(const NodeId& group_id) const;
@@ -31,8 +31,8 @@ Churn, duplication of data and ensuring all members of a group agree is handled 
 * =>>>> represents a group message (with callback)
 * => represents a direct message (with callback)
 
-### Maidsafe Identities
-The MaidSafe Network consists of many data types as well as many identity types. These identities are described in [MaidSafe-Passport](https://github.com/maidsafe/MaidSafe-Passport/wiki). The personas are particularly focussed on 4 of these identities and ensures the appropriate entities satisfy the requirements enforced by these identities.
+### SAFE Network Identities
+The SAFE Network consists of many data types as well as many identity types. These identities are described in [Passport](https://github.com/maidsafe/MaidSafe-Passport/wiki). The personas are particularly focussed on 4 of these identities and ensures the appropriate entities satisfy the requirements enforced by these identities.
 
 * MAID (MaidSafe Anonymous ID) - The client identity to manipulate non structured data. A client can have one of these.
 * PMID (Proxy Maidsafe ID) - The client identity to safely store non structured data. A client can have many of these.
@@ -40,7 +40,7 @@ The MaidSafe Network consists of many data types as well as many identity types.
 * MSID (Maidsafe Share ID) - The client identity to manager groups of MPID's to privately share data (structured and non structured). A client can have many of these. This type of identity has no NAE holder for security purposes.
 
 ### Vault Personas
-The personas employed by MaidSafe vaults fall into two distinct categories, namely Data Management and Node Management. These categories define the actions and grouping of the nodes and their knowledge of the surroundings and messages.
+The personas employed by SAFE Network vaults fall into two distinct categories, namely Data Management and Node Management. These categories define the actions and grouping of the nodes and their knowledge of the surroundings and messages.
 * Data Management nodes are responsible for NAE specifically data, usually pointers to data.
 * Node Management personas are responsible for an entity persona (node) and manages the actions and requests by that entity persona.
 
@@ -355,7 +355,7 @@ This database should only hold records while _MpidNode_ is off-line.
 
 # <a id="sync"></a>Synchronisation
 
-The network is in a constant state of flux, with nodes appearing and disappearing continually. This forces a state change mechanism that can recognise which nodes are responsible for what data in real time and recognising churn events near a node. Using [MaidSafe-Routing](https://github.com/maidsafe/MaidSafe-Routing/wiki) the network can detect node changes in a very short time period. Routing also provides a mechanism that can guarantee with great precision which nodes are responsible for which NAE (including the node querying the network).
+The network is in a constant state of flux, with nodes appearing and disappearing continually. This forces a state change mechanism that can recognise which nodes are responsible for what data in real time and recognising churn events near a node. Using [Routing](https://github.com/maidsafe/MaidSafe-Routing/wiki) the network can detect node changes in a very short time period. Routing also provides a mechanism that can guarantee with great precision which nodes are responsible for which NAE (including the node querying the network).
 
 To resolve a data element, whether an `account transfer` or `unresolved action` then the node requires a majority of close nodes to agree on the element. As there can be multiple churn events during a transfer of such data, the node requires to handle this multiple churn event itself. To do this with each churn event the new node and old nodes are handled by checking if the old node had given a data element and replace this node_id with the new node id. If the data element did not contain the new node but should have (i.e. the new node would have been responsible for an unresolved element) then the new node_id is added as having sent the data. To make this a little simpler, all synchronise data has the current node added as having 'seen' the element, this helps with the majority size required. When a node adds itself to unresolved data in this manner it adds itself to the end of the container. This will prevent the node sending this element in a synchronise message.
 
