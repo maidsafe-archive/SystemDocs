@@ -118,7 +118,7 @@ Any churn in the network may result in moving a node near or far from a group ID
 
 In event of:
 
-1. Node(s) disappearing from a logical group : Some of the group member nodes will move far from the group ID and will not remain under [Parameters::node_group_size](https://github.com/maidsafe/MaidSafe-Routing/blob/master/src/maidsafe/routing/parameters.cc) closest to the group ID. These Node(s) will not receive any group message destined to the group ID. These Node(s) will delete data which they are no longer responsible for. 
+1. Node(s) disappearing from a logical group : Some of the group member nodes will move far from the group ID and will [Parameters::node_group_size](https://github.com/maidsafe/MaidSafe-Routing/blob/master/src/maidsafe/routing/parameters.cc) therefore no longer be a part of that close group. These Node(s) will not receive any group message destined to the group ID. These Node(s) will delete data which they are no longer responsible for. 
 2. Node(s) appearing in the logical group : New node(s) appearing closer in the address space to [Parameters::node_group_size](https://github.com/maidsafe/MaidSafe-Routing/blob/master/src/maidsafe/routing/parameters.cc) will replace those from further away. It is the responsibility of other remaining nodes of that group to quickly replicate data to the new node(s).
 
 
