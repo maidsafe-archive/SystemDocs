@@ -12,7 +12,7 @@ Routing offers the following features:
 * Modes of operation
 * Reliable direct and group messaging
 * Proximity evaluation
-* Node identification via PKI provided by MaidSafe-Passport
+* Node identification via PKI provided by Passport library
 * Caching mechanism
 * Churn handling
 * Routing table and group matrix
@@ -41,7 +41,7 @@ The initial setting up of the network, which is called zero state, involves two 
 
 ###NAT Traversal
 
-An objective of Routing has been enabling communication between each pair of nodes in the network, regardless of their network configuration settings. Routing in combination with [MaidSafe-RUDP](https://github.com/maidsafe/MaidSafe-RUDP/wiki) performs [hole punching](http://www.brynosaurus.com/pub/net/p2pnat/) to enable direct connection between each pair of nodes.
+An objective of Routing has been enabling communication between each pair of nodes in the network, regardless of their network configuration settings. Routing in combination with [SAFE Network-RUDP](https://github.com/maidsafe/MaidSafe-RUDP/wiki) performs [hole punching](http://www.brynosaurus.com/pub/net/p2pnat/) to enable direct connection between each pair of nodes.
 Hole punching is achievable as long as both nodes are not behind symmetric routers. If both nodes are behind symmetric routers, routing enables communication between two nodes by choosing a third node acting as proxy between the two nodes behind symmetric routers.
 
 
