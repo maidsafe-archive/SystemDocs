@@ -18,7 +18,7 @@ Two RUDP nodes maintain a psuedo-connection or "managed connection" by continual
 
 For each connection, a node has an `EndpointPair` associated with itself and another for the peer.  The `EndpointPair` contains the "local" endpoint (IP/Port as seen inside or behind the router) and the "external" endpoint (IP/Port as seen outside the router).  External endpoints are preferred, internals are used in case the external fails and the two peers are both behind a router which disallows hairpinning.
 
-A connection cannot be established between two peers which are both behind routers providing [Symmetric NAT](https://en.wikipedia.org/wiki/Network_address_translation#Methods_of_port_translation).  The MaidSafe [Routing](https://github.com/maidsafe/MaidSafe-Routing/wiki) library handles this by providing a proxy node for each such "hidden" node, and as such the RUDP library doesn't attempt to resolve this issue.
+A connection cannot be established between two peers which are both behind routers providing [Symmetric NAT](https://en.wikipedia.org/wiki/Network_address_translation#Methods_of_port_translation).  The SAFE Network [Routing](https://github.com/maidsafe/MaidSafe-Routing/wiki) library handles this by providing a proxy node for each such "hidden" node, and as such the RUDP library doesn't attempt to resolve this issue.
 
 
 ### Details
