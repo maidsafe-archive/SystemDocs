@@ -27,7 +27,7 @@ The benefits of using the SAFE Network are numerous and for end users these are 
 
 ###Where can I download the SAFE Network software?
 
-We plan beta launch at the end of this year/early 2015, at which point users will be able to start providing resource (earning safecoins) to the network and start using SAFE applications.
+We plan beta launch during the course of 2015, at which point users will be able to start providing resource (earning safecoins) to the network and start using SAFE applications.
 
 When the network is launched a simple software download is all you require and we will inform users where to go nearer the time using our forum, blog and social media channels.
 
@@ -45,7 +45,7 @@ The API / libraries are written in C++, however, application developers will not
 Anyone will be able to write their own wrappers to add support for a new language.
 
 
-###Can MaidSafe clients host on different operating systems access the same vaults?
+###Can SAFE Network clients host on different operating systems access the same vaults?
 
 Yes, the SAFE Network and client are completely supported cross-platform.
 
