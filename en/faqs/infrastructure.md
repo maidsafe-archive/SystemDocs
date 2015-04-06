@@ -49,7 +49,7 @@ Yes, you can decentralise any applications or webs service that exist on the Int
 ###How does the SAFE Network deal with Sybil attacks?
 
 The SAFE Network requires all requests be processed by at least two groups of Vaults.
-The MaidSafe client passes a request to its four Data managers, who verify the request based on the client’s signature. The request in then passed to a deterministically selected group of four other Vaults which also verify the request based on its signature.
+The SAFE Network client passes a request to its four Data managers, who verify the request based on the client’s signature. The request in then passed to a deterministically selected group of four other Vaults which also verify the request based on its signature.
 
 By deterministically selecting the second group of Data managers, this attack no longer holds true for the SAFE Network, since it is not possible for the attacker to gain control over a Vault by simply surrounding it.
 
