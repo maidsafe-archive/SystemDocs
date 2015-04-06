@@ -1,23 +1,23 @@
 ### Overview
 
-MaidSafe-Encrypt implements functions related to 'self-encryption' of files and folders.
+The SAFE Network Encrypt library implements functions related to 'self-encryption' of files and folders.
 
 The library's interface is provided in the following files:
 
 * [self_encryptor.h](https://github.com/maidsafe/MaidSafe-Encrypt/blob/master/include/maidsafe/encrypt/self_encryptor.h) - this is the main API and is discussed in more detail below
 * [data_map.h](https://github.com/maidsafe/MaidSafe-Encrypt/blob/master/include/maidsafe/encrypt/data_map.h) - a struct which holds the encryption details of a single file
-* [config.h](https://github.com/maidsafe/MaidSafe-Encrypt/blob/master/src/maidsafe/encrypt/config.h) - provides const library configuration variables and return codes.  In the future, the use of return codes will be replaced with the error-handling mechanisms provided in the [MaidSafe Common library](https://github.com/maidsafe/MaidSafe-Common/wiki).
+* [config.h](https://github.com/maidsafe/MaidSafe-Encrypt/blob/master/src/maidsafe/encrypt/config.h) - provides const library configuration variables and return codes.  In the future, the use of return codes will be replaced with the error-handling mechanisms provided in the [Common library](https://github.com/maidsafe/MaidSafe-Common/wiki).
 
-The library makes use of [OpenMP](http://en.wikipedia.org/wiki/OpenMP) where available for parallelisation of tasks.  It also depends on the MaidSafe libraries [Common](https://github.com/maidsafe/MaidSafe-Common/wiki), [Private](https://github.com/maidsafe/MaidSafe-Vault-Manager/wiki), [Passport](https://github.com/maidsafe/MaidSafe-Passport/wiki), [RUDP](https://github.com/maidsafe/MaidSafe-RUDP/wiki), [Routing](https://github.com/maidsafe/MaidSafe-Routing/wiki) and [Network-Filesystem](https://github.com/maidsafe/MaidSafe-Network-Filesystem/wiki).
+The library makes use of [OpenMP](http://en.wikipedia.org/wiki/OpenMP) where available for parallelisation of tasks.  It also depends on the SAFE Network libraries [Common](https://github.com/maidsafe/MaidSafe-Common/wiki), [Private](https://github.com/maidsafe/MaidSafe-Vault-Manager/wiki), [Passport](https://github.com/maidsafe/MaidSafe-Passport/wiki), [RUDP](https://github.com/maidsafe/MaidSafe-RUDP/wiki), [Routing](https://github.com/maidsafe/MaidSafe-Routing/wiki) and [Network-Filesystem](https://github.com/maidsafe/MaidSafe-Network-Filesystem/wiki).
 
 
 ### Background
 [Self-encrypting] (http://maidsafe.net/images/opportunistic-caching.png)
-a file needs no other input than the file itself. It results in several encrypted chunks of data which need to be put to a persistent key-value store (e.g. the MaidSafe Network's vault) and a 'DataMap'.
+a file needs no other input than the file itself. It results in several encrypted chunks of data which need to be put to a persistent key-value store (e.g. the SAFE Network's vault) and a 'DataMap'.
 
 The DataMap is primarily two lists; one containing the pre-encryption [SHA512 hashes](https://en.wikipedia.org/wiki/SHA-2) of the chunks of the file and the other containing the post-encryption hashes. The pre-encryption hashes of two other chunks from the file are used in the encryption/decryption of a single chunk.  The post-encryption hashes are the names of the encrypted chunks, i.e. the key under which they are stored in the DHT.  The result is that given a DataMap, any user can retrieve the encrypted chunks and decrypt them into the original file.
 
-In the case of directories, the assumption is that the contents (a collection of DataMap and meta information) can be serialised to a single file.  This file, if self-encrypted, yields its own DataMap which also needs to be put to the key-value store.  However, the DataMap cannot be stored unencrypted if the contents are to remain secret.  These directory DataMaps are encrypted/decrypted using two pieces of additional information.  In the case of the MaidSafe Network, the first piece is normally a random ID which is attributed to that folder.  The second is the ID of the parent folder.  The ID's are suitable for use as keys in the key-value store, i.e. they are strings of the same size as a SHA512 hash.  The ID for a given directory becomes the key under which it's encrypted DataMap is stored.
+In the case of directories, the assumption is that the contents (a collection of DataMap and meta information) can be serialised to a single file.  This file, if self-encrypted, yields its own DataMap which also needs to be put to the key-value store.  However, the DataMap cannot be stored unencrypted if the contents are to remain secret.  These directory DataMaps are encrypted/decrypted using two pieces of additional information.  In the case of the SAFE Network, the first piece is normally a random ID which is attributed to that folder.  The second is the ID of the parent folder.  The ID's are suitable for use as keys in the key-value store, i.e. they are strings of the same size as a SHA512 hash.  The ID for a given directory becomes the key under which it's encrypted DataMap is stored.
 
 
 ### Details
