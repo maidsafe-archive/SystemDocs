@@ -1,5 +1,5 @@
 # Vaults
-Vaults are created on a user's computer when they install the MaidSafe client and join the SAFE Network.
+Vaults are created on a user's computer when they install the SAFE Network client and join the SAFE Network.
 
 The Vault on the user's computer can not be seen by the user. Instead the user sees a virtual mounted drive that provides access to their distributed data.
 
