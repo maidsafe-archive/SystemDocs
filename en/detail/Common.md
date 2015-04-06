@@ -1,6 +1,6 @@
 #Common Overview
 
-Maidsafe-Common library provides many components that are widely used by other MaidSafe libraries. Use of these components is strongly encouraged as they are well tested and will evolve over time to increase efficiency and effectiveness.
+The SAFE Network common library provides many components that are widely used by other SAFE Network libraries. Use of these components is strongly encouraged as they are well tested and will evolve over time to increase efficiency and effectiveness.
 
 Generally, the components it presents can be divided into the following groups :
 
