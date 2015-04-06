@@ -20,7 +20,7 @@ The proof of resource follows a series of steps.
 4. The result is collected and decrypted by the checking group and compared
 5. If any Vault returns a different result then it is believed compromised and de-ranked
 
-This mechanism is triggered on Get requests and during account transfers. It is non-deterministic and randomised by use by users. It is considered to be secure and uses zero knowledge, not to conceal content (as anyone can ask for any data), but to ensure any data which is contaminated is not required to be transferred.
+This mechanism is triggered on Get requests and during account transfers. Account transfers are where information about a data chunk, or information about nodes holding a chunk are passed to new members of a [close group](http://systemdocs.maidsafe.net/content/en/how_it_works/vault.html). Proof of resource is non-deterministic and randomised by use by users. It is considered to be secure and uses zero knowledge, not to conceal content (as anyone can ask for any data), but to ensure any data which is contaminated is not required to be transferred.
 
 Here is an overview of the proof of resource process.
 
