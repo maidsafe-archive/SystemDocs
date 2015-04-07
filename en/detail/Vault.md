@@ -124,7 +124,7 @@ Data management personas are responsible for maintaining links between NAE keys 
 The **DataManager** persona manages pointers to non versioned data, such as file contents, network keys as defined in [passport](https://github.com/maidsafe/MaidSafe-Passport/wiki) and any other 'static' data elements.
 
 ### Container Structure
-Uses a unique ManagerDb
+Uses a unique key value store
 
 * Key : data key + type
 * Value : DataManagerValue object (serialised)
@@ -162,7 +162,7 @@ The **VersionManager**, manages versioned data. This currently includes data tha
 
 ### Container Structure
 
-Uses a unique ManagerDb
+Uses a unique Manager key value store
 
 * Key : data key + type + Entity ID
 * Value : StructuredDataVersions object (serialised)
@@ -187,7 +187,7 @@ Node management personas, manage entity personas (nodes).
 The **MaidManager** function is to manage the MaidNode. This means ensuring the client has an account and at least one registered PmidNode.
 
 ### Container Structure
-Uses the AccountDb
+Uses the Account key value store
 
 * Key : Hash of the data key (hashed to protect clients data)
 * Value : Number of copies (int32) : total cost (int32)
@@ -227,7 +227,7 @@ Uses the AccountDb
 The PAH (Pmid Account Holder) function is to manage the Pmid client. This means ensuring the client has an account and an accurate record of data elements held and any lost (early version of rank).
 ### Container Structure
 
-Uses the AccountDb
+Uses the Account key value store
 
 * Key : Data key
 * Value : Size (int32)
@@ -259,7 +259,7 @@ Uses the AccountDb
 The MPAH (Mpid Account Holder) function is to manage the Mpid client. This means ensuring the client has an account and a blacklist or whitelist if required by the client. This persona will also hold messages destined for an Mpid client who is currently off-line.
 
 ### Container Structure
-Uses the AccountDb
+Uses the Account key value store
 
 * Key : MpidName + SenderMpidName + messageID
 * Value : message contents
