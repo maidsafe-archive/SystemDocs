@@ -408,7 +408,7 @@ Opportunistic caching is always a first in first out (FIFO) mechanism. In respon
 
 * Multiple requests for the same data will speed up automatically.
 * Denial of service attacks become extremely difficult as the data simply surrounds the requester of that data if continually asked for.
-* Important data is faster when it's important and slows downs otherwise, making good use of network resources.
+* The network creates more copies of popular data enabling faster access times 
 * Close nodes can become temporary stores of data very easily, allowing many advantages to system designers.
 * If for instance a web site were located in a public share then that site would increase in speed with more viewers, this is a more logical approach than today's web sites which can run the risk of overload and crash.
 
