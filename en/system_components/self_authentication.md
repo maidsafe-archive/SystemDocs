@@ -10,13 +10,13 @@ Then to generate a unique identifier, a hash is created from the concatenated ke
 
 A Password Based Key Derivation File (PBKDF2) is used to strengthen the password. This is required as user selected passwords are commonly weak.
 
-Finally the encrypted access permission are stored on the SAFE Network using the following structure:
+Finally the encrypted access permission is stored on the SAFE Network using the following structure:
 
 **Store On Network [H(K+S)] Symmetric Encrypt [ PBKDF2[P][S] ] (Account)**
 
-Self authentication relies on a system where a Vault can create a unique key, to store a value in the SAFE Network. The value stored with this key should contain an encrypted passport to data.
+Self authentication relies on a system where a Vault can create a unique key, to store a value in the SAFE Network. The value stored with this key contains an encrypted passport to data.
 
-This passport contains cryptographically secure keys and/or a list of other keys to make use of the information to be stored or shared.
+This passport contains a variety of key types that enable different tasks to be performed across the network. 
 
 The location of this initial key is masked or at least not obvious in the SAFE Network. This approach is the basis for self authentication and is extended into the SAFE Network to allow access to data to be stored publicly and with no additional requirement such as firewalls or access controls.
 
