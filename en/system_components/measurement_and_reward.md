@@ -1,5 +1,5 @@
 # Measurement and reward
-Vaults are rewarded for supplying resources by being awarded safecoins at a rate proportional to the Vault's rank. As a result users are not locked to a particular Vault.
+Vaults are rewarded for supplying resources by being awarded safecoins at a rate proportional to the Vault's rank.
 
 Users do not require to have their account managed, even in a secured manner.
 
