@@ -37,7 +37,6 @@
    * [Libraries](detail/README.md)
        * [Crust](detail/Crust.md)
        * [Routing](detail/Routing.md)
-       * [Passport](detail/Passport.md)
        * [RUDP](detail/RUDP.md)
        * [Encrypt](detail/Encrypt.md)
        * [Drive](detail/Drive.md)
