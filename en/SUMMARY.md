@@ -37,7 +37,6 @@
    * [Libraries](detail/README.md)
        * [Crust](detail/Crust.md)
        * [Routing](detail/Routing.md)
-       * [RUDP](detail/RUDP.md)
        * [Encrypt](detail/Encrypt.md)
        * [Drive](detail/Drive.md)
        * [Network Filesystem](detail/Network-Filesystem.md)
