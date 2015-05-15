@@ -37,7 +37,6 @@
    * [Libraries](detail/README.md)
        * [Crust](detail/Crust.md)
        * [Routing](detail/Routing.md)
-       * [Vault Manager](detail/Vault-Manager.md)
        * [Vault](detail/Vault.md)
 * [FAQs](faqs/README.md)
    * [General](faqs/general.md)
