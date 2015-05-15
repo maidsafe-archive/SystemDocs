@@ -2,7 +2,7 @@
 
 Reliable p2p network connections in Rust with NAT traversal. One of the most needed libraries for any server-less, decentralised project.
 
-[](https://raw.githubusercontent.com/dirvine/crust/master/img/crust-diagram_1024.png)
+![](https://raw.githubusercontent.com/dirvine/crust/master/img/crust-diagram_1024.png)
 
 This library will allow p2p networks to establish and maintain a number of connections in a group when informed by users of the library. As connections are made they are passed up and the user can select which connections to maintain or drop. The library has a bootstrap handler which will attempt to reconnect to any previous "direct connected" nodes.
 
