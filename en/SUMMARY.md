@@ -34,8 +34,8 @@
    * [An App Builder](how_to_use_it/app_devs.md)
    * [A Core Developer](how_to_use_it/a_core_developer.md)
 * [Get involved](get_involved/README.md)
-   * [Libraries]
-        * Crust
+   * [Libraries](get_involved/Libraries.md)
+        * [Crust](get_involved/Libraries/crust.md)
         * Routing 
         * Passport
         * Vault
