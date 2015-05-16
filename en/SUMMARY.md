@@ -38,7 +38,7 @@
        * [Crust](detail/Crust.md)
        * [Routing](detail/Routing.md)
        * [Passport](detail/Passport.md)
-       * Vault
+       * [Vault](detail/Vault.md)
        * Encrypt
        * NFS
        * Drive
