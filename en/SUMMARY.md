@@ -37,6 +37,7 @@
    * [Libraries](detail/README.md)
        * [Crust](detail/Crust.md)
        * [Routing](detail/Routing.md)
+           * Passport
 * [FAQs](faqs/README.md)
    * [General](faqs/general.md)
        * [Infrastructure](faqs/infrastructure.md)
