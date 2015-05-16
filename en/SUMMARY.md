@@ -37,7 +37,7 @@
    * [Libraries](detail/README.md)
        * [Crust](detail/Crust.md)
        * [Routing](detail/Routing.md)
-       * Passport
+       * [Passport](detail/Passport.md)
        * Vault
        * Encrypt
        * NFS
