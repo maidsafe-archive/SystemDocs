@@ -36,7 +36,7 @@
 * [Get involved](get_involved/README.md)
    * [Libraries](get_involved/Libraries.md)
        * [Crust](detail/Crust.md)
-       * Routing
+       * [Routing](detail/Routing.md)
        * Passport
        * Vault
        * Encrypt
