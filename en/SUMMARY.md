@@ -39,7 +39,7 @@
        * [Routing](detail/Routing.md)
        * [Passport](detail/Passport.md)
        * [Vault](detail/Vault.md)
-       * Encrypt
+       * [Encrypt](detail/Encrypt.md)
        * NFS
        * Drive
 * [FAQs](faqs/README.md)
