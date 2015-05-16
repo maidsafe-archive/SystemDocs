@@ -34,9 +34,6 @@
    * [An App Builder](how_to_use_it/app_devs.md)
    * [A Core Developer](how_to_use_it/a_core_developer.md)
 * [Get involved](get_involved/README.md)
-   * [Libraries](detail/README.md)
-       * [Crust](detail/Crust.md)
-       * Passport
 * [FAQs](faqs/README.md)
    * [General](faqs/general.md)
        * [Infrastructure](faqs/infrastructure.md)
