@@ -36,6 +36,7 @@
 * [Get involved](get_involved/README.md)
    * [Libraries](detail/README.md)
        * [Crust](detail/Crust.md)
+       * Passport
 * [FAQs](faqs/README.md)
    * [General](faqs/general.md)
        * [Infrastructure](faqs/infrastructure.md)
