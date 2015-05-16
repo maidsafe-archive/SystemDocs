@@ -35,7 +35,7 @@
    * [A Core Developer](how_to_use_it/a_core_developer.md)
 * [Get involved](get_involved/README.md)
    * [Libraries](get_involved/Libraries.md)
-       * [Crust](en/detail/Crust.md)
+       * [Crust](detail/Crust.md)
        * Routing
        * Passport
        * Vault
