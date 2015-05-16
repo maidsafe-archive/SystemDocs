@@ -1,4 +1,5 @@
-### Encrypt Overview
+
+## Encrypt Overview
 
 Self encrypting files (convergent encryption plus obfuscation)
 
