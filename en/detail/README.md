@@ -1,6 +1,8 @@
 # Libraries
 
-The SAFE network is comprised of several individual libraries. The following section, aimed at the more technical reader, provides a more detailed explanation of what role each library performs and how they work.
+The SAFE network is comprised of several individual libraries. The following section, aimed at the more technical reader, provides a more detailed explanation of what role each library performs and how they work.The following diagram provides an overview of the SAFE Network stack and how all the components fit together:
+
+
 
 The code for each library is available in MaidSafe's [GitHub repository](https://github.com/maidsafe). The libraries are:
 
