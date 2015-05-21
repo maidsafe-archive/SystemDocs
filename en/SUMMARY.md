@@ -37,11 +37,9 @@
    * [Libraries](detail/README.md)
        * [Crust](detail/Crust.md)
        * [Routing](detail/Routing.md)
-       * [Passport](detail/Passport.md)
        * [Vault](detail/Vault.md)
        * [Encrypt](detail/Encrypt.md)
-       * NFS
-       * Drive
+       * [Self Authentication]
 * [FAQs](faqs/README.md)
    * [General](faqs/general.md)
        * [Infrastructure](faqs/infrastructure.md)
