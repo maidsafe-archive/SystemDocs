@@ -39,7 +39,6 @@
        * [Routing](detail/Routing.md)
        * [Vault](detail/Vault.md)
        * [Encrypt](detail/Encrypt.md)
-       * [Self Authentication]
 * [FAQs](faqs/README.md)
    * [General](faqs/general.md)
        * [Infrastructure](faqs/infrastructure.md)
