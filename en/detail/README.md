@@ -15,7 +15,6 @@ The code for each library is available in MaidSafe's [GitHub repositories](https
     6.  Compute - Still to be implemented, this module will enable the processing of distributed computing actions, leveraging the massive processing capability of the decentralised system.
     7.  Safecoin - A crypto graphic network token that is integral to the network, rewarding and incentivising all network contributors. API access wil enable balance check, transfer, escrow and multi-sig functionality.
     8.  Self-authentication - A mechanism that enables users to create accounts on the SAFE Network and log in from any computer without the need or knowledge of third parties.
-    9. SAFE Apps -  The networks application layer where all third party apps reside and will access the network via NFS / Messaging / Compute modules.
 
-Access to all library APIs is completely unrestricted to app developers. 
+Access to all library APIs is completely unrestricted to app developers and SAFE apps will access the network via the NFS, Messaging and Compute modules.
 
