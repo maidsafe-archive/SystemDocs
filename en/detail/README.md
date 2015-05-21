@@ -6,8 +6,8 @@ The SAFE network is comprised of several individual libraries. The following sec
     
 The code for each library is available in MaidSafe's [GitHub repositories](https://github.com/maidsafe). The libraries are:
 
-1.  Crust- Reliable p2p network connections in Rust with NAT traversal
-2.  Routing - A secured DHT, based on a Kademlia-like implementation, that has group based consensus decisions confirmed by Sentinel
+1.  [Crust](https://github.com/maidsafe/crust)- Reliable p2p network connections in Rust with NAT traversal [Access the Crust API.](http://maidsafe.net/crust/crust/)
+2.  [Routing](https://github.com/maidsafe/routing) - A secured DHT, based on a Kademlia-like implementation, that has group based consensus decisions confirmed by Sentinel. [Access the Routing API.](http://maidsafe.net/routing/routing/)
 3.  Vault - An autonomous network that perform many functions including: data storage, data management, publishing and sharing. Vaults receive responsibilities for anything with a network address from the routing layer.
 4.  Encrypt - Self-encrypting files (convergent encryption plus obfuscation) which can be accessed via either a RESTful or POSIX API. The RESTful API offers simplicity (GET, PUT, POST, DELETE), while the POSIX API provides more granular access.
 5.  Messaging - This module handles communication between public identities in the network. All communication between MPID's (MaidSafe Public ID's) in the network are private and digitally signed.
@@ -16,5 +16,5 @@ The code for each library is available in MaidSafe's [GitHub repositories](https
 8.  Self-authentication - A mechanism that enables users to create accounts on the SAFE Network and log in from any computer without the need or knowledge of third parties.
 9. SAFE Apps -  The networks application layer where all third party apps reside and will access the network via NFS / Messaging / Compute modules.
 
-
+Access to all library APIs is completely unrestricted to app developers, enabling balance check, transfer, escrow and multi-sig functionality.   
 
