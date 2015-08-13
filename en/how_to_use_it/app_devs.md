@@ -11,7 +11,7 @@ The provision of safecoin rewards based on usage allows the App Builder to focus
 
 [Click here for more information about the MaidSafe API](https://github.com/maidsafe/MaidSafe-API/wiki)
 
-[Click here for examples of apps which use the MaidSafe API](http://maidsafe.net/maidsafe-examples/)
+
 
 
 
