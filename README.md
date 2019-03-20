@@ -1,3 +1,9 @@
+# ***This repository is no longer maintained***
+# It has been moved to the maidsafe-archive organisation for reference only
+#
+#
+#
+#
 # SAFE Network description
 
 This book is written for anyone who wants to know more about the **SAFE (Secure Access For Everyone) Network** from MaidSafe. The book explains the details and benefits of using the SAFE Network. The following areas are covered:
