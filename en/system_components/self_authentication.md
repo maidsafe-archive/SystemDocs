@@ -12,7 +12,7 @@ A Password Based Key Derivation File (PBKDF2) is used to strengthen the password
 
 Finally the encrypted access permission is stored on the SAFE Network using the following structure:
 
-**Store On Network [H(K+S)] Symmetric Encrypt [ PBKDF2[P][S] ] (Account)**
+**Store On Network [H(K+S)] Symmetric Encrypt \[ PBKDF2[P][S] \] (Account)**
 
 Self authentication relies on a system where a Vault can create a unique key, to store a value in the SAFE Network. The value stored with this key contains an encrypted passport to data.
 
